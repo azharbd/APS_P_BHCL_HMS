@@ -13,3 +13,5 @@ E:\HMS\hms\hms\obj\x86\Debug\hms.Froms.frmHopitalAdmissionFront.resources
 E:\HMS\hms\hms\obj\x86\Debug\hms.Froms.frminvestigationsearchandedit.resources
 E:\HMS\hms\hms\obj\x86\Debug\hms.csprojResolveAssemblyReference.cache
 E:\HMS\hms\hms\obj\x86\Debug\hms.Froms.frmHospitalDeposit.resources
+E:\APS_P_BHCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.exe
+E:\APS_P_BHCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.pdb
