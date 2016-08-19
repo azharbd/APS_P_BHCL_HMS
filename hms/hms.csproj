@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DA08C054-E55E-4012-AF6B-F66A17FD7F91}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>hms</RootNamespace>
+    <AssemblyName>hms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Froms\Doctors Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\Doctors Information.Designer.cs">
+      <DependentUpon>Doctors Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\frmfrontdeskinvestigation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\frmfrontdeskinvestigation.Designer.cs">
+      <DependentUpon>frmfrontdeskinvestigation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\frmfrontdeskreturninvestigaton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\frmfrontdeskreturninvestigaton.Designer.cs">
+      <DependentUpon>frmfrontdeskreturninvestigaton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\frmHopitalAdmissionFront.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\frmHopitalAdmissionFront.Designer.cs">
+      <DependentUpon>frmHopitalAdmissionFront.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\frmHospitalDeposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\frmHospitalDeposit.Designer.cs">
+      <DependentUpon>frmHospitalDeposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\frminvestigationsearchandedit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\frminvestigationsearchandedit.Designer.cs">
+      <DependentUpon>frminvestigationsearchandedit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\frmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\frmlogin.Designer.cs">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\frmPathologylab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\frmPathologylab.designer.cs">
+      <DependentUpon>frmPathologylab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\ItemInformationSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\ItemInformationSetup.Designer.cs">
+      <DependentUpon>ItemInformationSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Froms\Doctors Information.resx">
+      <DependentUpon>Doctors Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\frmfrontdeskinvestigation.resx">
+      <DependentUpon>frmfrontdeskinvestigation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\frmfrontdeskreturninvestigaton.resx">
+      <DependentUpon>frmfrontdeskreturninvestigaton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\frmHopitalAdmissionFront.resx">
+      <DependentUpon>frmHopitalAdmissionFront.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\frmHospitalDeposit.resx">
+      <DependentUpon>frmHospitalDeposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\frminvestigationsearchandedit.resx">
+      <DependentUpon>frminvestigationsearchandedit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\frmlogin.resx">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\frmPathologylab.resx">
+      <DependentUpon>frmPathologylab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\ItemInformationSetup.resx">
+      <DependentUpon>ItemInformationSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classes\" />
+    <Folder Include="Dal\" />
+    <Folder Include="Reports\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\SAVE.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Edit.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\ADD.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CLOSE.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Preview.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\DELETE.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PRINTMAN.ICO" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

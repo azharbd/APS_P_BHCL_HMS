@@ -1,0 +1,15 @@
+E:\HMS\hms\hms\obj\x86\Debug\hms.Froms.frmlogin.resources
+E:\HMS\hms\hms\obj\x86\Debug\hms.Properties.Resources.resources
+E:\HMS\hms\hms\obj\x86\Debug\hms.csproj.GenerateResource.Cache
+E:\HMS\hms\hms\bin\Debug\hms.exe
+E:\HMS\hms\hms\bin\Debug\hms.pdb
+E:\HMS\hms\hms\obj\x86\Debug\hms.exe
+E:\HMS\hms\hms\obj\x86\Debug\hms.pdb
+E:\HMS\hms\hms\obj\x86\Debug\hms.Froms.frmfrontdeskinvestigation.resources
+E:\HMS\hms\hms\obj\x86\Debug\hms.Froms.frmserviceiteminformation.resources
+E:\HMS\hms\hms\obj\x86\Debug\hms.Froms.frmDoctorsInformation.resources
+E:\HMS\hms\hms\obj\x86\Debug\hms.Froms.frmfrontdeskinvetigationreturn.resources
+E:\HMS\hms\hms\obj\x86\Debug\hms.Froms.frmHopitalAdmissionFront.resources
+E:\HMS\hms\hms\obj\x86\Debug\hms.Froms.frminvestigationsearchandedit.resources
+E:\HMS\hms\hms\obj\x86\Debug\hms.csprojResolveAssemblyReference.cache
+E:\HMS\hms\hms\obj\x86\Debug\hms.Froms.frmHospitalDeposit.resources
