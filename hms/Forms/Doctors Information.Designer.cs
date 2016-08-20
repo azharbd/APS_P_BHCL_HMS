@@ -338,7 +338,6 @@
             this.Name = "frmDoctorsInformation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Doctor\'s Information";
-            this.Load += new System.EventHandler(this.frmDoctorsInformation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

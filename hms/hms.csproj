@@ -11,7 +11,8 @@
     <RootNamespace>hms</RootNamespace>
     <AssemblyName>hms</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -34,9 +35,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="C_Data_Batch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\C_Data_Batch.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -48,47 +54,69 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Doctors Information.cs" />
+    <Compile Include="Forms\Doctors Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Doctors Information.Designer.cs">
       <DependentUpon>Doctors Information.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmfrontdeskinvestigation.cs" />
+    <Compile Include="Forms\frmfrontdeskinvestigation.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frmfrontdeskinvestigation.Designer.cs">
       <DependentUpon>frmfrontdeskinvestigation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmfrontdeskreturninvestigaton.cs" />
+    <Compile Include="Forms\frmfrontdeskreturninvestigaton.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frmfrontdeskreturninvestigaton.Designer.cs">
       <DependentUpon>frmfrontdeskreturninvestigaton.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmHopitalAdmissionFront.cs" />
+    <Compile Include="Forms\frmHopitalAdmissionFront.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frmHopitalAdmissionFront.Designer.cs">
       <DependentUpon>frmHopitalAdmissionFront.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmHospitalDeposit.cs" />
+    <Compile Include="Forms\frmHospitalDeposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frmHospitalDeposit.Designer.cs">
       <DependentUpon>frmHospitalDeposit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frminvestigationsearchandedit.cs" />
+    <Compile Include="Forms\frminvestigationsearchandedit.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frminvestigationsearchandedit.Designer.cs">
       <DependentUpon>frminvestigationsearchandedit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmlogin.cs" />
+    <Compile Include="Forms\frmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frmlogin.Designer.cs">
       <DependentUpon>frmlogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmPathologylab.cs" />
+    <Compile Include="Forms\frmPathologylab.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frmPathologylab.designer.cs">
       <DependentUpon>frmPathologylab.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ItemInformationSetup.cs" />
+    <Compile Include="Forms\ItemInformationSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\ItemInformationSetup.Designer.cs">
       <DependentUpon>ItemInformationSetup.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\NewTestFrm.cs" />
+    <Compile Include="Forms\NewTestFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\NewTestFrm.Designer.cs">
       <DependentUpon>NewTestFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\test2.cs" />
+    <Compile Include="Forms\test2.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\test2.Designer.cs">
       <DependentUpon>test2.cs</DependentUpon>
     </Compile>
@@ -140,6 +168,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="bin\Debug\hms.vshost.exe.manifest" />
     <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferences.cache" />
     <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
@@ -156,6 +187,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\Release\" />
     <Folder Include="Classes\" />
     <Folder Include="Dal\" />
     <Folder Include="Reports\" />
@@ -185,6 +217,8 @@
     <None Include="Images\PRINTMAN.ICO" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\C_Data_Batch.dll" />
+    <Content Include="bin\Debug\C_Data_Batch.pdb" />
     <Content Include="bin\Debug\hms.exe" />
     <Content Include="bin\Debug\hms.pdb" />
     <Content Include="bin\Debug\hms.vshost.exe" />

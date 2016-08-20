@@ -16,6 +16,11 @@ namespace hms.Froms
             InitializeComponent();
         }
 
+        private void btnsave_Click(object sender, EventArgs e)
+        {
+
+        }
+
         
     }
 }

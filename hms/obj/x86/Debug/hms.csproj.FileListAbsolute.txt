@@ -17,3 +17,19 @@ E:\APS_P_BHCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.exe
 E:\APS_P_BHCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.pdb
 F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.exe
 F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.pdb
+F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Debug\hms.exe.config
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.csprojResolveAssemblyReference.cache
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmfrontdeskinvestigation.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmfrontdeskinvetigationreturn.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmHopitalAdmissionFront.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmHospitalDeposit.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frminvestigationsearchandedit.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmlogin.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\Lab.From.frmPathologylab.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmserviceiteminformation.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Properties.Resources.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.csproj.GenerateResource.Cache
+F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Debug\hms.exe
+F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Debug\hms.pdb
+F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Debug\C_Data_Batch.pdb
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmDoctorsInformation.resources
