@@ -48,89 +48,88 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Froms\Doctors Information.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Froms\Doctors Information.Designer.cs">
+    <Compile Include="Forms\Doctors Information.cs" />
+    <Compile Include="Forms\Doctors Information.Designer.cs">
       <DependentUpon>Doctors Information.cs</DependentUpon>
     </Compile>
-    <Compile Include="Froms\frmfrontdeskinvestigation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Froms\frmfrontdeskinvestigation.Designer.cs">
+    <Compile Include="Forms\frmfrontdeskinvestigation.cs" />
+    <Compile Include="Forms\frmfrontdeskinvestigation.Designer.cs">
       <DependentUpon>frmfrontdeskinvestigation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Froms\frmfrontdeskreturninvestigaton.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Froms\frmfrontdeskreturninvestigaton.Designer.cs">
+    <Compile Include="Forms\frmfrontdeskreturninvestigaton.cs" />
+    <Compile Include="Forms\frmfrontdeskreturninvestigaton.Designer.cs">
       <DependentUpon>frmfrontdeskreturninvestigaton.cs</DependentUpon>
     </Compile>
-    <Compile Include="Froms\frmHopitalAdmissionFront.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Froms\frmHopitalAdmissionFront.Designer.cs">
+    <Compile Include="Forms\frmHopitalAdmissionFront.cs" />
+    <Compile Include="Forms\frmHopitalAdmissionFront.Designer.cs">
       <DependentUpon>frmHopitalAdmissionFront.cs</DependentUpon>
     </Compile>
-    <Compile Include="Froms\frmHospitalDeposit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Froms\frmHospitalDeposit.Designer.cs">
+    <Compile Include="Forms\frmHospitalDeposit.cs" />
+    <Compile Include="Forms\frmHospitalDeposit.Designer.cs">
       <DependentUpon>frmHospitalDeposit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Froms\frminvestigationsearchandedit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Froms\frminvestigationsearchandedit.Designer.cs">
+    <Compile Include="Forms\frminvestigationsearchandedit.cs" />
+    <Compile Include="Forms\frminvestigationsearchandedit.Designer.cs">
       <DependentUpon>frminvestigationsearchandedit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Froms\frmlogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Froms\frmlogin.Designer.cs">
+    <Compile Include="Forms\frmlogin.cs" />
+    <Compile Include="Forms\frmlogin.Designer.cs">
       <DependentUpon>frmlogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Froms\frmPathologylab.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Froms\frmPathologylab.designer.cs">
+    <Compile Include="Forms\frmPathologylab.cs" />
+    <Compile Include="Forms\frmPathologylab.designer.cs">
       <DependentUpon>frmPathologylab.cs</DependentUpon>
     </Compile>
-    <Compile Include="Froms\ItemInformationSetup.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Froms\ItemInformationSetup.Designer.cs">
+    <Compile Include="Forms\ItemInformationSetup.cs" />
+    <Compile Include="Forms\ItemInformationSetup.Designer.cs">
       <DependentUpon>ItemInformationSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewTestFrm.cs" />
+    <Compile Include="Forms\NewTestFrm.Designer.cs">
+      <DependentUpon>NewTestFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\test2.cs" />
+    <Compile Include="Forms\test2.Designer.cs">
+      <DependentUpon>test2.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Froms\Doctors Information.resx">
+    <EmbeddedResource Include="Forms\Doctors Information.resx">
       <DependentUpon>Doctors Information.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Froms\frmfrontdeskinvestigation.resx">
+    <EmbeddedResource Include="Forms\frmfrontdeskinvestigation.resx">
       <DependentUpon>frmfrontdeskinvestigation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Froms\frmfrontdeskreturninvestigaton.resx">
+    <EmbeddedResource Include="Forms\frmfrontdeskreturninvestigaton.resx">
       <DependentUpon>frmfrontdeskreturninvestigaton.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Froms\frmHopitalAdmissionFront.resx">
+    <EmbeddedResource Include="Forms\frmHopitalAdmissionFront.resx">
       <DependentUpon>frmHopitalAdmissionFront.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Froms\frmHospitalDeposit.resx">
+    <EmbeddedResource Include="Forms\frmHospitalDeposit.resx">
       <DependentUpon>frmHospitalDeposit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Froms\frminvestigationsearchandedit.resx">
+    <EmbeddedResource Include="Forms\frminvestigationsearchandedit.resx">
       <DependentUpon>frminvestigationsearchandedit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Froms\frmlogin.resx">
+    <EmbeddedResource Include="Forms\frmlogin.resx">
       <DependentUpon>frmlogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Froms\frmPathologylab.resx">
+    <EmbeddedResource Include="Forms\frmPathologylab.resx">
       <DependentUpon>frmPathologylab.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Froms\ItemInformationSetup.resx">
+    <EmbeddedResource Include="Forms\ItemInformationSetup.resx">
       <DependentUpon>ItemInformationSetup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\x86\Debug\hms.Froms.frmDoctorsInformation.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\hms.Froms.frmfrontdeskinvestigation.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\hms.Froms.frmfrontdeskinvetigationreturn.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\hms.Froms.frmHopitalAdmissionFront.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\hms.Froms.frmHospitalDeposit.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\hms.Froms.frminvestigationsearchandedit.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\hms.Froms.frmlogin.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\hms.Froms.frmserviceiteminformation.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\hms.Properties.Resources.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -141,6 +140,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="bin\Debug\hms.vshost.exe.manifest" />
+    <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\x86\Debug\hms.csproj.GenerateResource.Cache" />
+    <None Include="obj\x86\Debug\hms.csprojResolveAssemblyReference.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -179,6 +183,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\PRINTMAN.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\hms.exe" />
+    <Content Include="bin\Debug\hms.pdb" />
+    <Content Include="bin\Debug\hms.vshost.exe" />
+    <Content Include="obj\x86\Debug\hms.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\x86\Debug\hms.exe" />
+    <Content Include="obj\x86\Debug\hms.pdb" />
+    <Content Include="obj\x86\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
