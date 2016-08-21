@@ -1,4 +1,4 @@
-﻿namespace hms.Froms
+﻿namespace hms.Forms
 {
     partial class frmDoctorsInformation
     {
@@ -36,17 +36,16 @@
             this.lbldegree = new System.Windows.Forms.Label();
             this.txtdoctorname = new System.Windows.Forms.TextBox();
             this.lbldoctorname = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
             this.lbladdress = new System.Windows.Forms.Label();
             this.txtspecialist = new System.Windows.Forms.TextBox();
             this.lblspecialist = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtArea = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.lbldoctortype = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtMarketingBy = new System.Windows.Forms.TextBox();
             this.lblmarketingby = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
             this.lblphone = new System.Windows.Forms.Label();
             this.chkbispc = new System.Windows.Forms.CheckBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -56,6 +55,7 @@
             this.btnedit = new System.Windows.Forms.Button();
             this.btnsave = new System.Windows.Forms.Button();
             this.lstmarketinginformation = new System.Windows.Forms.ListBox();
+            this.drDoctorType = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,12 +127,12 @@
             this.lbldoctorname.TabIndex = 4;
             this.lbldoctorname.Text = "Doctor Name";
             // 
-            // textBox1
+            // txtAddress
             // 
-            this.textBox1.Location = new System.Drawing.Point(279, 149);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(126, 20);
-            this.textBox1.TabIndex = 11;
+            this.txtAddress.Location = new System.Drawing.Point(279, 149);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(126, 20);
+            this.txtAddress.TabIndex = 11;
             // 
             // lbladdress
             // 
@@ -161,12 +161,12 @@
             this.lblspecialist.TabIndex = 8;
             this.lblspecialist.Text = "Specialist";
             // 
-            // textBox2
+            // txtArea
             // 
-            this.textBox2.Location = new System.Drawing.Point(410, 149);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(109, 20);
-            this.textBox2.TabIndex = 13;
+            this.txtArea.Location = new System.Drawing.Point(410, 149);
+            this.txtArea.Name = "txtArea";
+            this.txtArea.Size = new System.Drawing.Size(109, 20);
+            this.txtArea.TabIndex = 13;
             // 
             // label1
             // 
@@ -178,13 +178,6 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Area";
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(152, 199);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(129, 20);
-            this.textBox3.TabIndex = 17;
-            // 
             // lbldoctortype
             // 
             this.lbldoctortype.AutoSize = true;
@@ -195,12 +188,12 @@
             this.lbldoctortype.TabIndex = 16;
             this.lbldoctortype.Text = "Doctor Type";
             // 
-            // textBox4
+            // txtMarketingBy
             // 
-            this.textBox4.Location = new System.Drawing.Point(152, 175);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(163, 20);
-            this.textBox4.TabIndex = 15;
+            this.txtMarketingBy.Location = new System.Drawing.Point(152, 175);
+            this.txtMarketingBy.Name = "txtMarketingBy";
+            this.txtMarketingBy.Size = new System.Drawing.Size(163, 20);
+            this.txtMarketingBy.TabIndex = 15;
             // 
             // lblmarketingby
             // 
@@ -212,12 +205,12 @@
             this.lblmarketingby.TabIndex = 14;
             this.lblmarketingby.Text = "Marketing By";
             // 
-            // textBox5
+            // txtPhone
             // 
-            this.textBox5.Location = new System.Drawing.Point(333, 200);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(127, 20);
-            this.textBox5.TabIndex = 19;
+            this.txtPhone.Location = new System.Drawing.Point(333, 200);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(127, 20);
+            this.txtPhone.TabIndex = 19;
             // 
             // lblphone
             // 
@@ -243,9 +236,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 225);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 228);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(577, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(577, 147);
             this.dataGridView1.TabIndex = 21;
             // 
             // btnpreview
@@ -302,11 +295,22 @@
             this.lstmarketinginformation.Size = new System.Drawing.Size(199, 17);
             this.lstmarketinginformation.TabIndex = 27;
             // 
+            // drDoctorType
+            // 
+            this.drDoctorType.FormattingEnabled = true;
+            this.drDoctorType.Items.AddRange(new object[] {
+            "1"});
+            this.drDoctorType.Location = new System.Drawing.Point(152, 201);
+            this.drDoctorType.Name = "drDoctorType";
+            this.drDoctorType.Size = new System.Drawing.Size(129, 21);
+            this.drDoctorType.TabIndex = 28;
+            // 
             // frmDoctorsInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(601, 400);
+            this.Controls.Add(this.drDoctorType);
             this.Controls.Add(this.lstmarketinginformation);
             this.Controls.Add(this.btnpreview);
             this.Controls.Add(this.btnclose);
@@ -315,15 +319,14 @@
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.chkbispc);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.lblphone);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.lbldoctortype);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtMarketingBy);
             this.Controls.Add(this.lblmarketingby);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtArea);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.lbladdress);
             this.Controls.Add(this.txtspecialist);
             this.Controls.Add(this.lblspecialist);
@@ -354,17 +357,16 @@
         private System.Windows.Forms.Label lbldegree;
         private System.Windows.Forms.TextBox txtdoctorname;
         private System.Windows.Forms.Label lbldoctorname;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Label lbladdress;
         private System.Windows.Forms.TextBox txtspecialist;
         private System.Windows.Forms.Label lblspecialist;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtArea;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label lbldoctortype;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtMarketingBy;
         private System.Windows.Forms.Label lblmarketingby;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Label lblphone;
         private System.Windows.Forms.CheckBox chkbispc;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -374,5 +376,6 @@
         private System.Windows.Forms.Button btnclose;
         private System.Windows.Forms.Button btnpreview;
         private System.Windows.Forms.ListBox lstmarketinginformation;
+        private System.Windows.Forms.ComboBox drDoctorType;
     }
 }

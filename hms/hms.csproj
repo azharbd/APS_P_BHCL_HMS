@@ -24,6 +24,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -44,6 +45,7 @@
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,11 +56,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Doctors Information.cs">
+    <Compile Include="BLL\Doctor.cs" />
+    <Compile Include="DAL\DoctorDA.cs" />
+    <Compile Include="Forms\DoctorsInformation.cs">
       <SubType>Form</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Forms\Doctors Information.Designer.cs">
-      <DependentUpon>Doctors Information.cs</DependentUpon>
+    <Compile Include="Forms\DoctorsInformation.Designer.cs">
+      <DependentUpon>DoctorsInformation.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Forms\frmfrontdeskinvestigation.cs">
       <SubType>Form</SubType>
@@ -120,10 +126,13 @@
     <Compile Include="Forms\test2.Designer.cs">
       <DependentUpon>test2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Program.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Doctors Information.resx">
-      <DependentUpon>Doctors Information.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\DoctorsInformation.resx">
+      <DependentUpon>DoctorsInformation.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmfrontdeskinvestigation.resx">
       <DependentUpon>frmfrontdeskinvestigation.cs</DependentUpon>
@@ -149,15 +158,6 @@
     <EmbeddedResource Include="Forms\ItemInformationSetup.resx">
       <DependentUpon>ItemInformationSetup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="obj\x86\Debug\hms.Froms.frmDoctorsInformation.resources" />
-    <EmbeddedResource Include="obj\x86\Debug\hms.Froms.frmfrontdeskinvestigation.resources" />
-    <EmbeddedResource Include="obj\x86\Debug\hms.Froms.frmfrontdeskinvetigationreturn.resources" />
-    <EmbeddedResource Include="obj\x86\Debug\hms.Froms.frmHopitalAdmissionFront.resources" />
-    <EmbeddedResource Include="obj\x86\Debug\hms.Froms.frmHospitalDeposit.resources" />
-    <EmbeddedResource Include="obj\x86\Debug\hms.Froms.frminvestigationsearchandedit.resources" />
-    <EmbeddedResource Include="obj\x86\Debug\hms.Froms.frmlogin.resources" />
-    <EmbeddedResource Include="obj\x86\Debug\hms.Froms.frmserviceiteminformation.resources" />
-    <EmbeddedResource Include="obj\x86\Debug\hms.Properties.Resources.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -172,10 +172,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="bin\Debug\hms.vshost.exe.manifest" />
-    <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferences.cache" />
-    <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="obj\x86\Debug\hms.csproj.GenerateResource.Cache" />
-    <None Include="obj\x86\Debug\hms.csprojResolveAssemblyReference.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -188,8 +184,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
-    <Folder Include="Classes\" />
-    <Folder Include="Dal\" />
     <Folder Include="Reports\" />
   </ItemGroup>
   <ItemGroup>
@@ -222,9 +216,6 @@
     <Content Include="bin\Debug\hms.exe" />
     <Content Include="bin\Debug\hms.pdb" />
     <Content Include="bin\Debug\hms.vshost.exe" />
-    <Content Include="obj\x86\Debug\hms.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\x86\Debug\hms.exe" />
-    <Content Include="obj\x86\Debug\hms.pdb" />
     <Content Include="obj\x86\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
