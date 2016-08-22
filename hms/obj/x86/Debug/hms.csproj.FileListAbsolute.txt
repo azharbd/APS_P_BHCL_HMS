@@ -18,3 +18,6 @@ F:\Dot Net Projects\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Properties.Resources.re
 F:\Dot Net Projects\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.csproj.GenerateResource.Cache
 F:\Dot Net Projects\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.exe
 F:\Dot Net Projects\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.pdb
+E:\Drive F\Azhar Office\Personal Documents\APS_P_BHCL_HMS\APS_P_BHCL_HMS\hms\bin\Debug\hms.exe.config
+E:\Drive F\Azhar Office\Personal Documents\APS_P_BHCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.exe
+E:\Drive F\Azhar Office\Personal Documents\APS_P_BHCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.pdb
