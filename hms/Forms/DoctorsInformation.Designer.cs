@@ -276,6 +276,7 @@
             this.btnedit.Size = new System.Drawing.Size(30, 23);
             this.btnedit.TabIndex = 23;
             this.btnedit.UseVisualStyleBackColor = true;
+            this.btnedit.Click += new System.EventHandler(this.btnedit_Click);
             // 
             // btnsave
             // 

@@ -37,6 +37,11 @@ namespace hms.Forms
             
         }
 
+        private void btnedit_Click(object sender, EventArgs e)
+        {
+
+        }
+
         
     }
 }
