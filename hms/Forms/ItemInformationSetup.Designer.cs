@@ -52,6 +52,7 @@
             this.btnpreview = new System.Windows.Forms.Button();
             this.btnnew = new System.Windows.Forms.Button();
             this.btnclose = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -211,9 +212,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(403, 13);
+            this.dataGridView1.Location = new System.Drawing.Point(403, 49);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(461, 442);
+            this.dataGridView1.Size = new System.Drawing.Size(461, 406);
             this.dataGridView1.TabIndex = 18;
             // 
             // btnsave
@@ -261,11 +262,19 @@
             this.btnclose.TabIndex = 23;
             this.btnclose.UseVisualStyleBackColor = true;
             // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(403, 18);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(461, 20);
+            this.textBox3.TabIndex = 24;
+            // 
             // frmserviceiteminformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(876, 467);
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.btnclose);
             this.Controls.Add(this.btnnew);
             this.Controls.Add(this.btnpreview);
@@ -325,5 +334,6 @@
         private System.Windows.Forms.Button btnpreview;
         private System.Windows.Forms.Button btnnew;
         private System.Windows.Forms.Button btnclose;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }

@@ -590,7 +590,7 @@
             // 
             this.txtdoctorinformation.Location = new System.Drawing.Point(264, 40);
             this.txtdoctorinformation.Name = "txtdoctorinformation";
-            this.txtdoctorinformation.Size = new System.Drawing.Size(188, 20);
+            this.txtdoctorinformation.Size = new System.Drawing.Size(167, 20);
             this.txtdoctorinformation.TabIndex = 59;
             // 
             // groupBox2
