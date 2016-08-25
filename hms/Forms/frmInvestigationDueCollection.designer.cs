@@ -442,7 +442,7 @@
             // 
             // btnnew
             // 
-            this.btnnew.Image = global::hms.Properties.Resources.ADD1;
+            //this.btnnew.Image = global::hms.Properties.Resources.ADD1;
             this.btnnew.Location = new System.Drawing.Point(683, 2);
             this.btnnew.Name = "btnnew";
             this.btnnew.Size = new System.Drawing.Size(30, 23);

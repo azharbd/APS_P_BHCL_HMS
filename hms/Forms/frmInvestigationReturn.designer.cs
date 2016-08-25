@@ -238,7 +238,7 @@
             // 
             // btnclose
             // 
-            this.btnclose.BackgroundImage = global::hms.Properties.Resources.CLOSE;
+            this.btnclose.Image = global::hms.Properties.Resources.CLOSE;
             this.btnclose.Location = new System.Drawing.Point(71, 2);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(30, 23);
@@ -247,7 +247,7 @@
             // 
             // btnsave
             // 
-            this.btnsave.BackgroundImage = global::hms.Properties.Resources.SAVE;
+            this.btnsave.Image = global::hms.Properties.Resources.SAVE;
             this.btnsave.Location = new System.Drawing.Point(39, 2);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(30, 23);
@@ -256,7 +256,6 @@
             // 
             // btnnew
             // 
-            this.btnnew.BackgroundImage = global::hms.Properties.Resources.ADD1;
             this.btnnew.Location = new System.Drawing.Point(8, 2);
             this.btnnew.Name = "btnnew";
             this.btnnew.Size = new System.Drawing.Size(25, 23);
@@ -267,7 +266,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(835, 750);
+            this.ClientSize = new System.Drawing.Size(835, 742);
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.btnclose);
             this.Controls.Add(this.btnnew);

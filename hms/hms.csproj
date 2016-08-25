@@ -66,6 +66,12 @@
       <DependentUpon>DoctorsInformation.cs</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
+    <Compile Include="Forms\frmConsultantVisit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmConsultantVisit.designer.cs">
+      <DependentUpon>frmConsultantVisit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmfrontdeskinvestigation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,11 +96,35 @@
     <Compile Include="Forms\frmHospitalDeposit.Designer.cs">
       <DependentUpon>frmHospitalDeposit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmHospitalOtherService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHospitalOtherService.designer.cs">
+      <DependentUpon>frmHospitalOtherService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmInvestigationDueCollection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInvestigationDueCollection.designer.cs">
+      <DependentUpon>frmInvestigationDueCollection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmInvestigationReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInvestigationReturn.designer.cs">
+      <DependentUpon>frmInvestigationReturn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frminvestigationsearchandedit.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frminvestigationsearchandedit.Designer.cs">
       <DependentUpon>frminvestigationsearchandedit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmInvestigationSearchEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInvestigationSearchEdit.designer.cs">
+      <DependentUpon>frmInvestigationSearchEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmlogin.cs">
       <SubType>Form</SubType>
@@ -126,6 +156,7 @@
     <Compile Include="Forms\test2.Designer.cs">
       <DependentUpon>test2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Include_Files\Utility.cs" />
     <Compile Include="Program.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
@@ -133,6 +164,9 @@
     <EmbeddedResource Include="Forms\DoctorsInformation.resx">
       <DependentUpon>DoctorsInformation.cs</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmConsultantVisit.resx">
+      <DependentUpon>frmConsultantVisit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmfrontdeskinvestigation.resx">
       <DependentUpon>frmfrontdeskinvestigation.cs</DependentUpon>
@@ -146,8 +180,17 @@
     <EmbeddedResource Include="Forms\frmHospitalDeposit.resx">
       <DependentUpon>frmHospitalDeposit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmInvestigationDueCollection.resx">
+      <DependentUpon>frmInvestigationDueCollection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmInvestigationReturn.resx">
+      <DependentUpon>frmInvestigationReturn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frminvestigationsearchandedit.resx">
       <DependentUpon>frminvestigationsearchandedit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmInvestigationSearchEdit.resx">
+      <DependentUpon>frmInvestigationSearchEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmlogin.resx">
       <DependentUpon>frmlogin.cs</DependentUpon>

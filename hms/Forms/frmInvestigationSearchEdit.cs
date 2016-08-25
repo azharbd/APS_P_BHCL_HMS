@@ -19,7 +19,7 @@ namespace hms.Forms
         private void frmInvestigationSearchEdit_Load(object sender, EventArgs e)
         {
 
-            this.reportViewer1.RefreshReport();
+            //this.reportViewer1.RefreshReport();
         }
     }
 }

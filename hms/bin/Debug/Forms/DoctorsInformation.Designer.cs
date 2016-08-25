@@ -276,6 +276,7 @@
             this.btnedit.Size = new System.Drawing.Size(30, 23);
             this.btnedit.TabIndex = 23;
             this.btnedit.UseVisualStyleBackColor = true;
+            this.btnedit.Click += new System.EventHandler(this.btnedit_Click);
             // 
             // btnsave
             // 
@@ -298,12 +299,11 @@
             // drDoctorType
             // 
             this.drDoctorType.FormattingEnabled = true;
-            this.drDoctorType.Items.AddRange(new object[] {
-            "1"});
             this.drDoctorType.Location = new System.Drawing.Point(152, 201);
             this.drDoctorType.Name = "drDoctorType";
             this.drDoctorType.Size = new System.Drawing.Size(129, 21);
             this.drDoctorType.TabIndex = 28;
+            this.drDoctorType.SelectedIndexChanged += new System.EventHandler(this.drDoctorType_SelectedIndexChanged);
             // 
             // frmDoctorsInformation
             // 
@@ -341,6 +341,7 @@
             this.Name = "frmDoctorsInformation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Doctor\'s Information";
+            this.Load += new System.EventHandler(this.frmDoctorsInformation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
