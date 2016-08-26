@@ -33,7 +33,6 @@ E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmHopitalAdmissio
 E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmHospitalDeposit.resources
 E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmInvestigationDueCollection.resources
 E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmInvestigationReturn.resources
-E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frminvestigationsearchandedit.resources
 E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmInvestigationSearchEdit.resources
 E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmlogin.resources
 E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\Lab.From.frmPathologylab.resources
@@ -46,3 +45,8 @@ E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\bin\Debug\Forms\DoctorsInformation.Designe
 E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\bin\Debug\Program.cs
 E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\bin\Debug\hms.exe
 E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\bin\Debug\hms.pdb
+E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmCategory.resources
+E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmInvestigationsamplecollection.resources
+E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmReportDelivery.resources
+E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmServiceWiseList.resources
+E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmReport.resources

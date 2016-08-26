@@ -58,7 +58,8 @@ namespace hms.Forms
             drDoctorType.Items.Add(new hms.Include_Files.Utility.ComboboxItem("Out Source", 3));
 
             //to select the selected item
-            drDoctorType.SelectedIndex = drDoctorType.FindStringExact("Listed");
+            drDoctorType.SelectedIndex = drDoctorType.FindStringExact("Out Source");
+            
         }
 
         private void drDoctorType_SelectedIndexChanged(object sender, EventArgs e)
