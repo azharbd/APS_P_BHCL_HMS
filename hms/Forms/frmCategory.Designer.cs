@@ -63,6 +63,7 @@
             // txtcategoryname
             // 
             this.txtcategoryname.Location = new System.Drawing.Point(119, 116);
+            this.txtcategoryname.MaxLength = 150;
             this.txtcategoryname.Name = "txtcategoryname";
             this.txtcategoryname.Size = new System.Drawing.Size(290, 20);
             this.txtcategoryname.TabIndex = 3;

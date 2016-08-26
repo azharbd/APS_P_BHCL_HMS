@@ -90,15 +90,13 @@ namespace hms.Forms
 
         private void btnclose_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Close();
         }
 
         private void btnsave_Click(object sender, EventArgs e)
         {
             insertData();
-            getcategorid();
-            clearCatName();
-            grdShow();
+            
         }
 
         private void insertData()
@@ -118,6 +116,9 @@ namespace hms.Forms
             else
             {
                 MessageBox.Show("Data Save Succefully Done.");
+                getcategorid();
+                clearCatName();
+                grdShow();
             }
             objData.CloseConnection();
         }
@@ -131,9 +132,7 @@ namespace hms.Forms
         private void btnedit_Click(object sender, EventArgs e)
         {
             dataEdit();
-            getcategorid();
-            clearCatName();
-            grdShow();
+            
         }
 
         private void dataEdit()
@@ -153,6 +152,9 @@ namespace hms.Forms
             else
             {
                 MessageBox.Show("Data edited Succefully Done.");
+                getcategorid();
+                clearCatName();
+                grdShow();
             }
             objData.CloseConnection();
         }
@@ -160,9 +162,7 @@ namespace hms.Forms
         private void btndelect_Click(object sender, EventArgs e)
         {
             deleteData();
-            getcategorid();
-            clearCatName();
-            grdShow();
+            
         }
 
         private void deleteData()
@@ -182,6 +182,9 @@ namespace hms.Forms
             else
             {
                 MessageBox.Show("Data Deleted Succefully Done.");
+                getcategorid();
+                clearCatName();
+                grdShow();
             }
             objData.CloseConnection();
         }

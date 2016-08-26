@@ -36,7 +36,6 @@ E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmInvestigationRe
 E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmInvestigationSearchEdit.resources
 E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmlogin.resources
 E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\Lab.From.frmPathologylab.resources
-E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmserviceiteminformation.resources
 E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Properties.Resources.resources
 E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.csproj.GenerateResource.Cache
 E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\bin\Debug\Forms\DoctorsInformation.resx
@@ -50,3 +49,4 @@ E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmInvestigationsa
 E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmReportDelivery.resources
 E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmServiceWiseList.resources
 E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmReport.resources
+E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmserviceiteminformation.resources
