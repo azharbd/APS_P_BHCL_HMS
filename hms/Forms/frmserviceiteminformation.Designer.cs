@@ -266,7 +266,7 @@
             // cmbCommission
             // 
             this.cmbCommission.FormattingEnabled = true;
-            this.cmbCommission.Location = new System.Drawing.Point(187, 163);
+            this.cmbCommission.Location = new System.Drawing.Point(194, 161);
             this.cmbCommission.Name = "cmbCommission";
             this.cmbCommission.Size = new System.Drawing.Size(52, 21);
             this.cmbCommission.TabIndex = 27;

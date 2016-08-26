@@ -184,7 +184,7 @@ namespace hms.Forms
             objData.ExecuteQuery(strSQL, ref strErr);
             if (strErr != "")
             {
-                MessageBox.Show("Data not Inserted.");
+                MessageBox.Show("Data not Inserted."); 
             }
             else
             {
