@@ -66,6 +66,12 @@
       <DependentUpon>DoctorsInformation.cs</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
+    <Compile Include="Forms\frmCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCategory.Designer.cs">
+      <DependentUpon>frmCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmConsultantVisit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,11 +120,11 @@
     <Compile Include="Forms\frmInvestigationReturn.designer.cs">
       <DependentUpon>frmInvestigationReturn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frminvestigationsearchandedit.cs">
+    <Compile Include="Forms\frmInvestigationsamplecollection.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frminvestigationsearchandedit.Designer.cs">
-      <DependentUpon>frminvestigationsearchandedit.cs</DependentUpon>
+    <Compile Include="Forms\frmInvestigationsamplecollection.Designer.cs">
+      <DependentUpon>frmInvestigationsamplecollection.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmInvestigationSearchEdit.cs">
       <SubType>Form</SubType>
@@ -137,6 +143,18 @@
     </Compile>
     <Compile Include="Forms\frmPathologylab.designer.cs">
       <DependentUpon>frmPathologylab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmReportDelivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReportDelivery.Designer.cs">
+      <DependentUpon>frmReportDelivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmServiceWiseList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmServiceWiseList.Designer.cs">
+      <DependentUpon>frmServiceWiseList.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ItemInformationSetup.cs">
       <SubType>Form</SubType>
@@ -165,6 +183,9 @@
       <DependentUpon>DoctorsInformation.cs</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCategory.resx">
+      <DependentUpon>frmCategory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmConsultantVisit.resx">
       <DependentUpon>frmConsultantVisit.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,8 +207,8 @@
     <EmbeddedResource Include="Forms\frmInvestigationReturn.resx">
       <DependentUpon>frmInvestigationReturn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frminvestigationsearchandedit.resx">
-      <DependentUpon>frminvestigationsearchandedit.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmInvestigationsamplecollection.resx">
+      <DependentUpon>frmInvestigationsamplecollection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmInvestigationSearchEdit.resx">
       <DependentUpon>frmInvestigationSearchEdit.cs</DependentUpon>
@@ -197,6 +218,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmPathologylab.resx">
       <DependentUpon>frmPathologylab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReportDelivery.resx">
+      <DependentUpon>frmReportDelivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmServiceWiseList.resx">
+      <DependentUpon>frmServiceWiseList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ItemInformationSetup.resx">
       <DependentUpon>ItemInformationSetup.cs</DependentUpon>

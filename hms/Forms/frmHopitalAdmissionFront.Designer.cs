@@ -62,6 +62,19 @@
             this.txtadmissionid = new System.Windows.Forms.TextBox();
             this.lblAdmissionID = new System.Windows.Forms.Label();
             this.gbadmission = new System.Windows.Forms.GroupBox();
+            this.txtbedlist = new System.Windows.Forms.TextBox();
+            this.lbllistofdocument = new System.Windows.Forms.Label();
+            this.lblProvisionalDiagnosis = new System.Windows.Forms.Label();
+            this.lbladvance = new System.Windows.Forms.Label();
+            this.txtlistofdocument = new System.Windows.Forms.TextBox();
+            this.txtprovisionsis = new System.Windows.Forms.TextBox();
+            this.txtadvance = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.lbltype = new System.Windows.Forms.Label();
+            this.lblarea = new System.Windows.Forms.Label();
+            this.txttype = new System.Windows.Forms.TextBox();
+            this.txtarea = new System.Windows.Forms.TextBox();
             this.lblspeciallist = new System.Windows.Forms.Label();
             this.txtspecialist = new System.Windows.Forms.TextBox();
             this.lbldegree = new System.Windows.Forms.Label();
@@ -78,19 +91,6 @@
             this.btndoctorsinformation = new System.Windows.Forms.Button();
             this.txtdoctorid = new System.Windows.Forms.TextBox();
             this.lblreferredby = new System.Windows.Forms.Label();
-            this.lblarea = new System.Windows.Forms.Label();
-            this.txttype = new System.Windows.Forms.TextBox();
-            this.txtarea = new System.Windows.Forms.TextBox();
-            this.lbltype = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.txtadvance = new System.Windows.Forms.TextBox();
-            this.txtprovisionsis = new System.Windows.Forms.TextBox();
-            this.txtlistofdocument = new System.Windows.Forms.TextBox();
-            this.lbladvance = new System.Windows.Forms.Label();
-            this.lblProvisionalDiagnosis = new System.Windows.Forms.Label();
-            this.lbllistofdocument = new System.Windows.Forms.Label();
-            this.txtbedlist = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.gbadmission.SuspendLayout();
             this.SuspendLayout();
@@ -472,6 +472,121 @@
             this.gbadmission.Text = "Adminssion";
             this.gbadmission.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
+            // txtbedlist
+            // 
+            this.txtbedlist.Location = new System.Drawing.Point(11, 230);
+            this.txtbedlist.Multiline = true;
+            this.txtbedlist.Name = "txtbedlist";
+            this.txtbedlist.Size = new System.Drawing.Size(797, 137);
+            this.txtbedlist.TabIndex = 48;
+            // 
+            // lbllistofdocument
+            // 
+            this.lbllistofdocument.AutoSize = true;
+            this.lbllistofdocument.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbllistofdocument.ForeColor = System.Drawing.Color.Black;
+            this.lbllistofdocument.Location = new System.Drawing.Point(431, 135);
+            this.lbllistofdocument.Name = "lbllistofdocument";
+            this.lbllistofdocument.Size = new System.Drawing.Size(97, 15);
+            this.lbllistofdocument.TabIndex = 47;
+            this.lbllistofdocument.Text = "List of Diagnosis";
+            // 
+            // lblProvisionalDiagnosis
+            // 
+            this.lblProvisionalDiagnosis.AutoSize = true;
+            this.lblProvisionalDiagnosis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProvisionalDiagnosis.ForeColor = System.Drawing.Color.Black;
+            this.lblProvisionalDiagnosis.Location = new System.Drawing.Point(431, 50);
+            this.lblProvisionalDiagnosis.Name = "lblProvisionalDiagnosis";
+            this.lblProvisionalDiagnosis.Size = new System.Drawing.Size(125, 15);
+            this.lblProvisionalDiagnosis.TabIndex = 46;
+            this.lblProvisionalDiagnosis.Text = "Provisional Diagnosis";
+            // 
+            // lbladvance
+            // 
+            this.lbladvance.AutoSize = true;
+            this.lbladvance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbladvance.ForeColor = System.Drawing.Color.Black;
+            this.lbladvance.Location = new System.Drawing.Point(431, 11);
+            this.lbladvance.Name = "lbladvance";
+            this.lbladvance.Size = new System.Drawing.Size(56, 15);
+            this.lbladvance.TabIndex = 45;
+            this.lbladvance.Text = "Advance:";
+            // 
+            // txtlistofdocument
+            // 
+            this.txtlistofdocument.Location = new System.Drawing.Point(428, 155);
+            this.txtlistofdocument.Multiline = true;
+            this.txtlistofdocument.Name = "txtlistofdocument";
+            this.txtlistofdocument.Size = new System.Drawing.Size(380, 47);
+            this.txtlistofdocument.TabIndex = 44;
+            // 
+            // txtprovisionsis
+            // 
+            this.txtprovisionsis.Location = new System.Drawing.Point(429, 68);
+            this.txtprovisionsis.Multiline = true;
+            this.txtprovisionsis.Name = "txtprovisionsis";
+            this.txtprovisionsis.Size = new System.Drawing.Size(380, 66);
+            this.txtprovisionsis.TabIndex = 43;
+            // 
+            // txtadvance
+            // 
+            this.txtadvance.Location = new System.Drawing.Point(428, 29);
+            this.txtadvance.Name = "txtadvance";
+            this.txtadvance.Size = new System.Drawing.Size(380, 21);
+            this.txtadvance.TabIndex = 42;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(741, 206);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(67, 21);
+            this.textBox11.TabIndex = 41;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(11, 206);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(730, 21);
+            this.textBox10.TabIndex = 40;
+            // 
+            // lbltype
+            // 
+            this.lbltype.AutoSize = true;
+            this.lbltype.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltype.ForeColor = System.Drawing.Color.Black;
+            this.lbltype.Location = new System.Drawing.Point(266, 184);
+            this.lbltype.Name = "lbltype";
+            this.lbltype.Size = new System.Drawing.Size(33, 15);
+            this.lbltype.TabIndex = 39;
+            this.lbltype.Text = "Type";
+            // 
+            // lblarea
+            // 
+            this.lblarea.AutoSize = true;
+            this.lblarea.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblarea.ForeColor = System.Drawing.Color.Black;
+            this.lblarea.Location = new System.Drawing.Point(23, 185);
+            this.lblarea.Name = "lblarea";
+            this.lblarea.Size = new System.Drawing.Size(32, 15);
+            this.lblarea.TabIndex = 38;
+            this.lblarea.Text = "Area";
+            // 
+            // txttype
+            // 
+            this.txttype.Location = new System.Drawing.Point(313, 182);
+            this.txttype.Name = "txttype";
+            this.txttype.Size = new System.Drawing.Size(108, 21);
+            this.txttype.TabIndex = 37;
+            this.txttype.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
+            // 
+            // txtarea
+            // 
+            this.txtarea.Location = new System.Drawing.Point(74, 182);
+            this.txtarea.Name = "txtarea";
+            this.txtarea.Size = new System.Drawing.Size(186, 21);
+            this.txtarea.TabIndex = 36;
+            // 
             // lblspeciallist
             // 
             this.lblspeciallist.AutoSize = true;
@@ -612,126 +727,11 @@
             this.lblreferredby.TabIndex = 0;
             this.lblreferredby.Text = "Referred By";
             // 
-            // lblarea
-            // 
-            this.lblarea.AutoSize = true;
-            this.lblarea.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblarea.ForeColor = System.Drawing.Color.Black;
-            this.lblarea.Location = new System.Drawing.Point(23, 185);
-            this.lblarea.Name = "lblarea";
-            this.lblarea.Size = new System.Drawing.Size(32, 15);
-            this.lblarea.TabIndex = 38;
-            this.lblarea.Text = "Area";
-            // 
-            // txttype
-            // 
-            this.txttype.Location = new System.Drawing.Point(313, 182);
-            this.txttype.Name = "txttype";
-            this.txttype.Size = new System.Drawing.Size(108, 21);
-            this.txttype.TabIndex = 37;
-            this.txttype.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
-            // 
-            // txtarea
-            // 
-            this.txtarea.Location = new System.Drawing.Point(74, 182);
-            this.txtarea.Name = "txtarea";
-            this.txtarea.Size = new System.Drawing.Size(186, 21);
-            this.txtarea.TabIndex = 36;
-            // 
-            // lbltype
-            // 
-            this.lbltype.AutoSize = true;
-            this.lbltype.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltype.ForeColor = System.Drawing.Color.Black;
-            this.lbltype.Location = new System.Drawing.Point(266, 184);
-            this.lbltype.Name = "lbltype";
-            this.lbltype.Size = new System.Drawing.Size(33, 15);
-            this.lbltype.TabIndex = 39;
-            this.lbltype.Text = "Type";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(11, 206);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(730, 21);
-            this.textBox10.TabIndex = 40;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(741, 206);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(67, 21);
-            this.textBox11.TabIndex = 41;
-            // 
-            // txtadvance
-            // 
-            this.txtadvance.Location = new System.Drawing.Point(428, 29);
-            this.txtadvance.Name = "txtadvance";
-            this.txtadvance.Size = new System.Drawing.Size(380, 21);
-            this.txtadvance.TabIndex = 42;
-            // 
-            // txtprovisionsis
-            // 
-            this.txtprovisionsis.Location = new System.Drawing.Point(429, 68);
-            this.txtprovisionsis.Multiline = true;
-            this.txtprovisionsis.Name = "txtprovisionsis";
-            this.txtprovisionsis.Size = new System.Drawing.Size(380, 66);
-            this.txtprovisionsis.TabIndex = 43;
-            // 
-            // txtlistofdocument
-            // 
-            this.txtlistofdocument.Location = new System.Drawing.Point(428, 155);
-            this.txtlistofdocument.Multiline = true;
-            this.txtlistofdocument.Name = "txtlistofdocument";
-            this.txtlistofdocument.Size = new System.Drawing.Size(380, 47);
-            this.txtlistofdocument.TabIndex = 44;
-            // 
-            // lbladvance
-            // 
-            this.lbladvance.AutoSize = true;
-            this.lbladvance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbladvance.ForeColor = System.Drawing.Color.Black;
-            this.lbladvance.Location = new System.Drawing.Point(431, 11);
-            this.lbladvance.Name = "lbladvance";
-            this.lbladvance.Size = new System.Drawing.Size(56, 15);
-            this.lbladvance.TabIndex = 45;
-            this.lbladvance.Text = "Advance:";
-            // 
-            // lblProvisionalDiagnosis
-            // 
-            this.lblProvisionalDiagnosis.AutoSize = true;
-            this.lblProvisionalDiagnosis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProvisionalDiagnosis.ForeColor = System.Drawing.Color.Black;
-            this.lblProvisionalDiagnosis.Location = new System.Drawing.Point(431, 50);
-            this.lblProvisionalDiagnosis.Name = "lblProvisionalDiagnosis";
-            this.lblProvisionalDiagnosis.Size = new System.Drawing.Size(125, 15);
-            this.lblProvisionalDiagnosis.TabIndex = 46;
-            this.lblProvisionalDiagnosis.Text = "Provisional Diagnosis";
-            // 
-            // lbllistofdocument
-            // 
-            this.lbllistofdocument.AutoSize = true;
-            this.lbllistofdocument.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbllistofdocument.ForeColor = System.Drawing.Color.Black;
-            this.lbllistofdocument.Location = new System.Drawing.Point(431, 135);
-            this.lbllistofdocument.Name = "lbllistofdocument";
-            this.lbllistofdocument.Size = new System.Drawing.Size(97, 15);
-            this.lbllistofdocument.TabIndex = 47;
-            this.lbllistofdocument.Text = "List of Diagnosis";
-            // 
-            // txtbedlist
-            // 
-            this.txtbedlist.Location = new System.Drawing.Point(11, 230);
-            this.txtbedlist.Multiline = true;
-            this.txtbedlist.Name = "txtbedlist";
-            this.txtbedlist.Size = new System.Drawing.Size(797, 137);
-            this.txtbedlist.TabIndex = 48;
-            // 
             // frmHopitalAdmissionFront
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(838, 622);
+            this.ClientSize = new System.Drawing.Size(838, 634);
             this.Controls.Add(this.gbadmission);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmHopitalAdmissionFront";
