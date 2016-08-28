@@ -30,11 +30,13 @@ namespace hms.Forms
 
         private void frmLoad()
         {
+            cmbDurationType.Items.Clear();
             cmbDurationType.Items.Add(new hms.Include_Files.Utility.ComboboxItem("Hour", 1));
             cmbDurationType.Items.Add(new hms.Include_Files.Utility.ComboboxItem("Day", 2));
             //to select the selected item
             cmbDurationType.SelectedIndex = cmbDurationType.FindStringExact("Hour");
 
+            cmbCommission.Items.Clear();
             cmbCommission.Items.Add(new hms.Include_Files.Utility.ComboboxItem("%", 1));
             cmbCommission.Items.Add(new hms.Include_Files.Utility.ComboboxItem("TK", 2));
             //to select the selected item
@@ -85,25 +87,7 @@ namespace hms.Forms
             
         }
 
-        private void fillGridView()
-        {
-            //throw new NotImplementedException();
-            objData = new C_Data_Batch();
-            string strErr = "";
-            objData.OpenConnection("PolinPC-Office", ref strErr);
-            //txtCategoryID
-            string strSQL = "";
-            strSQL = "SELECT [Service_ID],cat.Category_Name,[Service_Name],[Amount],[Commission],case when [Commision_Type] = 1 then '%' else 'Tk' end  'Commision Type',[Dutaion]	,case when [Duraion_Type] = 1 then 'Hour' else 'day' end 'Duraion Type'	,[CC_PC],[Sample_Type],[isSample] FROM [Dbo_Services] S Inner Join dbo_Service_category Cat On S.Category_ID = CAt.Category_ID order by Service_id Desc ";
-            DataTable arrID = objData.RetriveData(strSQL, ref strErr);
-            objData.CloseConnection();
-
-            DataSet Ds = new DataSet();
-            Ds.Tables.Add(arrID);
-            dgvServcieInformation.DataSource = Ds.Tables["Table1"];
-            
-
-
-        }
+        
 
         private void getServiceID()
         {
@@ -193,10 +177,54 @@ namespace hms.Forms
             }
             objData.CloseConnection();
         }
+        private void fillGridView()
+        {
+            //throw new NotImplementedException();
+            objData = new C_Data_Batch();
+            string strErr = "";
+            objData.OpenConnection("PolinPC-Office", ref strErr);
+            //txtCategoryID
+            string strSQL = "";
+            strSQL = "SELECT [Service_ID],cat.Category_Name,[Service_Name],[Amount],[Commission],case when [Commision_Type] = 1 then '%' else 'Tk' end  'Commision Type',[Dutaion]	,case when [Duraion_Type] = 1 then 'Hour' else 'day' end 'Duraion Type'	,[CC_PC],[Sample_Type],[isSample] FROM [Dbo_Services] S Inner Join dbo_Service_category Cat On S.Category_ID = CAt.Category_ID order by Service_id Desc ";
+            DataTable arrID = objData.RetriveData(strSQL, ref strErr);
+            objData.CloseConnection();
 
+            DataSet Ds = new DataSet();
+            Ds.Tables.Add(arrID);
+            dgvServcieInformation.DataSource = Ds.Tables["Table1"];
+
+
+
+        }
         private void dgvServcieInformation_Click(object sender, EventArgs e)
         {
+            txtServiceID.Text = dgvServcieInformation.CurrentRow.Cells[0].Value.ToString();
+            cmbCategory.SelectedIndex = cmbCategory.FindStringExact(dgvServcieInformation.CurrentRow.Cells[1].Value.ToString());
+            hms.Include_Files.Utility.ComboboxItem valCategory = cmbCategory.SelectedItem as hms.Include_Files.Utility.ComboboxItem;
+            if (valCategory != null)
+            {
+                txtcatagory.Text = valCategory.Value.ToString();
+            }
+            //txtcatagory.Text = "";
 
+            cmbCommission.SelectedIndex = cmbCommission.FindStringExact(dgvServcieInformation.CurrentRow.Cells[5].Value.ToString());
+
+            cmbDurationType.SelectedIndex = cmbDurationType.FindStringExact(dgvServcieInformation.CurrentRow.Cells[7].Value.ToString());
+
+            txtcommistion.Text = dgvServcieInformation.CurrentRow.Cells[8].Value.ToString();
+            txtpc.Text = dgvServcieInformation.CurrentRow.Cells[6].Value.ToString();
+            txtservicecharge.Text = dgvServcieInformation.CurrentRow.Cells[3].Value.ToString();
+            txtservicename.Text = dgvServcieInformation.CurrentRow.Cells[2].Value.ToString();
+            txtDuration.Text = dgvServcieInformation.CurrentRow.Cells[6].Value.ToString();
+            if (dgvServcieInformation.CurrentRow.Cells[10].Value.ToString() == "True")
+            {
+                chkSample.Checked = true;
+            }
+            else {
+                chkSample.Checked = false;
+            }
+            chkSample.Checked = false;
+            txtSample.Text = dgvServcieInformation.CurrentRow.Cells[9].Value.ToString();
         }
 
         
@@ -219,7 +247,72 @@ namespace hms.Forms
 
         private void btnedit_Click(object sender, EventArgs e)
         {
+            editData();
+        }
 
+        private void editData()
+        {
+            //throw new NotImplementedException();
+            objData = new C_Data_Batch();
+            string strErr = "";
+            objData.OpenConnection("PolinPC-Office", ref strErr);
+            //txtCategoryID
+            hms.Include_Files.Utility.ComboboxItem commissionType = cmbCommission.SelectedItem as hms.Include_Files.Utility.ComboboxItem;
+            hms.Include_Files.Utility.ComboboxItem DurationType = cmbDurationType.SelectedItem as hms.Include_Files.Utility.ComboboxItem;
+
+            int isSample = 0;
+            if (chkSample.Checked == true)
+            {
+                isSample = 1;
+            }
+            string strSQL = "";
+            //strSQL = "insert into [Dbo_Services] ([Category_ID],[Amount],[Commission],[Commision_Type],[Dutaion],[Duraion_Type],[CC_PC],[isSample],[Sample_Type], [Service_Name] ) ";
+            //strSQL = strSQL + "Values (" + txtcatagory.Text.ToString() + ", " + txtservicecharge.Text.ToString() + ", " + txtcommistion.Text.ToString() + ", " + commissionType.Value.ToString() + ", " + txtDuration.Text.ToString() + ", " + DurationType.Value.ToString();
+            //strSQL = strSQL + ", " + txtpc.Text.ToString() + ", " + isSample.ToString() + ", '" + txtSample.Text.ToString() + "', '" + txtservicename.Text.ToString() + "' )";
+            //MessageBox.Show(strSQL);
+            strSQL = "update [Dbo_Services] SET [Category_ID] = " + txtcatagory.Text.ToString() + " ,[Amount] =" + txtservicecharge.Text.ToString() + " ,[Commission]=" + txtcommistion.Text.ToString();
+            strSQL = strSQL + ",[Commision_Type] = " + commissionType.Value.ToString() + ",[Dutaion]= " + txtDuration.Text.ToString() + ",[Duraion_Type] = " + DurationType.Value.ToString();
+            strSQL = strSQL + " ,[CC_PC] = " + txtpc.Text.ToString() + ",[isSample] = " + isSample.ToString() + " ,[Sample_Type]='" + txtSample.Text.ToString() + "', [Service_Name] = '" + txtservicename.Text.ToString() + "'  where Service_ID =" + txtServiceID.Text.ToString();
+            objData.ExecuteQuery(strSQL, ref strErr);
+            if (strErr != "")
+            {
+                MessageBox.Show("Data not updated.");
+            }
+            else
+            {
+                MessageBox.Show("Data updated Succefully Done.");
+                frmLoad();
+            }
+            objData.CloseConnection();
+        }
+
+        private void btnpreview_Click(object sender, EventArgs e)
+        {
+            objData = new C_Data_Batch();
+            string strErr = "";
+            objData.OpenConnection("PolinPC-Office", ref strErr);
+            //txtCategoryID
+            string strSQL = "";
+            strSQL = "SELECT [Service_ID],cat.Category_Name,[Service_Name],[Amount],[Commission],case when [Commision_Type] = 1 then '%' else 'Tk' end  'Commision Type',[Dutaion]	,case when [Duraion_Type] = 1 then 'Hour' else 'day' end 'Duraion Type'	,[CC_PC],[Sample_Type],[isSample] FROM [Dbo_Services] S Inner Join dbo_Service_category Cat On S.Category_ID = CAt.Category_ID order by Service_id Desc";
+            DataTable arrCatList = objData.RetriveData(strSQL, ref strErr);
+            objData.CloseConnection();
+            DataSet ds = new DataSet();
+            ds.Tables.Add(arrCatList);
+
+
+            frmReport reportviewer = new frmReport();
+
+
+            string rptpath = Application.StartupPath;
+            //path= @("..\\")+path.ToString();
+            rptpath = rptpath.ToLower().Replace("bin", "");
+            rptpath = rptpath.ToLower().Replace("debug", "");
+            rptpath = rptpath.Substring(0, rptpath.Length - 1);
+            rptpath = rptpath + @"Reports\rptServices.rpt";
+
+            reportviewer.ReportPath = rptpath;
+            reportviewer.Reportds = ds;
+            reportviewer.Show(this);
         }
     }
 }

@@ -216,6 +216,7 @@
             this.btnpreview.Size = new System.Drawing.Size(40, 23);
             this.btnpreview.TabIndex = 21;
             this.btnpreview.UseVisualStyleBackColor = true;
+            this.btnpreview.Click += new System.EventHandler(this.btnpreview_Click);
             // 
             // btnnew
             // 
