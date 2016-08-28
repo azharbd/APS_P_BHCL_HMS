@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvServiceWiseSetup = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.txtServiceID = new System.Windows.Forms.TextBox();
             this.lblService_ID = new System.Windows.Forms.Label();
-            this.txtCategoryID = new System.Windows.Forms.TextBox();
+            this.txtSIT_ID = new System.Windows.Forms.TextBox();
             this.lblSIT_ID = new System.Windows.Forms.Label();
             this.btnclose = new System.Windows.Forms.Button();
             this.btndelect = new System.Windows.Forms.Button();
@@ -50,16 +50,18 @@
             this.lblRefRenge = new System.Windows.Forms.Label();
             this.txtResultB = new System.Windows.Forms.TextBox();
             this.lblResultB = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.cmbServices = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvServiceWiseSetup)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvServiceWiseSetup
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 234);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(864, 237);
-            this.dataGridView1.TabIndex = 19;
+            this.dgvServiceWiseSetup.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvServiceWiseSetup.Location = new System.Drawing.Point(10, 234);
+            this.dgvServiceWiseSetup.Name = "dgvServiceWiseSetup";
+            this.dgvServiceWiseSetup.Size = new System.Drawing.Size(864, 237);
+            this.dgvServiceWiseSetup.TabIndex = 19;
+            this.dgvServiceWiseSetup.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServiceWiseSetup_CellClick);
             // 
             // label1
             // 
@@ -75,7 +77,8 @@
             // 
             this.txtServiceID.Location = new System.Drawing.Point(336, 80);
             this.txtServiceID.Name = "txtServiceID";
-            this.txtServiceID.Size = new System.Drawing.Size(100, 20);
+            this.txtServiceID.ReadOnly = true;
+            this.txtServiceID.Size = new System.Drawing.Size(42, 20);
             this.txtServiceID.TabIndex = 14;
             // 
             // lblService_ID
@@ -87,12 +90,13 @@
             this.lblService_ID.TabIndex = 13;
             this.lblService_ID.Text = "Service ID";
             // 
-            // txtCategoryID
+            // txtSIT_ID
             // 
-            this.txtCategoryID.Location = new System.Drawing.Point(336, 56);
-            this.txtCategoryID.Name = "txtCategoryID";
-            this.txtCategoryID.Size = new System.Drawing.Size(100, 20);
-            this.txtCategoryID.TabIndex = 12;
+            this.txtSIT_ID.Location = new System.Drawing.Point(336, 56);
+            this.txtSIT_ID.Name = "txtSIT_ID";
+            this.txtSIT_ID.ReadOnly = true;
+            this.txtSIT_ID.Size = new System.Drawing.Size(100, 20);
+            this.txtSIT_ID.TabIndex = 12;
             // 
             // lblSIT_ID
             // 
@@ -111,6 +115,7 @@
             this.btnclose.Size = new System.Drawing.Size(24, 23);
             this.btnclose.TabIndex = 21;
             this.btnclose.UseVisualStyleBackColor = true;
+            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
             // 
             // btndelect
             // 
@@ -120,6 +125,7 @@
             this.btndelect.Size = new System.Drawing.Size(24, 23);
             this.btndelect.TabIndex = 20;
             this.btndelect.UseVisualStyleBackColor = true;
+            this.btndelect.Click += new System.EventHandler(this.btndelect_Click);
             // 
             // btnedit
             // 
@@ -129,6 +135,7 @@
             this.btnedit.Size = new System.Drawing.Size(24, 23);
             this.btnedit.TabIndex = 18;
             this.btnedit.UseVisualStyleBackColor = true;
+            this.btnedit.Click += new System.EventHandler(this.btnedit_Click);
             // 
             // btnsave
             // 
@@ -138,6 +145,7 @@
             this.btnsave.Size = new System.Drawing.Size(24, 23);
             this.btnsave.TabIndex = 17;
             this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // btnnew
             // 
@@ -147,6 +155,7 @@
             this.btnnew.Size = new System.Drawing.Size(24, 23);
             this.btnnew.TabIndex = 16;
             this.btnnew.UseVisualStyleBackColor = true;
+            this.btnnew.Click += new System.EventHandler(this.btnnew_Click);
             // 
             // btnpreview
             // 
@@ -156,6 +165,7 @@
             this.btnpreview.Size = new System.Drawing.Size(24, 23);
             this.btnpreview.TabIndex = 22;
             this.btnpreview.UseVisualStyleBackColor = true;
+            this.btnpreview.Click += new System.EventHandler(this.btnpreview_Click);
             // 
             // txtEntity
             // 
@@ -237,11 +247,21 @@
             this.lblResultB.TabIndex = 31;
             this.lblResultB.Text = "Result B";
             // 
+            // cmbServices
+            // 
+            this.cmbServices.FormattingEnabled = true;
+            this.cmbServices.Location = new System.Drawing.Point(385, 78);
+            this.cmbServices.Name = "cmbServices";
+            this.cmbServices.Size = new System.Drawing.Size(215, 21);
+            this.cmbServices.TabIndex = 33;
+            this.cmbServices.SelectedIndexChanged += new System.EventHandler(this.cmbServices_SelectedIndexChanged);
+            // 
             // frmServiceWiseList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(885, 478);
+            this.Controls.Add(this.cmbServices);
             this.Controls.Add(this.txtResultB);
             this.Controls.Add(this.lblResultB);
             this.Controls.Add(this.txtRefRenge);
@@ -255,18 +275,19 @@
             this.Controls.Add(this.btnpreview);
             this.Controls.Add(this.btnclose);
             this.Controls.Add(this.btndelect);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvServiceWiseSetup);
             this.Controls.Add(this.btnedit);
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.btnnew);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtServiceID);
             this.Controls.Add(this.lblService_ID);
-            this.Controls.Add(this.txtCategoryID);
+            this.Controls.Add(this.txtSIT_ID);
             this.Controls.Add(this.lblSIT_ID);
             this.Name = "frmServiceWiseList";
             this.Text = "frmServiceWiseList";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.frmServiceWiseList_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvServiceWiseSetup)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,14 +297,14 @@
 
         private System.Windows.Forms.Button btnclose;
         private System.Windows.Forms.Button btndelect;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvServiceWiseSetup;
         private System.Windows.Forms.Button btnedit;
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Button btnnew;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtServiceID;
         private System.Windows.Forms.Label lblService_ID;
-        private System.Windows.Forms.TextBox txtCategoryID;
+        private System.Windows.Forms.TextBox txtSIT_ID;
         private System.Windows.Forms.Label lblSIT_ID;
         private System.Windows.Forms.Button btnpreview;
         private System.Windows.Forms.TextBox txtEntity;
@@ -296,5 +317,6 @@
         private System.Windows.Forms.Label lblRefRenge;
         private System.Windows.Forms.TextBox txtResultB;
         private System.Windows.Forms.Label lblResultB;
+        private System.Windows.Forms.ComboBox cmbServices;
     }
 }
