@@ -329,7 +329,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\C_Data_Batch.dll" />
-    <Content Include="bin\Debug\C_Data_Batch.pdb" />
     <Content Include="bin\Debug\hms.exe" />
     <Content Include="bin\Debug\hms.pdb" />
     <Content Include="bin\Debug\hms.vshost.exe" />

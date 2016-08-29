@@ -79,3 +79,32 @@ D:\hmd\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmServiceWiseList.resources
 D:\hmd\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmserviceiteminformation.resources
 D:\hmd\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Properties.Resources.resources
 D:\hmd\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.csproj.GenerateResource.Cache
+F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Debug\hms.exe.config
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.exe
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.pdb
+F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Debug\Forms\DoctorsInformation.resx
+F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Debug\Forms\DoctorsInformation.cs
+F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Debug\Forms\DoctorsInformation.Designer.cs
+F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Debug\Program.cs
+F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Debug\hms.exe
+F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Debug\hms.pdb
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.csprojResolveAssemblyReference.cache
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmDoctorsInformation.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmCategory.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmConsultantVisit.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmfrontdeskinvestigation.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmfrontdeskinvetigationreturn.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmHopitalAdmissionFront.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmHospitalDeposit.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmInvestigationDueCollection.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmInvestigationReturn.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmInvestigationsamplecollection.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmInvestigationSearchEdit.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmlogin.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\Lab.From.frmPathologylab.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmReport.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmReportDelivery.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmServiceWiseList.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmserviceiteminformation.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Properties.Resources.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.csproj.GenerateResource.Cache
