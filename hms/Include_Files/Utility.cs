@@ -9,6 +9,8 @@ namespace hms.Include_Files
     {
                
         //ReportPath = Application.StartupPath;
+        public static int userID = 1;
+
         public class ComboboxItem
         {
 

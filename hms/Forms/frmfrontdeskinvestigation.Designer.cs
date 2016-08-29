@@ -37,8 +37,8 @@
             this.lblphone = new System.Windows.Forms.Label();
             this.txtphone = new System.Windows.Forms.TextBox();
             this.lblage = new System.Windows.Forms.Label();
-            this.txtmonth = new System.Windows.Forms.TextBox();
-            this.txtday = new System.Windows.Forms.TextBox();
+            this.txtYear = new System.Windows.Forms.TextBox();
+            this.txtMonth = new System.Windows.Forms.TextBox();
             this.lsttestname = new System.Windows.Forms.ListBox();
             this.lbldoctorinformaion = new System.Windows.Forms.Label();
             this.lbldoctorid = new System.Windows.Forms.Label();
@@ -82,7 +82,7 @@
             this.btnsave = new System.Windows.Forms.Button();
             this.btnedit = new System.Windows.Forms.Button();
             this.btnprint = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtSearchServices = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvInvestigation = new System.Windows.Forms.DataGridView();
             this.txtdoctorinformation = new System.Windows.Forms.TextBox();
@@ -181,19 +181,19 @@
             this.lblage.TabIndex = 8;
             this.lblage.Text = "Age";
             // 
-            // txtmonth
+            // txtYear
             // 
-            this.txtmonth.Location = new System.Drawing.Point(48, 177);
-            this.txtmonth.Name = "txtmonth";
-            this.txtmonth.Size = new System.Drawing.Size(31, 20);
-            this.txtmonth.TabIndex = 9;
+            this.txtYear.Location = new System.Drawing.Point(48, 177);
+            this.txtYear.Name = "txtYear";
+            this.txtYear.Size = new System.Drawing.Size(31, 20);
+            this.txtYear.TabIndex = 9;
             // 
-            // txtday
+            // txtMonth
             // 
-            this.txtday.Location = new System.Drawing.Point(80, 177);
-            this.txtday.Name = "txtday";
-            this.txtday.Size = new System.Drawing.Size(30, 20);
-            this.txtday.TabIndex = 10;
+            this.txtMonth.Location = new System.Drawing.Point(80, 177);
+            this.txtMonth.Name = "txtMonth";
+            this.txtMonth.Size = new System.Drawing.Size(30, 20);
+            this.txtMonth.TabIndex = 10;
             // 
             // lsttestname
             // 
@@ -530,6 +530,7 @@
             this.btnnew.TabIndex = 52;
             this.btnnew.Text = "New";
             this.btnnew.UseVisualStyleBackColor = true;
+            this.btnnew.Click += new System.EventHandler(this.btnnew_Click);
             // 
             // btnsave
             // 
@@ -558,12 +559,12 @@
             this.btnprint.Text = "Print";
             this.btnprint.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // txtSearchServices
             // 
-            this.textBox3.Location = new System.Drawing.Point(48, 204);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(406, 20);
-            this.textBox3.TabIndex = 56;
+            this.txtSearchServices.Location = new System.Drawing.Point(48, 204);
+            this.txtSearchServices.Name = "txtSearchServices";
+            this.txtSearchServices.Size = new System.Drawing.Size(406, 20);
+            this.txtSearchServices.TabIndex = 56;
             // 
             // groupBox1
             // 
@@ -584,6 +585,7 @@
             this.dgvInvestigation.Name = "dgvInvestigation";
             this.dgvInvestigation.Size = new System.Drawing.Size(838, 150);
             this.dgvInvestigation.TabIndex = 58;
+            this.dgvInvestigation.Click += new System.EventHandler(this.dgvInvestigation_Click);
             // 
             // txtdoctorinformation
             // 
@@ -750,7 +752,7 @@
             this.Controls.Add(this.txtdoctorinformation);
             this.Controls.Add(this.dgvInvestigation);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtSearchServices);
             this.Controls.Add(this.btnprint);
             this.Controls.Add(this.btnedit);
             this.Controls.Add(this.btnsave);
@@ -791,8 +793,8 @@
             this.Controls.Add(this.lbldoctorid);
             this.Controls.Add(this.lbldoctorinformaion);
             this.Controls.Add(this.lsttestname);
-            this.Controls.Add(this.txtday);
-            this.Controls.Add(this.txtmonth);
+            this.Controls.Add(this.txtMonth);
+            this.Controls.Add(this.txtYear);
             this.Controls.Add(this.lblage);
             this.Controls.Add(this.txtphone);
             this.Controls.Add(this.lblphone);
@@ -828,8 +830,8 @@
         private System.Windows.Forms.Label lblphone;
         private System.Windows.Forms.TextBox txtphone;
         private System.Windows.Forms.Label lblage;
-        private System.Windows.Forms.TextBox txtmonth;
-        private System.Windows.Forms.TextBox txtday;
+        private System.Windows.Forms.TextBox txtYear;
+        private System.Windows.Forms.TextBox txtMonth;
         private System.Windows.Forms.ListBox lsttestname;
         private System.Windows.Forms.Label lbldoctorinformaion;
         private System.Windows.Forms.Label lbldoctorid;
@@ -873,7 +875,7 @@
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Button btnedit;
         private System.Windows.Forms.Button btnprint;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtSearchServices;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dgvInvestigation;
         private System.Windows.Forms.TextBox txtdoctorinformation;
