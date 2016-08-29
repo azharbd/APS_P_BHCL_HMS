@@ -22,10 +22,10 @@ namespace hms
           //Application.Run(new Froms.frmDoctorsInformation());
            // Application.Run(new Froms.frmserviceiteminformation());
             //Application.Run(new Froms.frmfrontdeskinvetigationreturn());
-            Application.Run(new Forms.frmDoctorsInformation());
+            //Application.Run(new Forms.frmDoctorsInformation());
            // Application.Run(new Froms.frmHospitalDeposit());
             //Application.Run(new hms.Forms.frmCategory());
-            //Application.Run(new hms.Forms.frmServiceWiseList());
+            Application.Run(new hms.Forms.frmfrontdeskinvestigation());
         }
     }
 

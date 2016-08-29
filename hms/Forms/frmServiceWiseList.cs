@@ -24,7 +24,7 @@ namespace hms.Forms
         {
             
             objData = new C_Data_Batch();
-            objData.OpenConnection("PolinPC-Office", ref strErr);
+            objData.OpenConnection("AzharPC-Home", ref strErr);
             frmload();
             objData.CloseConnection();
         }
@@ -122,7 +122,7 @@ namespace hms.Forms
         private void btnsave_Click (object sender, EventArgs e)
         {
             objData = new C_Data_Batch();
-            objData.OpenConnection("PolinPC-Office", ref strErr);
+            objData.OpenConnection("AzharPC-Home", ref strErr);
             DataSave();
             objData.CloseConnection();
         }
@@ -169,6 +169,27 @@ namespace hms.Forms
 
         private void btnedit_Click(object sender, EventArgs e)
         {
+            objData = new C_Data_Batch();
+            objData.OpenConnection("AzharPC-Home", ref strErr);
+            DataEdit();
+            objData.CloseConnection();
+        }
+
+        private void DataEdit()
+        {
+            //throw new NotImplementedException();
+            string strSql = "";
+            strSql = "UPDATE [Dbo_service_Itemwise_Test] SET [Service_ID] =" + txtServiceID.Text.ToString() + " ,[OGroup] ='" + txtOGroup.Text.ToString() + "' ,[Entity] = '" + txtEntity.Text.ToString() + "',[Unit] = '" + txtUnit.Text.ToString() + "',[RefRenge] = '" + txtRefRenge.Text.ToString() + "',[Result_B] ='" + txtResultB.Text.ToString() + "' WHERE SIT_ID = "+txtSIT_ID.Text.ToString();
+            objData.ExecuteQuery(strSql, ref strErr);
+            if (strErr != "")
+            {
+                MessageBox.Show("Data Not Edited.");
+            }
+            else
+            {
+                MessageBox.Show("Data Edited succefully done.");
+                frmload();
+            }
 
         }
         private void fillGridView()

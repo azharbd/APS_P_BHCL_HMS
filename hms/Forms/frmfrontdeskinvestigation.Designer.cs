@@ -1,4 +1,4 @@
-﻿namespace hms.Froms
+﻿namespace hms.Forms
 {
     partial class frmfrontdeskinvestigation
     {
@@ -347,7 +347,6 @@
             this.txtdiscount.Name = "txtdiscount";
             this.txtdiscount.Size = new System.Drawing.Size(50, 20);
             this.txtdiscount.TabIndex = 31;
-            this.txtdiscount.TextChanged += new System.EventHandler(this.txtdiscount_TextChanged);
             // 
             // lbldiscount
             // 
@@ -807,6 +806,7 @@
             this.Name = "frmfrontdeskinvestigation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Front Desk Investigation";
+            this.Load += new System.EventHandler(this.frmfrontdeskinvestigation_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInvestigation)).EndInit();
