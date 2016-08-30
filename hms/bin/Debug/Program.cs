@@ -17,7 +17,6 @@ namespace hms
             Application.SetCompatibleTextRenderingDefault(false);
        //Application.Run(new Froms.frmlogin());
            //Application.Run(new Froms.frmfrontdeskinvestigation());
-            //Application.Run(new Froms.frmserviceiteminformation());
             //Application.Run(new hms.Forms.frmserviceiteminformation()); 
           //Application.Run(new Froms.frmDoctorsInformation());
            // Application.Run(new Froms.frmserviceiteminformation());

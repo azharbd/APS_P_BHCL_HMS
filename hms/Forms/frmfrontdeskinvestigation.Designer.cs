@@ -62,7 +62,7 @@
             this.lblPasentance = new System.Windows.Forms.Label();
             this.txtvat = new System.Windows.Forms.TextBox();
             this.lblvat = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPayableAmount = new System.Windows.Forms.TextBox();
             this.lblpayableamount = new System.Windows.Forms.Label();
             this.txtpaidamount = new System.Windows.Forms.TextBox();
             this.lblpaidamount = new System.Windows.Forms.Label();
@@ -70,7 +70,7 @@
             this.lbltotaldue = new System.Windows.Forms.Label();
             this.lblreceive = new System.Windows.Forms.Label();
             this.txtreceive = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtReturn = new System.Windows.Forms.TextBox();
             this.lblreturn = new System.Windows.Forms.Label();
             this.rbtngenaral = new System.Windows.Forms.RadioButton();
             this.rbtnopd = new System.Windows.Forms.RadioButton();
@@ -92,7 +92,7 @@
             this.rbtnbloodbank = new System.Windows.Forms.RadioButton();
             this.rbtndental = new System.Windows.Forms.RadioButton();
             this.rbtnpathology = new System.Windows.Forms.RadioButton();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtDocNew = new System.Windows.Forms.TextBox();
             this.lblpc = new System.Windows.Forms.Label();
             this.txtpc = new System.Windows.Forms.TextBox();
             this.txtdiscouuntpersentnance = new System.Windows.Forms.TextBox();
@@ -101,6 +101,7 @@
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.btnAddDoctor = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInvestigation)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -202,6 +203,7 @@
             this.lsttestname.Name = "lsttestname";
             this.lsttestname.Size = new System.Drawing.Size(406, 121);
             this.lsttestname.TabIndex = 12;
+            this.lsttestname.DoubleClick += new System.EventHandler(this.lsttestname_DoubleClick);
             // 
             // lbldoctorinformaion
             // 
@@ -226,6 +228,7 @@
             // 
             this.txtdoctorid.Location = new System.Drawing.Point(663, 35);
             this.txtdoctorid.Name = "txtdoctorid";
+            this.txtdoctorid.ReadOnly = true;
             this.txtdoctorid.Size = new System.Drawing.Size(100, 20);
             this.txtdoctorid.TabIndex = 15;
             // 
@@ -233,6 +236,7 @@
             // 
             this.txttitle.Location = new System.Drawing.Point(663, 61);
             this.txttitle.Name = "txttitle";
+            this.txttitle.ReadOnly = true;
             this.txttitle.Size = new System.Drawing.Size(187, 20);
             this.txttitle.TabIndex = 17;
             // 
@@ -249,6 +253,7 @@
             // 
             this.txtrefferedby.Location = new System.Drawing.Point(663, 83);
             this.txtrefferedby.Name = "txtrefferedby";
+            this.txtrefferedby.ReadOnly = true;
             this.txtrefferedby.Size = new System.Drawing.Size(187, 20);
             this.txtrefferedby.TabIndex = 19;
             // 
@@ -265,6 +270,7 @@
             // 
             this.txtdegree.Location = new System.Drawing.Point(663, 108);
             this.txtdegree.Name = "txtdegree";
+            this.txtdegree.ReadOnly = true;
             this.txtdegree.Size = new System.Drawing.Size(187, 20);
             this.txtdegree.TabIndex = 21;
             // 
@@ -281,6 +287,7 @@
             // 
             this.txtspecialist.Location = new System.Drawing.Point(663, 130);
             this.txtspecialist.Name = "txtspecialist";
+            this.txtspecialist.ReadOnly = true;
             this.txtspecialist.Size = new System.Drawing.Size(187, 20);
             this.txtspecialist.TabIndex = 23;
             // 
@@ -297,6 +304,7 @@
             // 
             this.txtarea.Location = new System.Drawing.Point(663, 153);
             this.txtarea.Name = "txtarea";
+            this.txtarea.ReadOnly = true;
             this.txtarea.Size = new System.Drawing.Size(187, 20);
             this.txtarea.TabIndex = 25;
             // 
@@ -313,6 +321,7 @@
             // 
             this.txttype.Location = new System.Drawing.Point(663, 179);
             this.txttype.Name = "txttype";
+            this.txttype.ReadOnly = true;
             this.txttype.Size = new System.Drawing.Size(187, 20);
             this.txttype.TabIndex = 27;
             // 
@@ -382,12 +391,12 @@
             this.lblvat.TabIndex = 33;
             this.lblvat.Text = "Vat";
             // 
-            // textBox1
+            // txtPayableAmount
             // 
-            this.textBox1.Location = new System.Drawing.Point(663, 273);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(187, 20);
-            this.textBox1.TabIndex = 36;
+            this.txtPayableAmount.Location = new System.Drawing.Point(663, 273);
+            this.txtPayableAmount.Name = "txtPayableAmount";
+            this.txtPayableAmount.Size = new System.Drawing.Size(187, 20);
+            this.txtPayableAmount.TabIndex = 36;
             // 
             // lblpayableamount
             // 
@@ -446,12 +455,12 @@
             this.txtreceive.Size = new System.Drawing.Size(62, 20);
             this.txtreceive.TabIndex = 42;
             // 
-            // textBox2
+            // txtReturn
             // 
-            this.textBox2.Location = new System.Drawing.Point(776, 358);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(74, 20);
-            this.textBox2.TabIndex = 44;
+            this.txtReturn.Location = new System.Drawing.Point(776, 358);
+            this.txtReturn.Name = "txtReturn";
+            this.txtReturn.Size = new System.Drawing.Size(74, 20);
+            this.txtReturn.TabIndex = 44;
             // 
             // lblreturn
             // 
@@ -512,6 +521,7 @@
             this.lstdoctorsinformation.Name = "lstdoctorsinformation";
             this.lstdoctorsinformation.Size = new System.Drawing.Size(188, 108);
             this.lstdoctorsinformation.TabIndex = 50;
+            this.lstdoctorsinformation.DoubleClick += new System.EventHandler(this.lstdoctorsinformation_DoubleClick);
             // 
             // btndailyladger
             // 
@@ -576,7 +586,6 @@
             this.groupBox1.Size = new System.Drawing.Size(79, 81);
             this.groupBox1.TabIndex = 57;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
             // 
             // dgvInvestigation
             // 
@@ -606,7 +615,6 @@
             this.groupBox2.Size = new System.Drawing.Size(91, 115);
             this.groupBox2.TabIndex = 60;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
             // 
             // rbtntherapy
             // 
@@ -663,12 +671,12 @@
             this.rbtnpathology.Text = "pathology";
             this.rbtnpathology.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // txtDocNew
             // 
-            this.textBox4.Location = new System.Drawing.Point(315, 7);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(68, 20);
-            this.textBox4.TabIndex = 61;
+            this.txtDocNew.Location = new System.Drawing.Point(315, 7);
+            this.txtDocNew.Name = "txtDocNew";
+            this.txtDocNew.Size = new System.Drawing.Size(68, 20);
+            this.txtDocNew.TabIndex = 61;
             // 
             // lblpc
             // 
@@ -737,17 +745,28 @@
             this.lineShape1.Y1 = 326;
             this.lineShape1.Y2 = 326;
             // 
+            // btnAddDoctor
+            // 
+            this.btnAddDoctor.Location = new System.Drawing.Point(438, 44);
+            this.btnAddDoctor.Name = "btnAddDoctor";
+            this.btnAddDoctor.Size = new System.Drawing.Size(25, 22);
+            this.btnAddDoctor.TabIndex = 68;
+            this.btnAddDoctor.Text = "+";
+            this.btnAddDoctor.UseVisualStyleBackColor = true;
+            this.btnAddDoctor.Click += new System.EventHandler(this.btnAddDoctor_Click);
+            // 
             // frmfrontdeskinvestigation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(859, 563);
+            this.Controls.Add(this.btnAddDoctor);
             this.Controls.Add(this.txtsex);
             this.Controls.Add(this.lblsex);
             this.Controls.Add(this.txtdiscouuntpersentnance);
             this.Controls.Add(this.txtpc);
             this.Controls.Add(this.lblpc);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtDocNew);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.txtdoctorinformation);
             this.Controls.Add(this.dgvInvestigation);
@@ -760,7 +779,7 @@
             this.Controls.Add(this.btndailyladger);
             this.Controls.Add(this.lstdoctorsinformation);
             this.Controls.Add(this.chkbtmpsave);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtReturn);
             this.Controls.Add(this.lblreturn);
             this.Controls.Add(this.txtreceive);
             this.Controls.Add(this.lblreceive);
@@ -768,7 +787,7 @@
             this.Controls.Add(this.lbltotaldue);
             this.Controls.Add(this.txtpaidamount);
             this.Controls.Add(this.lblpaidamount);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPayableAmount);
             this.Controls.Add(this.lblpayableamount);
             this.Controls.Add(this.txtvat);
             this.Controls.Add(this.lblvat);
@@ -855,7 +874,7 @@
         private System.Windows.Forms.Label lblPasentance;
         private System.Windows.Forms.TextBox txtvat;
         private System.Windows.Forms.Label lblvat;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPayableAmount;
         private System.Windows.Forms.Label lblpayableamount;
         private System.Windows.Forms.TextBox txtpaidamount;
         private System.Windows.Forms.Label lblpaidamount;
@@ -863,7 +882,7 @@
         private System.Windows.Forms.Label lbltotaldue;
         private System.Windows.Forms.Label lblreceive;
         private System.Windows.Forms.TextBox txtreceive;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtReturn;
         private System.Windows.Forms.Label lblreturn;
         private System.Windows.Forms.RadioButton rbtngenaral;
         private System.Windows.Forms.RadioButton rbtnopd;
@@ -885,7 +904,7 @@
         private System.Windows.Forms.RadioButton rbtnbloodbank;
         private System.Windows.Forms.RadioButton rbtndental;
         private System.Windows.Forms.RadioButton rbtnpathology;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtDocNew;
         private System.Windows.Forms.Label lblpc;
         private System.Windows.Forms.TextBox txtpc;
         private System.Windows.Forms.TextBox txtdiscouuntpersentnance;
@@ -894,5 +913,6 @@
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
+        private System.Windows.Forms.Button btnAddDoctor;
     }
 }

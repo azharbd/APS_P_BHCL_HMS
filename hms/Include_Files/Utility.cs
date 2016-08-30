@@ -10,6 +10,8 @@ namespace hms.Include_Files
                
         //ReportPath = Application.StartupPath;
         public static int userID = 1;
+        public static int intVat= 5;
+        public static string selectTestIds = "";
 
         public class ComboboxItem
         {

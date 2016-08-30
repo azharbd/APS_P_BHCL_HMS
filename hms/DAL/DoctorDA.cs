@@ -50,7 +50,14 @@ namespace hms.DAL
             objData.CloseConnection();
             if (dtMaxDictorID.Rows.Count>0)
             {
-                doctorid = Convert.ToInt32(dtMaxDictorID.Rows[0][0].ToString()) + 1;
+                if (dtMaxDictorID.Rows[0][0].ToString() != "")
+                {
+                    doctorid = Convert.ToInt32(dtMaxDictorID.Rows[0][0].ToString()) + 1;
+                }
+                else
+                {
+                    doctorid = 1;
+                }
             }
             else
             {
