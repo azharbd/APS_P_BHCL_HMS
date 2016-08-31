@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using BatchDLL;
 
+
 namespace hms.Forms
 {
     public partial class frmfrontdeskinvestigation : Form
@@ -49,6 +50,8 @@ namespace hms.Forms
             checkBoxColumn.Width = 30;
             checkBoxColumn.Name = "";
             dgvInvestigation.Columns.Insert(0, checkBoxColumn);
+            
+            
         }
 
         private void getDocList()
@@ -87,6 +90,28 @@ namespace hms.Forms
         private void getMaxID()
         {
             //throw new NotImplementedException();
+            string strSQL = "";
+            strSQL = "select max(P_ID) from dbo_Patient_info";
+            DataTable arrCatID = objData.RetriveData(strSQL, ref strErr);
+            
+            int CatId = 0;
+
+            if (arrCatID.Rows.Count > 0)
+            {
+                if (arrCatID.Rows[0][0].ToString() == "")
+                {
+                    CatId = 1;
+                }
+                else
+                {
+                    CatId = Convert.ToInt32(arrCatID.Rows[0][0].ToString()) + 1;
+                }
+            }
+            else
+            {
+                CatId = 1;
+            }
+            txtid.Text = CatId.ToString();
         }
 
         private void clearFileds()
@@ -201,6 +226,9 @@ namespace hms.Forms
                 }
                 //hms.Include_Files.Utility.selectTestIds = hms.Include_Files.Utility.selectTestIds + "," + itms.Value.ToString()+",";
             }
+
+            
+
             objData = new C_Data_Batch();
             objData.OpenConnection("AzharPC-Home", ref strErr);
             loadGrid();
@@ -212,6 +240,7 @@ namespace hms.Forms
         private void loadGrid()
         {
             //throw new NotImplementedException();
+            
 
             string strSQL = "";
             strSQL = "Select * from Dbo_Services where service_id in (" + hms.Include_Files.Utility.selectTestIds.Substring(1, Convert.ToInt16(hms.Include_Files.Utility.selectTestIds.Length) - 2).ToString() + ")";
@@ -243,8 +272,32 @@ namespace hms.Forms
             int DiscountTaka;
             Int32.TryParse(txtdiscouuntpersentnance.Text, out DiscountTaka);
 
-            
+            Decimal intVat;
+            Decimal.TryParse(txtvat.Text, out intVat);
 
+            Decimal intPayableAmount = Convert.ToDecimal(totalPayableAmount);
+            if (discount > 0)
+            {
+                intPayableAmount = Convert.ToDecimal(intPayableAmount) - ((Convert.ToDecimal(discount) / 100) * Convert.ToDecimal(totalPayableAmount));
+            }
+
+            if (DiscountTaka > 0)
+            {
+                intPayableAmount = intPayableAmount - Convert.ToDecimal(DiscountTaka);
+            }
+
+            intVat = ((Convert.ToDecimal(hms.Include_Files.Utility.intVat) / 100) * Convert.ToDecimal(totalPayableAmount));
+            txtvat.Text = intVat.ToString();
+            intPayableAmount = intPayableAmount + intVat;
+
+            txtPayableAmount.Text = intPayableAmount.ToString();
+
+            Decimal paidAmount;
+            Decimal.TryParse(txtpaidamount.Text, out paidAmount);
+
+            Decimal totalDue = intPayableAmount - paidAmount;
+
+            txttotaldue.Text = totalDue.ToString();
             //MessageBox.Show(discount.ToString());
         }
 
@@ -280,6 +333,91 @@ namespace hms.Forms
         {
             frmDoctorsInformation doc = new frmDoctorsInformation();
             doc.Show();
+        }
+
+        private void txtdiscount_TextChanged(object sender, EventArgs e)
+        {
+            string Valid = numericCheck(txtdiscount.Text.ToString());
+            if (Valid == "F")
+            {
+                txtdiscount.Text = "";
+            }
+            else
+            {
+                getTotalCalculation();
+            }
+        }
+
+        private string numericCheck(string p)
+        {
+            string val = "F";
+            try
+            {
+                decimal d = Convert.ToDecimal(p);
+                val = "T";
+            }
+            catch
+            {
+                MessageBox.Show("Please Enter Numeric");
+            }
+            return val;
+        }
+
+       
+
+        private void txtdiscouuntpersentnance_TextChanged(object sender, EventArgs e)
+        {
+            string Valid = numericCheck(txtdiscouuntpersentnance.Text.ToString());
+            if (Valid == "F")
+            {
+                txtdiscouuntpersentnance.Text = "";
+            }
+            else
+            {
+                getTotalCalculation();
+            }
+        }
+
+        private void txtpaidamount_TextChanged(object sender, EventArgs e)
+        {
+            string Valid = numericCheck(txtpaidamount.Text.ToString());
+            if (Valid == "F")
+            {
+                txtpaidamount.Text = "";
+            }
+            else
+            {
+                getTotalCalculation();
+            }
+        }
+
+        private void btnsave_Click(object sender, EventArgs e)
+        {
+     //       INSERT INTO [dbo_Patient_info]([Name],[PresentAddress],[Phone],[Year],[Month],[Day],[Gender],[PatientID],[BirthDate])
+     //VALUES('',,'','',,,0,'',,'')
+            objData = new C_Data_Batch();
+            objData.OpenConnection("AzharPC-Home", ref strErr);
+            saveData();
+            objData.CloseConnection();
+        }
+
+        private void saveData()
+        {
+            //throw new NotImplementedException();
+            objData.BeginTransaction(ref strErr);
+            string strSql = "";
+            int year;
+            int.TryParse(txtYear.Text, out year);
+            int month;
+            int.TryParse(txtMonth.Text, out month);
+            DateTime thisDay = DateTime.Today;
+            Int64 DateDiff = Convert.ToInt64(((year * 12) + month) * 30);
+            DateTime totalDays = thisDay.AddDays(-DateDiff);
+
+            MessageBox.Show(totalDays.ToString());
+            //strSql = "INSERT INTO [dbo_Patient_info]([Name],[PresentAddress],[Phone],[Year],[Month],[Day],[Gender],[PatientID],[BirthDate]) ";
+            //strSql = strSql + "VALUES('" + txtname.Text.ToString() + "','" + txtaddress.Text.ToString() + "','" + txtphone.Text.ToString();
+            //strSql = strSql + "',"+txtYear.Text.ToString()+","+txtMonth.Text.ToString()+",0,'"+txtsex.Text.ToString()+"',,'')";
         }
 
         

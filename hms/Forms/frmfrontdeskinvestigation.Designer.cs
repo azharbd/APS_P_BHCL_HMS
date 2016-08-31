@@ -121,8 +121,10 @@
             // 
             this.txtid.Location = new System.Drawing.Point(169, 38);
             this.txtid.Name = "txtid";
+            this.txtid.ReadOnly = true;
             this.txtid.Size = new System.Drawing.Size(89, 20);
             this.txtid.TabIndex = 1;
+            this.txtid.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblname
             // 
@@ -338,6 +340,7 @@
             // 
             this.txttotalamount.Location = new System.Drawing.Point(663, 205);
             this.txttotalamount.Name = "txttotalamount";
+            this.txttotalamount.ReadOnly = true;
             this.txttotalamount.Size = new System.Drawing.Size(187, 20);
             this.txttotalamount.TabIndex = 29;
             // 
@@ -356,6 +359,7 @@
             this.txtdiscount.Name = "txtdiscount";
             this.txtdiscount.Size = new System.Drawing.Size(50, 20);
             this.txtdiscount.TabIndex = 31;
+            this.txtdiscount.TextChanged += new System.EventHandler(this.txtdiscount_TextChanged);
             // 
             // lbldiscount
             // 
@@ -379,6 +383,7 @@
             // 
             this.txtvat.Location = new System.Drawing.Point(663, 249);
             this.txtvat.Name = "txtvat";
+            this.txtvat.ReadOnly = true;
             this.txtvat.Size = new System.Drawing.Size(187, 20);
             this.txtvat.TabIndex = 34;
             // 
@@ -395,6 +400,7 @@
             // 
             this.txtPayableAmount.Location = new System.Drawing.Point(663, 273);
             this.txtPayableAmount.Name = "txtPayableAmount";
+            this.txtPayableAmount.ReadOnly = true;
             this.txtPayableAmount.Size = new System.Drawing.Size(187, 20);
             this.txtPayableAmount.TabIndex = 36;
             // 
@@ -413,6 +419,7 @@
             this.txtpaidamount.Name = "txtpaidamount";
             this.txtpaidamount.Size = new System.Drawing.Size(187, 20);
             this.txtpaidamount.TabIndex = 38;
+            this.txtpaidamount.TextChanged += new System.EventHandler(this.txtpaidamount_TextChanged);
             // 
             // lblpaidamount
             // 
@@ -427,6 +434,7 @@
             // 
             this.txttotaldue.Location = new System.Drawing.Point(663, 332);
             this.txttotaldue.Name = "txttotaldue";
+            this.txttotaldue.ReadOnly = true;
             this.txttotaldue.Size = new System.Drawing.Size(187, 20);
             this.txttotaldue.TabIndex = 40;
             // 
@@ -550,6 +558,7 @@
             this.btnsave.TabIndex = 53;
             this.btnsave.Text = "Save";
             this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // btnedit
             // 
@@ -700,6 +709,7 @@
             this.txtdiscouuntpersentnance.Name = "txtdiscouuntpersentnance";
             this.txtdiscouuntpersentnance.Size = new System.Drawing.Size(61, 20);
             this.txtdiscouuntpersentnance.TabIndex = 64;
+            this.txtdiscouuntpersentnance.TextChanged += new System.EventHandler(this.txtdiscouuntpersentnance_TextChanged);
             // 
             // lblsex
             // 
