@@ -102,6 +102,7 @@
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.btnAddDoctor = new System.Windows.Forms.Button();
+            this.btnGridDelete = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInvestigation)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -684,6 +685,7 @@
             // 
             this.txtDocNew.Location = new System.Drawing.Point(315, 7);
             this.txtDocNew.Name = "txtDocNew";
+            this.txtDocNew.ReadOnly = true;
             this.txtDocNew.Size = new System.Drawing.Size(68, 20);
             this.txtDocNew.TabIndex = 61;
             // 
@@ -765,11 +767,22 @@
             this.btnAddDoctor.UseVisualStyleBackColor = true;
             this.btnAddDoctor.Click += new System.EventHandler(this.btnAddDoctor_Click);
             // 
+            // btnGridDelete
+            // 
+            this.btnGridDelete.Image = global::hms.Properties.Resources.DELETE;
+            this.btnGridDelete.Location = new System.Drawing.Point(20, 373);
+            this.btnGridDelete.Name = "btnGridDelete";
+            this.btnGridDelete.Size = new System.Drawing.Size(24, 20);
+            this.btnGridDelete.TabIndex = 69;
+            this.btnGridDelete.UseVisualStyleBackColor = true;
+            this.btnGridDelete.Click += new System.EventHandler(this.btnGridDelete_Click);
+            // 
             // frmfrontdeskinvestigation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(859, 563);
+            this.Controls.Add(this.btnGridDelete);
             this.Controls.Add(this.btnAddDoctor);
             this.Controls.Add(this.txtsex);
             this.Controls.Add(this.lblsex);
@@ -924,5 +937,6 @@
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
         private System.Windows.Forms.Button btnAddDoctor;
+        private System.Windows.Forms.Button btnGridDelete;
     }
 }

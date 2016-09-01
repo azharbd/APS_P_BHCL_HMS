@@ -268,13 +268,14 @@ namespace hms.Forms
             txttotalamount.Text = totalPayableAmount.ToString();
             int discount;
             Int32.TryParse(txtdiscount.Text, out discount);
-
+            txtdiscount.Text = discount.ToString();
             int DiscountTaka;
             Int32.TryParse(txtdiscouuntpersentnance.Text, out DiscountTaka);
-
+            txtdiscouuntpersentnance.Text = DiscountTaka.ToString();
             Decimal intVat;
             Decimal.TryParse(txtvat.Text, out intVat);
 
+            txtvat.Text = intVat.ToString();
             Decimal intPayableAmount = Convert.ToDecimal(totalPayableAmount);
             if (discount > 0)
             {
@@ -351,14 +352,21 @@ namespace hms.Forms
         private string numericCheck(string p)
         {
             string val = "F";
-            try
+            if (p.ToString() != "")
             {
-                decimal d = Convert.ToDecimal(p);
-                val = "T";
+                try
+                {
+                    decimal d = Convert.ToDecimal(p);
+                    val = "T";
+                }
+                catch
+                {
+                    MessageBox.Show("Please Enter Numeric");
+                }
             }
-            catch
+            else
             {
-                MessageBox.Show("Please Enter Numeric");
+                val = "T";
             }
             return val;
         }
@@ -454,9 +462,25 @@ namespace hms.Forms
                 intInvestigationType = 3;
             }
             int intInvestigationDeptType = 0;
-            if (rbtnbloodbank.Checked == true)
+            if (rbtnpathology.Checked == true)
+            {
+                intInvestigationDeptType = 1;
+            }
+            else if (rbtndental.Checked == true)
+            {
+                intInvestigationDeptType = 2;
+            }
+            else if (rbtnbloodbank.Checked == true)
             {
                 intInvestigationDeptType = 3;
+            }
+            else if (rbtndialysis.Checked == true)
+            {
+                intInvestigationDeptType = 4;
+            }
+            else
+            {
+                intInvestigationDeptType = 5;
             }
             //else if ()
 
@@ -467,13 +491,146 @@ namespace hms.Forms
             strPatSql = strPatSql + "VALUES('" + txtname.Text.ToString() + "','" + txtaddress.Text.ToString() + "','" + txtphone.Text.ToString();
             strPatSql = strPatSql + "'," + txtYear.Text.ToString() + "," + txtMonth.Text.ToString() + ",0,'" + txtsex.Text.ToString() + "'," + PatientID.ToString() + ",'" + birthDate.ToString() + "', "+hms.Include_Files.Utility.userID.ToString()+")";
 
-            string strInvSql = "";
-            strInvSql = "INSERT INTO [dbo_Investigation]([DocID],[DiscountTK],[DiscountPasentance],[TotalDue],[InvestigationType],[InvestigationDeptType]";
-            strInvSql = strInvSql + " ,[P_ID],[Invetigation_SL],[PC_CC], [userID])";
-            strInvSql = strInvSql + " Values (" + txtdoctorid + ", " + txtdiscount.ToString() + ", " + txtdiscouuntpersentnance.ToString() + ", " + txttotaldue.Text.ToString();
-            strInvSql = strInvSql + ", )";
+            objData.ExecuteQuery(strPatSql, ref strErr);
+
+            if (strErr.ToString() == "")
+            {
+                string strInvFndSL = "";
+                strInvFndSL = "select max(Invetigation_SL) From dbo_Investigation where month(CreatedON) = month(getdate()) ";
+                DataTable arrMaxInvSL = objData.RetriveData(strInvFndSL, ref strErr);
+                if (strErr.ToString() == "")
+                {
+                    int maxInvSlL = 0;
+                    if (arrMaxInvSL.Rows.Count > 0)
+                    {
+                        if (arrMaxInvSL.Rows[0][0].ToString() == "")
+                        {
+                            maxInvSlL = 1000;
+                        }
+                        else
+                        {
+                            maxInvSlL = Convert.ToInt32(arrMaxInvSL.Rows[0][0].ToString()) + 1;
+                        }
+                    }
+                    else
+                    {
+                        maxInvSlL = 1000;
+                    }
+
+                    string strInvSql = "";
+                    strInvSql = "INSERT INTO [dbo_Investigation]([DocID],[DiscountTK],[DiscountPasentance],[TotalDue],[InvestigationType],[InvestigationDeptType]";
+                    strInvSql = strInvSql + " ,[P_ID],[Invetigation_SL],[PC_CC], [userID])";
+                    strInvSql = strInvSql + " Values (" + txtdoctorid.Text.ToString() + ", " + txtdiscount.Text.ToString() + ", " + txtdiscouuntpersentnance.Text.ToString() + ", " + txttotaldue.Text.ToString();
+                    strInvSql = strInvSql + ", " + intInvestigationType.ToString() + ", " + intInvestigationDeptType.ToString() + ", " + txtid.Text.ToString() + ", " + maxInvSlL.ToString() + ", " + txtpc.Text.ToString() + "," + hms.Include_Files.Utility.userID.ToString() + " )";
+
+                    objData.ExecuteQuery(strInvSql, ref strErr);
+
+                    if (strErr.ToString() == "")
+                    {
+
+                        string strMaxInvID = "";
+                        strMaxInvID = "select max(Investigationid) from dbo_Investigation";
+                        DataTable arrMaxInvID = objData.RetriveData(strMaxInvID, ref strErr);
+
+                        if (strErr.ToString() == "")
+                        {
+                            int maxInvID = 0;
+                            if (arrMaxInvID.Rows.Count > 0)
+                            {
+                                if (arrMaxInvID.Rows[0][0].ToString() == "")
+                                {
+                                    maxInvID = 1;
+                                }
+                                else
+                                {
+                                    maxInvID = Convert.ToInt16(arrMaxInvID.Rows[0][0].ToString())+1;
+                                }
+                            }
+                            else
+                            {
+                                maxInvID = 1;
+                            }
+                            
+                            
+                            string strSqlInvItem = "";
+                            //
 
 
+                            if (Convert.ToInt32(dgvInvestigation.Rows.Count) - 1 > 0)
+                            {
+                                for (int i = 0; i < dgvInvestigation.Rows.Count - 1; i++)
+                                {
+                                    if (strSqlInvItem == "")
+                                    {
+
+                                        strSqlInvItem =  " (" + maxInvID.ToString() + ", " + dgvInvestigation.Rows[i].Cells[1].Value.ToString() + ",getdate(), 0," + hms.Include_Files.Utility.userID.ToString() + ", " + dgvInvestigation.Rows[i].Cells[4].Value.ToString() + " )";
+                                    }
+                                    else
+                                    {
+                                        strSqlInvItem = strSqlInvItem + ", (" + maxInvID.ToString() + ", " + dgvInvestigation.Rows[i].Cells[1].Value.ToString() + ",getdate(), 0," + hms.Include_Files.Utility.userID.ToString() + ", " + dgvInvestigation.Rows[i].Cells[4].Value.ToString() + " )";
+                                    }
+                                }
+                            }
+
+                            if (strSqlInvItem.ToString() != "")
+                            {
+                                string strSqlInvItemMain = "INSERT INTO [dbo_InvertigationServiceItem]([Investigationid],[Service_ID],[Date],[Status],[UserID],Amount) Values " + strSqlInvItem;
+                                objData.ExecuteQuery(strSqlInvItemMain, ref strErr);
+                                if (strErr.ToString() == "")
+                                {
+                                    objData.CommitTransaction(ref strErr);
+                                    MessageBox.Show("Invertigation created succefully");
+                                    frmload();
+                                }
+                                else
+                                {
+                                    objData.Rollback(ref strErr);
+                                    
+                                }
+                            }
+
+                        }
+                        else
+                        {
+                            objData.Rollback(ref strErr);
+                        }
+                    }
+                    else
+                    {
+                        objData.Rollback(ref strErr);
+                    }
+                }
+                else
+                {
+                    objData.Rollback(ref strErr);
+                }
+
+            }
+            else
+            {
+                objData.Rollback(ref strErr);
+            }
+
+        }
+
+        private void btnGridDelete_Click(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(dgvInvestigation.Rows.Count) - 1 > 0)
+            {
+                for (int i = 0; i < dgvInvestigation.Rows.Count - 1; i++)
+                {
+                    //MessageBox.Show(dgvInvestigation.Rows[i].Cells[0].FormattedValue.ToString());
+                    if ((bool)dgvInvestigation.Rows[i].Cells[0].FormattedValue == true)
+                    {
+                        hms.Include_Files.Utility.selectTestIds = hms.Include_Files.Utility.selectTestIds.Replace("," + dgvInvestigation.Rows[i].Cells[1].Value.ToString(), "");
+                    }
+                }
+            }
+
+            objData = new C_Data_Batch();
+            objData.OpenConnection("AzharPC-Home", ref strErr);
+            loadGrid();
+            objData.CloseConnection();
         }
 
         
