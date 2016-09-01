@@ -404,8 +404,7 @@ namespace hms.Forms
         private void saveData()
         {
             //throw new NotImplementedException();
-            objData.BeginTransaction(ref strErr);
-            string strSql = "";
+            
             int year;
             int.TryParse(txtYear.Text, out year);
             int month;
@@ -414,10 +413,67 @@ namespace hms.Forms
             Int64 DateDiff = Convert.ToInt64(((year * 12) + month) * 30);
             DateTime totalDays = thisDay.AddDays(-DateDiff);
 
-            MessageBox.Show(totalDays.ToString());
-            //strSql = "INSERT INTO [dbo_Patient_info]([Name],[PresentAddress],[Phone],[Year],[Month],[Day],[Gender],[PatientID],[BirthDate]) ";
-            //strSql = strSql + "VALUES('" + txtname.Text.ToString() + "','" + txtaddress.Text.ToString() + "','" + txtphone.Text.ToString();
-            //strSql = strSql + "',"+txtYear.Text.ToString()+","+txtMonth.Text.ToString()+",0,'"+txtsex.Text.ToString()+"',,'')";
+            string birthDate = Convert.ToString(totalDays.Date.ToShortDateString());
+
+            string strYear = Convert.ToString(totalDays.Year.ToString());
+            string strmonth = "";
+            if (totalDays.Month < 10)
+            {
+                strmonth = "0" + Convert.ToString(totalDays.Month.ToString()); ;
+            }
+            else
+            {
+                strmonth = Convert.ToString(totalDays.Month.ToString());
+            }
+            string strDay = "";
+            if (totalDays.Day < 10)
+            {
+                strDay = "0" + Convert.ToString(totalDays.Day.ToString()); ;
+            }
+            else
+            {
+                strDay = Convert.ToString(totalDays.Day.ToString());
+            }
+
+
+            string tPatientID = strYear + strmonth + strDay + txtid.Text.ToString();
+
+            double PatientID = Convert.ToDouble(tPatientID.ToString());
+
+            int intInvestigationType = 0;
+            if (rbtngenaral.Checked == true)
+            {
+                intInvestigationType = 1;
+            }
+            else if (rbtnopd.Checked == true)
+            {
+                intInvestigationType = 2;
+            }
+            else
+            {
+                intInvestigationType = 3;
+            }
+            int intInvestigationDeptType = 0;
+            if (rbtnbloodbank.Checked == true)
+            {
+                intInvestigationDeptType = 3;
+            }
+            //else if ()
+
+            //MessageBox.Show(PatientID.ToString());
+            objData.BeginTransaction(ref strErr);
+            string strPatSql = "";
+            strPatSql = "INSERT INTO [dbo_Patient_info]([Name],[PresentAddress],[Phone],[Year],[Month],[Day],[Gender],[PatientID],[BirthDate], UserID) ";
+            strPatSql = strPatSql + "VALUES('" + txtname.Text.ToString() + "','" + txtaddress.Text.ToString() + "','" + txtphone.Text.ToString();
+            strPatSql = strPatSql + "'," + txtYear.Text.ToString() + "," + txtMonth.Text.ToString() + ",0,'" + txtsex.Text.ToString() + "'," + PatientID.ToString() + ",'" + birthDate.ToString() + "', "+hms.Include_Files.Utility.userID.ToString()+")";
+
+            string strInvSql = "";
+            strInvSql = "INSERT INTO [dbo_Investigation]([DocID],[DiscountTK],[DiscountPasentance],[TotalDue],[InvestigationType],[InvestigationDeptType]";
+            strInvSql = strInvSql + " ,[P_ID],[Invetigation_SL],[PC_CC], [userID])";
+            strInvSql = strInvSql + " Values (" + txtdoctorid + ", " + txtdiscount.ToString() + ", " + txtdiscouuntpersentnance.ToString() + ", " + txttotaldue.Text.ToString();
+            strInvSql = strInvSql + ", )";
+
+
         }
 
         

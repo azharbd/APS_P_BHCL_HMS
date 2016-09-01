@@ -137,3 +137,32 @@ D:\HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmserviceiteminformation.reso
 D:\HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Properties.Resources.resources
 D:\HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.csproj.GenerateResource.Cache
 D:\HMS\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmfrontdeskinvestigation.resources
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\bin\Debug\hms.exe.config
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.exe
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.pdb
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\bin\Debug\Forms\DoctorsInformation.resx
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\bin\Debug\Forms\DoctorsInformation.cs
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\bin\Debug\Forms\DoctorsInformation.Designer.cs
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\bin\Debug\Program.cs
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\bin\Debug\hms.exe
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\bin\Debug\hms.pdb
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.csprojResolveAssemblyReference.cache
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmDoctorsInformation.resources
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmCategory.resources
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmConsultantVisit.resources
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmfrontdeskinvestigation.resources
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmfrontdeskinvetigationreturn.resources
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmHopitalAdmissionFront.resources
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmHospitalDeposit.resources
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmInvestigationDueCollection.resources
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmInvestigationReturn.resources
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmInvestigationsamplecollection.resources
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmInvestigationSearchEdit.resources
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmlogin.resources
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\Lab.From.frmPathologylab.resources
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmReport.resources
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmReportDelivery.resources
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmServiceWiseList.resources
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmserviceiteminformation.resources
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Properties.Resources.resources
+E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.csproj.GenerateResource.Cache
