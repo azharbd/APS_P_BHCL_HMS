@@ -273,7 +273,7 @@
             this.Controls.Add(this.lblDateRange);
             this.Name = "frmInvestigationSearchEdit";
             this.Text = "frmInvestigationSearchEdit";
-            this.Load += new System.EventHandler(this.frmInvestigationSearchEdit_Load);
+            //this.Load += new System.EventHandler(this.frmInvestigationSearchEdit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

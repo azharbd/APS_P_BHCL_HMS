@@ -166,3 +166,32 @@ E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86
 E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmserviceiteminformation.resources
 E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Properties.Resources.resources
 E:\Drive F\Azhar Office\Personal Documents\HMS_Office\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.csproj.GenerateResource.Cache
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\bin\Debug\hms.exe.config
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.exe
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.pdb
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.csprojResolveAssemblyReference.cache
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmDoctorsInformation.resources
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmCategory.resources
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmConsultantVisit.resources
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmfrontdeskinvestigation.resources
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmfrontdeskinvetigationreturn.resources
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmHopitalAdmissionFront.resources
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmHospitalDeposit.resources
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmInvestigationDueCollection.resources
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmInvestigationReturn.resources
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmInvestigationsamplecollection.resources
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmInvestigationSearchEdit.resources
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Froms.frmlogin.resources
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Debug\Lab.From.frmPathologylab.resources
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmReport.resources
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmReportDelivery.resources
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmServiceWiseList.resources
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Forms.frmserviceiteminformation.resources
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.Properties.Resources.resources
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Debug\hms.csproj.GenerateResource.Cache
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\bin\Debug\Forms\DoctorsInformation.resx
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\bin\Debug\Forms\DoctorsInformation.cs
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\bin\Debug\Forms\DoctorsInformation.Designer.cs
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\bin\Debug\Program.cs
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\bin\Debug\hms.exe
+E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\bin\Debug\hms.pdb

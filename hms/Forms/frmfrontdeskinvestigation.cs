@@ -243,7 +243,7 @@ namespace hms.Forms
             
 
             string strSQL = "";
-            strSQL = "Select * from Dbo_Services where service_id in (" + hms.Include_Files.Utility.selectTestIds.Substring(1, Convert.ToInt16(hms.Include_Files.Utility.selectTestIds.Length) - 2).ToString() + ")";
+            strSQL = "Select s.Service_ID,  s.Service_Name, s.Amount ,(case when Duraion_Type = 1 then dateadd(hh, Dutaion, getdate()) else dateadd(day,Dutaion, getdate() ) end ) 'Delivery Date' ,  '' Remarks from Dbo_Services S where service_id in (" + hms.Include_Files.Utility.selectTestIds.Substring(1, Convert.ToInt16(hms.Include_Files.Utility.selectTestIds.Length) - 2).ToString() + ")";
             DataTable arrservice = objData.RetriveData(strSQL, ref strErr);
 
             DataSet ds = new DataSet();
@@ -261,7 +261,7 @@ namespace hms.Forms
             {
                 for (int i = 0; i < dgvInvestigation.Rows.Count - 1; i++)
                 {
-                    totalPayableAmount = totalPayableAmount + Convert.ToInt32(dgvInvestigation.Rows[i].Cells[4].Value.ToString());
+                    totalPayableAmount = totalPayableAmount + Convert.ToInt32(dgvInvestigation.Rows[i].Cells[3].Value.ToString());
                 }
             }
 
@@ -296,9 +296,9 @@ namespace hms.Forms
             Decimal paidAmount;
             Decimal.TryParse(txtpaidamount.Text, out paidAmount);
 
-            Decimal totalDue = intPayableAmount - paidAmount;
+            decimal totalDue = intPayableAmount - paidAmount;
 
-            txttotaldue.Text = totalDue.ToString();
+            txttotaldue.Text = Convert.ToInt64(Math.Floor(Convert.ToDouble(totalDue.ToString()))).ToString();// Math.Round(d, totalDue);
             //MessageBox.Show(discount.ToString());
         }
 
@@ -539,16 +539,16 @@ namespace hms.Forms
                             {
                                 if (arrMaxInvID.Rows[0][0].ToString() == "")
                                 {
-                                    maxInvID = 1;
+                                    maxInvID = 0;
                                 }
                                 else
                                 {
-                                    maxInvID = Convert.ToInt16(arrMaxInvID.Rows[0][0].ToString())+1;
+                                    maxInvID = Convert.ToInt16(arrMaxInvID.Rows[0][0].ToString());
                                 }
                             }
                             else
                             {
-                                maxInvID = 1;
+                                maxInvID = 0;
                             }
                             
                             
@@ -563,23 +563,37 @@ namespace hms.Forms
                                     if (strSqlInvItem == "")
                                     {
 
-                                        strSqlInvItem =  " (" + maxInvID.ToString() + ", " + dgvInvestigation.Rows[i].Cells[1].Value.ToString() + ",getdate(), 0," + hms.Include_Files.Utility.userID.ToString() + ", " + dgvInvestigation.Rows[i].Cells[4].Value.ToString() + " )";
+                                        strSqlInvItem = " (" + maxInvID.ToString() + ", " + dgvInvestigation.Rows[i].Cells[1].Value.ToString() + ",getdate(), 0," + hms.Include_Files.Utility.userID.ToString() + ", " + dgvInvestigation.Rows[i].Cells[3].Value.ToString() + ",'" + dgvInvestigation.Rows[i].Cells[4].Value.ToString() + "' ,'" + dgvInvestigation.Rows[i].Cells[5].Value.ToString() + "' )";
                                     }
                                     else
                                     {
-                                        strSqlInvItem = strSqlInvItem + ", (" + maxInvID.ToString() + ", " + dgvInvestigation.Rows[i].Cells[1].Value.ToString() + ",getdate(), 0," + hms.Include_Files.Utility.userID.ToString() + ", " + dgvInvestigation.Rows[i].Cells[4].Value.ToString() + " )";
+                                        strSqlInvItem = strSqlInvItem + ", (" + maxInvID.ToString() + ", " + dgvInvestigation.Rows[i].Cells[1].Value.ToString() + ",getdate(), 0," + hms.Include_Files.Utility.userID.ToString() + ", " + dgvInvestigation.Rows[i].Cells[3].Value.ToString() + ",'" + dgvInvestigation.Rows[i].Cells[4].Value.ToString() + "' ,'" + dgvInvestigation.Rows[i].Cells[5].Value.ToString() + "' )";
                                     }
                                 }
                             }
 
                             if (strSqlInvItem.ToString() != "")
                             {
-                                string strSqlInvItemMain = "INSERT INTO [dbo_InvertigationServiceItem]([Investigationid],[Service_ID],[Date],[Status],[UserID],Amount) Values " + strSqlInvItem;
+                                string strSqlInvItemMain = "INSERT INTO [dbo_InvertigationServiceItem]([Investigationid],[Service_ID],[Date],[Status],[UserID],Amount, DeliveryOn, Remaks) Values " + strSqlInvItem;
                                 objData.ExecuteQuery(strSqlInvItemMain, ref strErr);
                                 if (strErr.ToString() == "")
                                 {
+                                    
+                                    //MessageBox.Show("Invertigation created succefully");
+                                    var confirmResult = MessageBox.Show("Invertigation created succefully.\n do you wate to get print?",
+                                                             "Confirm Delete!!",
+                                                             MessageBoxButtons.YesNo);
+                                    if (confirmResult == DialogResult.Yes)
+                                    {
+                                        //MessageBox.Show("Y");
+                                        getPrint(maxInvID.ToString());
+                                    }
+                                    else
+                                    {
+                                        // If 'No', do something here.
+                                        //MessageBox.Show("N");
+                                    }
                                     objData.CommitTransaction(ref strErr);
-                                    MessageBox.Show("Invertigation created succefully");
                                     frmload();
                                 }
                                 else
@@ -613,6 +627,93 @@ namespace hms.Forms
 
         }
 
+        private void getPrint(string p)
+        {
+            //throw new NotImplementedException();
+            string strSQLCashMemo = "";
+            strSQLCashMemo = "select max(CM_ID) From dbo_CashMemo ";
+            string strSQLCashMemoSL = "";
+            strSQLCashMemoSL = "select max(CM_SL) From dbo_CashMemo where month(CreatedOn) = month(getdate()) ";
+
+            DataTable arrCashID = objData.RetriveData(strSQLCashMemo, ref strErr);
+            DataTable arrCashSL = objData.RetriveData(strSQLCashMemoSL, ref strErr);
+            
+
+            int cashSL = 0;
+            if (arrCashSL.Rows.Count > 0)
+            {
+                if (arrCashSL.Rows[0][0].ToString() == "")
+                {
+                    cashSL = 1000;
+                }
+                else
+                {
+                    cashSL = Convert.ToInt16(arrCashSL.Rows[0][0].ToString()) + 1;
+                }
+            }
+            else
+            {
+                cashSL = 1000;
+            }
+
+            string strSQLCASH = "";
+            int paidAmount = 0;
+            if (txtpaidamount.ToString() == "")
+            {
+                paidAmount = 0;
+            }
+            else
+            {
+                paidAmount = Convert.ToInt16(txtpaidamount.Text.ToString());
+            }
+
+            int totalDueAmount = 0;
+            if (txttotaldue.ToString() == "")
+            {
+                totalDueAmount = 0;
+            }
+            else
+            {
+                totalDueAmount = Convert.ToInt16(txttotaldue.Text.ToString());
+            }
+
+            strSQLCASH = "insert into [dbo_CashMemo]([CM_SL], [InvetigationID], [Pay_Amount], [Due], USERID) ";
+            strSQLCASH = strSQLCASH + "Values (" + cashSL.ToString() + ", " + p.ToString() + ", " + paidAmount.ToString() + ", " + totalDueAmount.ToString() + ", "+hms.Include_Files.Utility.userID.ToString()+")";
+            objData.ExecuteQuery(strSQLCASH, ref strErr);
+
+            if (strErr == "")
+            {
+                int cashID = 0;
+                if (arrCashID.Rows.Count > 0)
+                {
+                    if (arrCashID.Rows[0][0].ToString() == "")
+                    {
+                        cashID = 0;
+                    }
+                    else
+                    {
+                        cashID = Convert.ToInt16(arrCashID.Rows[0][0].ToString());
+                    }
+                }
+                else
+                {
+                    cashID = 0;
+                }
+
+                objData.CommitTransaction(ref strErr);
+
+
+
+            }
+            else
+            {
+                MessageBox.Show("Cash memo not Created on the system");
+                objData.Rollback(ref strErr);
+            }
+        }
+
+       
+
         private void btnGridDelete_Click(object sender, EventArgs e)
         {
             if (Convert.ToInt32(dgvInvestigation.Rows.Count) - 1 > 0)
@@ -631,6 +732,12 @@ namespace hms.Forms
             objData.OpenConnection("AzharPC-Home", ref strErr);
             loadGrid();
             objData.CloseConnection();
+        }
+
+        private void btnedit_Click(object sender, EventArgs e)
+        {
+            frmInvestigationSearchEdit fr = new frmInvestigationSearchEdit();
+            fr.Show();
         }
 
         

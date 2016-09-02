@@ -16,10 +16,6 @@ namespace hms.Forms
             InitializeComponent();
         }
 
-        private void frmInvestigationSearchEdit_Load(object sender, EventArgs e)
-        {
-
-            //this.reportViewer1.RefreshReport();
-        }
+        
     }
 }

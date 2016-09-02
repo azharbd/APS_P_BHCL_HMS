@@ -569,6 +569,7 @@
             this.btnedit.TabIndex = 54;
             this.btnedit.Text = "Edit";
             this.btnedit.UseVisualStyleBackColor = true;
+            this.btnedit.Click += new System.EventHandler(this.btnedit_Click);
             // 
             // btnprint
             // 
