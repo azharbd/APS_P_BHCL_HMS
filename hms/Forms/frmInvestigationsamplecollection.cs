@@ -31,7 +31,16 @@ namespace hms.Forms
 
         private void frmLoad()
         {
-            
+            txtInvestigation.Text = "";
+            chkNewCollection.Checked = false;
+            loadGrid();
+        }
+
+        private void loadGrid()
+        {
+            //throw new NotImplementedException();
+            string strSql = "";
+            strSql = "select ";
         }
     }
 }

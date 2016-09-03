@@ -33,12 +33,15 @@
             this.chkNewCollection = new System.Windows.Forms.CheckBox();
             this.lblclose = new System.Windows.Forms.Button();
             this.btnsave = new System.Windows.Forms.Button();
+            this.SL = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.SL});
             this.dataGridView1.Location = new System.Drawing.Point(38, 75);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(812, 636);
@@ -81,6 +84,11 @@
             this.btnsave.TabIndex = 5;
             this.btnsave.UseVisualStyleBackColor = true;
             // 
+            // SL
+            // 
+            this.SL.HeaderText = "Sl NO";
+            this.SL.Name = "SL";
+            // 
             // frmInvestigationsamplecollection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -107,5 +115,6 @@
         private System.Windows.Forms.CheckBox chkNewCollection;
         private System.Windows.Forms.Button lblclose;
         private System.Windows.Forms.Button btnsave;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn SL;
     }
 }

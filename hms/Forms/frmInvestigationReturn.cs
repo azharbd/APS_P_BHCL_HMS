@@ -83,10 +83,6 @@ namespace hms.Forms
 
                 string[] arrinv = strVal.Split(new string[] { "/" }, StringSplitOptions.None);
 
-                //MessageBox.Show(arrinv.Length.ToString());
-                //MessageBox.Show(arrinv[0].ToString());
-                //MessageBox.Show(arrinv[1].ToString());
-                //MessageBox.Show(arrinv[2].ToString());
 
                 if (arrinv.Length.ToString() == "3")
                 {
