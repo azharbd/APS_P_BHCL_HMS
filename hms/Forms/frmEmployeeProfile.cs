@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace hms.Forms
 {
-    public partial class frmDesignationSetup : Form
+    public partial class frmEmployeeProfile : Form
     {
-        public frmDesignationSetup()
+        public frmEmployeeProfile()
         {
             InitializeComponent();
         }
