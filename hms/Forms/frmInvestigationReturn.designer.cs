@@ -42,15 +42,26 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.gbAccountsInformation = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.gpAccountsInformation = new System.Windows.Forms.GroupBox();
+            this.dgvRetrurn = new System.Windows.Forms.DataGridView();
             this.txtcashmemoid = new System.Windows.Forms.TextBox();
             this.btnclose = new System.Windows.Forms.Button();
             this.btnsave = new System.Windows.Forms.Button();
             this.btnnew = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lblDoctor = new System.Windows.Forms.Label();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.SL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbPatientInformation.SuspendLayout();
-            this.gbAccountsInformation.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.gpAccountsInformation.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRetrurn)).BeginInit();
             this.SuspendLayout();
             // 
             // lblInvestigationID
@@ -68,13 +79,15 @@
             this.txtInvestigationID.Name = "txtInvestigationID";
             this.txtInvestigationID.Size = new System.Drawing.Size(100, 20);
             this.txtInvestigationID.TabIndex = 1;
+            this.txtInvestigationID.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInvestigationID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInvestigationID_KeyPress);
             // 
             // lbltotaldue
             // 
             this.lbltotaldue.AutoSize = true;
             this.lbltotaldue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltotaldue.ForeColor = System.Drawing.Color.Black;
-            this.lbltotaldue.Location = new System.Drawing.Point(83, 150);
+            this.lbltotaldue.Location = new System.Drawing.Point(151, 149);
             this.lbltotaldue.Name = "lbltotaldue";
             this.lbltotaldue.Size = new System.Drawing.Size(63, 15);
             this.lbltotaldue.TabIndex = 49;
@@ -85,7 +98,7 @@
             this.lbltotalreturn.AutoSize = true;
             this.lbltotalreturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltotalreturn.ForeColor = System.Drawing.Color.Black;
-            this.lbltotalreturn.Location = new System.Drawing.Point(70, 123);
+            this.lbltotalreturn.Location = new System.Drawing.Point(151, 126);
             this.lbltotalreturn.Name = "lbltotalreturn";
             this.lbltotalreturn.Size = new System.Drawing.Size(77, 15);
             this.lbltotalreturn.TabIndex = 48;
@@ -96,7 +109,7 @@
             this.lbltotalpaid.AutoSize = true;
             this.lbltotalpaid.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltotalpaid.ForeColor = System.Drawing.Color.Black;
-            this.lbltotalpaid.Location = new System.Drawing.Point(81, 106);
+            this.lbltotalpaid.Location = new System.Drawing.Point(151, 109);
             this.lbltotalpaid.Name = "lbltotalpaid";
             this.lbltotalpaid.Size = new System.Drawing.Size(65, 15);
             this.lbltotalpaid.TabIndex = 47;
@@ -107,7 +120,7 @@
             this.lbltotalpayamount.AutoSize = true;
             this.lbltotalpayamount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltotalpayamount.ForeColor = System.Drawing.Color.Black;
-            this.lbltotalpayamount.Location = new System.Drawing.Point(16, 86);
+            this.lbltotalpayamount.Location = new System.Drawing.Point(151, 89);
             this.lbltotalpayamount.Name = "lbltotalpayamount";
             this.lbltotalpayamount.Size = new System.Drawing.Size(129, 15);
             this.lbltotalpayamount.TabIndex = 46;
@@ -118,7 +131,7 @@
             this.lblvat.AutoSize = true;
             this.lblvat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblvat.ForeColor = System.Drawing.Color.Black;
-            this.lblvat.Location = new System.Drawing.Point(119, 54);
+            this.lblvat.Location = new System.Drawing.Point(151, 57);
             this.lblvat.Name = "lblvat";
             this.lblvat.Size = new System.Drawing.Size(27, 15);
             this.lblvat.TabIndex = 45;
@@ -129,7 +142,7 @@
             this.lbltotaldiscount.AutoSize = true;
             this.lbltotaldiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltotaldiscount.ForeColor = System.Drawing.Color.Black;
-            this.lbltotaldiscount.Location = new System.Drawing.Point(57, 36);
+            this.lbltotaldiscount.Location = new System.Drawing.Point(151, 39);
             this.lbltotaldiscount.Name = "lbltotaldiscount";
             this.lbltotaldiscount.Size = new System.Drawing.Size(88, 15);
             this.lbltotaldiscount.TabIndex = 44;
@@ -140,7 +153,7 @@
             this.lbltotalamount.AutoSize = true;
             this.lbltotalamount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltotalamount.ForeColor = System.Drawing.Color.Black;
-            this.lbltotalamount.Location = new System.Drawing.Point(64, 18);
+            this.lbltotalamount.Location = new System.Drawing.Point(151, 21);
             this.lbltotalamount.Name = "lbltotalamount";
             this.lbltotalamount.Size = new System.Drawing.Size(82, 15);
             this.lbltotalamount.TabIndex = 43;
@@ -158,6 +171,9 @@
             // 
             // gbPatientInformation
             // 
+            this.gbPatientInformation.Controls.Add(this.lblDoctor);
+            this.gbPatientInformation.Controls.Add(this.lblAddress);
+            this.gbPatientInformation.Controls.Add(this.lblName);
             this.gbPatientInformation.Controls.Add(this.label1);
             this.gbPatientInformation.Controls.Add(this.label2);
             this.gbPatientInformation.Controls.Add(this.label3);
@@ -203,31 +219,40 @@
             this.label3.TabIndex = 42;
             this.label3.Text = "Name:";
             // 
-            // gbAccountsInformation
+            // gpAccountsInformation
             // 
-            this.gbAccountsInformation.Controls.Add(this.lbltotaldiscount);
-            this.gbAccountsInformation.Controls.Add(this.lbltotalamount);
-            this.gbAccountsInformation.Controls.Add(this.lbltotaldue);
-            this.gbAccountsInformation.Controls.Add(this.lblvat);
-            this.gbAccountsInformation.Controls.Add(this.lbltotalreturn);
-            this.gbAccountsInformation.Controls.Add(this.lbltotalpayamount);
-            this.gbAccountsInformation.Controls.Add(this.lbltotalpaid);
-            this.gbAccountsInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbAccountsInformation.ForeColor = System.Drawing.Color.Red;
-            this.gbAccountsInformation.Location = new System.Drawing.Point(541, 11);
-            this.gbAccountsInformation.Name = "gbAccountsInformation";
-            this.gbAccountsInformation.Size = new System.Drawing.Size(289, 169);
-            this.gbAccountsInformation.TabIndex = 51;
-            this.gbAccountsInformation.TabStop = false;
-            this.gbAccountsInformation.Text = "Accounts Information";
+            this.gpAccountsInformation.Controls.Add(this.label4);
+            this.gpAccountsInformation.Controls.Add(this.lbltotaldiscount);
+            this.gpAccountsInformation.Controls.Add(this.lbltotalamount);
+            this.gpAccountsInformation.Controls.Add(this.label5);
+            this.gpAccountsInformation.Controls.Add(this.lbltotaldue);
+            this.gpAccountsInformation.Controls.Add(this.label6);
+            this.gpAccountsInformation.Controls.Add(this.lblvat);
+            this.gpAccountsInformation.Controls.Add(this.lbltotalreturn);
+            this.gpAccountsInformation.Controls.Add(this.label7);
+            this.gpAccountsInformation.Controls.Add(this.lbltotalpayamount);
+            this.gpAccountsInformation.Controls.Add(this.lbltotalpaid);
+            this.gpAccountsInformation.Controls.Add(this.label8);
+            this.gpAccountsInformation.Controls.Add(this.label9);
+            this.gpAccountsInformation.Controls.Add(this.label10);
+            this.gpAccountsInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpAccountsInformation.ForeColor = System.Drawing.Color.Red;
+            this.gpAccountsInformation.Location = new System.Drawing.Point(541, 11);
+            this.gpAccountsInformation.Name = "gpAccountsInformation";
+            this.gpAccountsInformation.Size = new System.Drawing.Size(289, 169);
+            this.gpAccountsInformation.TabIndex = 51;
+            this.gpAccountsInformation.TabStop = false;
+            this.gpAccountsInformation.Text = "Accounts Information";
             // 
-            // dataGridView1
+            // dgvRetrurn
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 189);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(815, 549);
-            this.dataGridView1.TabIndex = 52;
+            this.dgvRetrurn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRetrurn.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.SL});
+            this.dgvRetrurn.Location = new System.Drawing.Point(15, 189);
+            this.dgvRetrurn.Name = "dgvRetrurn";
+            this.dgvRetrurn.Size = new System.Drawing.Size(815, 246);
+            this.dgvRetrurn.TabIndex = 52;
             // 
             // txtcashmemoid
             // 
@@ -255,6 +280,7 @@
             this.btnsave.Size = new System.Drawing.Size(30, 23);
             this.btnsave.TabIndex = 57;
             this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // btnnew
             // 
@@ -264,30 +290,148 @@
             this.btnnew.Size = new System.Drawing.Size(25, 23);
             this.btnnew.TabIndex = 54;
             this.btnnew.UseVisualStyleBackColor = true;
+            this.btnnew.Click += new System.EventHandler(this.btnnew_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(47, 39);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(88, 15);
+            this.label4.TabIndex = 51;
+            this.label4.Text = "Total Discount:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(54, 21);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(82, 15);
+            this.label5.TabIndex = 50;
+            this.label5.Text = "Total Amount:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(73, 150);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(63, 15);
+            this.label6.TabIndex = 56;
+            this.label6.Text = "Total Due:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(109, 57);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(27, 15);
+            this.label7.TabIndex = 52;
+            this.label7.Text = "Vat:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(60, 126);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(77, 15);
+            this.label8.TabIndex = 55;
+            this.label8.Text = "Total Return:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(6, 89);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(129, 15);
+            this.label9.TabIndex = 53;
+            this.label9.Text = "Total Payable Amount:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(71, 109);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(65, 15);
+            this.label10.TabIndex = 54;
+            this.label10.Text = "Total Paid:";
+            // 
+            // lblDoctor
+            // 
+            this.lblDoctor.AutoSize = true;
+            this.lblDoctor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDoctor.ForeColor = System.Drawing.Color.Black;
+            this.lblDoctor.Location = new System.Drawing.Point(62, 82);
+            this.lblDoctor.Name = "lblDoctor";
+            this.lblDoctor.Size = new System.Drawing.Size(46, 15);
+            this.lblDoctor.TabIndex = 47;
+            this.lblDoctor.Text = "Doctor:";
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress.ForeColor = System.Drawing.Color.Black;
+            this.lblAddress.Location = new System.Drawing.Point(62, 38);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(54, 15);
+            this.lblAddress.TabIndex = 46;
+            this.lblAddress.Text = "Address:";
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.Color.Black;
+            this.lblName.Location = new System.Drawing.Point(62, 17);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(44, 15);
+            this.lblName.TabIndex = 45;
+            this.lblName.Text = "Name:";
+            // 
+            // SL
+            // 
+            this.SL.HeaderText = "SL";
+            this.SL.Name = "SL";
             // 
             // frmInvestigationReturn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(835, 742);
+            this.ClientSize = new System.Drawing.Size(835, 447);
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.btnclose);
             this.Controls.Add(this.btnnew);
             this.Controls.Add(this.txtcashmemoid);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.gbAccountsInformation);
+            this.Controls.Add(this.dgvRetrurn);
+            this.Controls.Add(this.gpAccountsInformation);
             this.Controls.Add(this.gbPatientInformation);
             this.Controls.Add(this.lblaccountsinformation);
             this.Controls.Add(this.txtInvestigationID);
             this.Controls.Add(this.lblInvestigationID);
-            this.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "frmInvestigationReturn";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmInvestigationReturn";
+            this.Load += new System.EventHandler(this.frmInvestigationReturn_Load);
             this.gbPatientInformation.ResumeLayout(false);
             this.gbPatientInformation.PerformLayout();
-            this.gbAccountsInformation.ResumeLayout(false);
-            this.gbAccountsInformation.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.gpAccountsInformation.ResumeLayout(false);
+            this.gpAccountsInformation.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRetrurn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -309,11 +453,22 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.GroupBox gbAccountsInformation;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.GroupBox gpAccountsInformation;
+        private System.Windows.Forms.DataGridView dgvRetrurn;
         private System.Windows.Forms.TextBox txtcashmemoid;
         private System.Windows.Forms.Button btnnew;
         private System.Windows.Forms.Button btnclose;
         private System.Windows.Forms.Button btnsave;
+        private System.Windows.Forms.Label lblDoctor;
+        private System.Windows.Forms.Label lblAddress;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SL;
     }
 }
