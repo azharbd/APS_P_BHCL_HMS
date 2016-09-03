@@ -9,16 +9,16 @@ using System.Windows.Forms;
 
 namespace hms.Forms
 {
-    public partial class frmInvestigationReturn : Form
+    public partial class frmDepartmentSetup : Form
     {
-        public frmInvestigationReturn()
+        public frmDepartmentSetup()
         {
             InitializeComponent();
         }
 
-        private void btnclose_Click(object sender, EventArgs e)
+        private void frmDepartmentSetup_Load(object sender, EventArgs e)
         {
-            this.Close();
+
         }
     }
 }

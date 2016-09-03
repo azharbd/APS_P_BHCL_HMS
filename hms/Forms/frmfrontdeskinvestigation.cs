@@ -38,7 +38,13 @@ namespace hms.Forms
             getServices();
             getDocList();
             clearGrid();
+            getINvertigationID();
 
+        }
+
+        private void getINvertigationID()
+        {
+            //throw new NotImplementedException();
         }
 
         private void clearGrid()
@@ -153,6 +159,7 @@ namespace hms.Forms
             txtreceive.Text = "";
             txtReturn.Text = "";
             txtPayableAmount.Text = "";
+            txttotalamount.Text = "";
             hms.Include_Files.Utility.selectTestIds = "";
             
         }
@@ -404,6 +411,7 @@ namespace hms.Forms
      //       INSERT INTO [dbo_Patient_info]([Name],[PresentAddress],[Phone],[Year],[Month],[Day],[Gender],[PatientID],[BirthDate])
      //VALUES('',,'','',,,0,'',,'')
             objData = new C_Data_Batch();
+            strErr = "";
             objData.OpenConnection("AzharPC-Home", ref strErr);
             saveData();
             objData.CloseConnection();
@@ -668,7 +676,7 @@ namespace hms.Forms
             }
 
             int totalDueAmount = 0;
-            if (txttotaldue.ToString() == "")
+            if (txttotaldue.Text.ToString() == "")
             {
                 totalDueAmount = 0;
             }

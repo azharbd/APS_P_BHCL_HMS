@@ -233,6 +233,7 @@
             // 
             this.txtcashmemoid.Location = new System.Drawing.Point(113, 9);
             this.txtcashmemoid.Name = "txtcashmemoid";
+            this.txtcashmemoid.ReadOnly = true;
             this.txtcashmemoid.Size = new System.Drawing.Size(100, 20);
             this.txtcashmemoid.TabIndex = 53;
             // 
@@ -244,6 +245,7 @@
             this.btnclose.Size = new System.Drawing.Size(30, 23);
             this.btnclose.TabIndex = 56;
             this.btnclose.UseVisualStyleBackColor = true;
+            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
             // 
             // btnsave
             // 
@@ -256,6 +258,7 @@
             // 
             // btnnew
             // 
+            this.btnnew.Image = global::hms.Properties.Resources.ADD;
             this.btnnew.Location = new System.Drawing.Point(8, 2);
             this.btnnew.Name = "btnnew";
             this.btnnew.Size = new System.Drawing.Size(25, 23);
