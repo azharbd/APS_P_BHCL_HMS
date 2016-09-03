@@ -28,6 +28,38 @@ E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Properties.Res
 E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.csproj.GenerateResource.Cache
 E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.exe
 E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.pdb
+<<<<<<< HEAD
+F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Release\hms.exe.config
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.exe
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.pdb
+F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Release\Forms\DoctorsInformation.resx
+F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Release\Forms\DoctorsInformation.cs
+F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Release\Forms\DoctorsInformation.Designer.cs
+F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Release\Program.cs
+F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Release\hms.exe
+F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Release\hms.pdb
+F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Release\C_Data_Batch.dll
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.csprojResolveAssemblyReference.cache
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmDoctorsInformation.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmCategory.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmConsultantVisit.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmfrontdeskinvestigation.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Froms.frmfrontdeskinvetigationreturn.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Froms.frmHospitalDeposit.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmInvestigationDueCollection.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmInvestigationReturn.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmInvestigationsamplecollection.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmInvestigationSearchEdit.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Froms.frmlogin.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\Lab.From.frmPathologylab.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmReport.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmReportDelivery.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmServiceWiseList.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmserviceiteminformation.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Properties.Resources.resources
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.csproj.GenerateResource.Cache
+F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmHopitalAdmissionFront.resources
+=======
 D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\bin\Release\hms.exe.config
 D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.exe
 D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.pdb
@@ -58,3 +90,7 @@ D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmServiceWi
 D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmserviceiteminformation.resources
 D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Properties.Resources.resources
 D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.csproj.GenerateResource.Cache
+E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\bin\Release\hms.exe.config
+E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.exe
+E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.pdb
+>>>>>>> origin/master

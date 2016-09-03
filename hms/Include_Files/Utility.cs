@@ -29,6 +29,30 @@ namespace hms.Include_Files
             } 
         }
 
+
+
+
+        public bool IsDate(string date)
+        {
+
+            try
+            {
+
+                DateTime dt = DateTime.Parse(date);
+
+                return true;
+            }
+
+            catch
+            {
+
+                return false;
+
+            }
+
+        }
+
+
         
 
         

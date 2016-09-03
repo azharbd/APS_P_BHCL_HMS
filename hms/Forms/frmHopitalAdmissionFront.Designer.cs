@@ -1,4 +1,4 @@
-﻿namespace hms.Froms
+﻿namespace hms.Forms
 {
     partial class frmHopitalAdmissionFront
     {
@@ -35,29 +35,28 @@
             this.lblpermanetaddress = new System.Windows.Forms.Label();
             this.txtpresentaddress = new System.Windows.Forms.TextBox();
             this.lblpresentaddress = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtGuardianAddress = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.lblguardianaddress = new System.Windows.Forms.Label();
             this.txtguardian = new System.Windows.Forms.TextBox();
             this.lblGuardian = new System.Windows.Forms.Label();
             this.txtoccupation = new System.Windows.Forms.TextBox();
             this.lbloccupation = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtReligion = new System.Windows.Forms.TextBox();
             this.lblreligion = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtMotherName = new System.Windows.Forms.TextBox();
             this.lblMothername = new System.Windows.Forms.Label();
-            this.txtfatherhusbantname = new System.Windows.Forms.TextBox();
-            this.rbtnhusbantname = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.txtFatherOrHusbandname = new System.Windows.Forms.TextBox();
+            this.rbtnhusbandname = new System.Windows.Forms.RadioButton();
+            this.rbtnfathername = new System.Windows.Forms.RadioButton();
             this.lblGender = new System.Windows.Forms.Label();
             this.txtgender = new System.Windows.Forms.TextBox();
             this.txtyyy = new System.Windows.Forms.TextBox();
             this.txtmm = new System.Windows.Forms.TextBox();
             this.txtdd = new System.Windows.Forms.TextBox();
             this.lblAge = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPatientName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.txtadmissionid = new System.Windows.Forms.TextBox();
             this.lblAdmissionID = new System.Windows.Forms.Label();
@@ -91,41 +90,42 @@
             this.btndoctorsinformation = new System.Windows.Forms.Button();
             this.txtdoctorid = new System.Windows.Forms.TextBox();
             this.lblreferredby = new System.Windows.Forms.Label();
+            this.btnsave = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.gbadmission.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnsave);
             this.groupBox1.Controls.Add(this.txtphone);
             this.groupBox1.Controls.Add(this.lblphone);
             this.groupBox1.Controls.Add(this.txtpermanetaddress);
             this.groupBox1.Controls.Add(this.lblpermanetaddress);
             this.groupBox1.Controls.Add(this.txtpresentaddress);
             this.groupBox1.Controls.Add(this.lblpresentaddress);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.txtGuardianAddress);
             this.groupBox1.Controls.Add(this.textBox5);
             this.groupBox1.Controls.Add(this.lblguardianaddress);
             this.groupBox1.Controls.Add(this.txtguardian);
             this.groupBox1.Controls.Add(this.lblGuardian);
             this.groupBox1.Controls.Add(this.txtoccupation);
             this.groupBox1.Controls.Add(this.lbloccupation);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.txtReligion);
             this.groupBox1.Controls.Add(this.lblreligion);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtMotherName);
             this.groupBox1.Controls.Add(this.lblMothername);
-            this.groupBox1.Controls.Add(this.txtfatherhusbantname);
-            this.groupBox1.Controls.Add(this.rbtnhusbantname);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.txtFatherOrHusbandname);
+            this.groupBox1.Controls.Add(this.rbtnhusbandname);
+            this.groupBox1.Controls.Add(this.rbtnfathername);
             this.groupBox1.Controls.Add(this.lblGender);
             this.groupBox1.Controls.Add(this.txtgender);
             this.groupBox1.Controls.Add(this.txtyyy);
             this.groupBox1.Controls.Add(this.txtmm);
             this.groupBox1.Controls.Add(this.txtdd);
             this.groupBox1.Controls.Add(this.lblAge);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtPatientName);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.txtadmissionid);
             this.groupBox1.Controls.Add(this.lblAdmissionID);
@@ -198,13 +198,13 @@
             this.lblpresentaddress.TabIndex = 25;
             this.lblpresentaddress.Text = "Present Address";
             // 
-            // textBox6
+            // txtGuardianAddress
             // 
-            this.textBox6.Location = new System.Drawing.Point(110, 184);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(312, 48);
-            this.textBox6.TabIndex = 24;
+            this.txtGuardianAddress.Location = new System.Drawing.Point(110, 184);
+            this.txtGuardianAddress.Multiline = true;
+            this.txtGuardianAddress.Name = "txtGuardianAddress";
+            this.txtGuardianAddress.Size = new System.Drawing.Size(312, 48);
+            this.txtGuardianAddress.TabIndex = 24;
             // 
             // textBox5
             // 
@@ -260,12 +260,12 @@
             this.lbloccupation.TabIndex = 19;
             this.lbloccupation.Text = "Occupation";
             // 
-            // textBox4
+            // txtReligion
             // 
-            this.textBox4.Location = new System.Drawing.Point(110, 137);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(109, 21);
-            this.textBox4.TabIndex = 18;
+            this.txtReligion.Location = new System.Drawing.Point(110, 137);
+            this.txtReligion.Name = "txtReligion";
+            this.txtReligion.Size = new System.Drawing.Size(109, 21);
+            this.txtReligion.TabIndex = 18;
             // 
             // lblreligion
             // 
@@ -278,12 +278,12 @@
             this.lblreligion.TabIndex = 17;
             this.lblreligion.Text = "Religion";
             // 
-            // textBox3
+            // txtMotherName
             // 
-            this.textBox3.Location = new System.Drawing.Point(110, 113);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(312, 21);
-            this.textBox3.TabIndex = 16;
+            this.txtMotherName.Location = new System.Drawing.Point(110, 113);
+            this.txtMotherName.Name = "txtMotherName";
+            this.txtMotherName.Size = new System.Drawing.Size(312, 21);
+            this.txtMotherName.TabIndex = 16;
             // 
             // lblMothername
             // 
@@ -296,38 +296,38 @@
             this.lblMothername.TabIndex = 15;
             this.lblMothername.Text = "Mother Name";
             // 
-            // txtfatherhusbantname
+            // txtFatherOrHusbandname
             // 
-            this.txtfatherhusbantname.Location = new System.Drawing.Point(168, 89);
-            this.txtfatherhusbantname.Name = "txtfatherhusbantname";
-            this.txtfatherhusbantname.Size = new System.Drawing.Size(254, 21);
-            this.txtfatherhusbantname.TabIndex = 14;
+            this.txtFatherOrHusbandname.Location = new System.Drawing.Point(168, 89);
+            this.txtFatherOrHusbandname.Name = "txtFatherOrHusbandname";
+            this.txtFatherOrHusbandname.Size = new System.Drawing.Size(254, 21);
+            this.txtFatherOrHusbandname.TabIndex = 14;
             // 
-            // rbtnhusbantname
+            // rbtnhusbandname
             // 
-            this.rbtnhusbantname.AutoSize = true;
-            this.rbtnhusbantname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnhusbantname.ForeColor = System.Drawing.Color.Black;
-            this.rbtnhusbantname.Location = new System.Drawing.Point(61, 91);
-            this.rbtnhusbantname.Name = "rbtnhusbantname";
-            this.rbtnhusbantname.Size = new System.Drawing.Size(108, 19);
-            this.rbtnhusbantname.TabIndex = 13;
-            this.rbtnhusbantname.TabStop = true;
-            this.rbtnhusbantname.Text = "Husbant Name";
-            this.rbtnhusbantname.UseVisualStyleBackColor = true;
+            this.rbtnhusbandname.AutoSize = true;
+            this.rbtnhusbandname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnhusbandname.ForeColor = System.Drawing.Color.Black;
+            this.rbtnhusbandname.Location = new System.Drawing.Point(61, 91);
+            this.rbtnhusbandname.Name = "rbtnhusbandname";
+            this.rbtnhusbandname.Size = new System.Drawing.Size(112, 19);
+            this.rbtnhusbandname.TabIndex = 13;
+            this.rbtnhusbandname.TabStop = true;
+            this.rbtnhusbandname.Text = "Husband Name";
+            this.rbtnhusbandname.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbtnfathername
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.radioButton1.Location = new System.Drawing.Point(4, 91);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(60, 19);
-            this.radioButton1.TabIndex = 12;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Father";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbtnfathername.AutoSize = true;
+            this.rbtnfathername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnfathername.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.rbtnfathername.Location = new System.Drawing.Point(4, 91);
+            this.rbtnfathername.Name = "rbtnfathername";
+            this.rbtnfathername.Size = new System.Drawing.Size(60, 19);
+            this.rbtnfathername.TabIndex = 12;
+            this.rbtnfathername.TabStop = true;
+            this.rbtnfathername.Text = "Father";
+            this.rbtnfathername.UseVisualStyleBackColor = true;
             // 
             // lblGender
             // 
@@ -379,12 +379,12 @@
             this.lblAge.TabIndex = 6;
             this.lblAge.Text = "Age";
             // 
-            // textBox2
+            // txtPatientName
             // 
-            this.textBox2.Location = new System.Drawing.Point(44, 42);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(378, 21);
-            this.textBox2.TabIndex = 5;
+            this.txtPatientName.Location = new System.Drawing.Point(44, 42);
+            this.txtPatientName.Name = "txtPatientName";
+            this.txtPatientName.Size = new System.Drawing.Size(378, 21);
+            this.txtPatientName.TabIndex = 5;
             // 
             // label1
             // 
@@ -396,13 +396,6 @@
             this.label1.Size = new System.Drawing.Size(41, 15);
             this.label1.TabIndex = 4;
             this.label1.Text = "Name";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(159, 20);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(73, 21);
-            this.textBox1.TabIndex = 3;
             // 
             // button1
             // 
@@ -727,6 +720,16 @@
             this.lblreferredby.TabIndex = 0;
             this.lblreferredby.Text = "Referred By";
             // 
+            // btnsave
+            // 
+            this.btnsave.Image = global::hms.Properties.Resources.SAVE;
+            this.btnsave.Location = new System.Drawing.Point(294, 12);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(36, 22);
+            this.btnsave.TabIndex = 31;
+            this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
+            // 
             // frmHopitalAdmissionFront
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -749,22 +752,21 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtReligion;
         private System.Windows.Forms.Label lblreligion;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtMotherName;
         private System.Windows.Forms.Label lblMothername;
-        private System.Windows.Forms.TextBox txtfatherhusbantname;
-        private System.Windows.Forms.RadioButton rbtnhusbantname;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.TextBox txtFatherOrHusbandname;
+        private System.Windows.Forms.RadioButton rbtnhusbandname;
+        private System.Windows.Forms.RadioButton rbtnfathername;
         private System.Windows.Forms.Label lblGender;
         private System.Windows.Forms.TextBox txtgender;
         private System.Windows.Forms.TextBox txtyyy;
         private System.Windows.Forms.TextBox txtmm;
         private System.Windows.Forms.TextBox txtdd;
         private System.Windows.Forms.Label lblAge;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPatientName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtadmissionid;
         private System.Windows.Forms.Label lblAdmissionID;
@@ -774,7 +776,7 @@
         private System.Windows.Forms.Label lblpermanetaddress;
         private System.Windows.Forms.TextBox txtpresentaddress;
         private System.Windows.Forms.Label lblpresentaddress;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtGuardianAddress;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label lblguardianaddress;
         private System.Windows.Forms.TextBox txtguardian;
@@ -811,5 +813,6 @@
         private System.Windows.Forms.TextBox txtadvance;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Button btnsave;
     }
 }
