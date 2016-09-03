@@ -20,5 +20,10 @@ namespace hms.Forms
         {
 
         }
+
+        private void btnsearch_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
