@@ -73,7 +73,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnsave = new System.Windows.Forms.Button();
-            this.btndelect = new System.Windows.Forms.Button();
             this.btnprint = new System.Windows.Forms.Button();
             this.btnclose = new System.Windows.Forms.Button();
             this.cmbInvestigation = new System.Windows.Forms.ComboBox();
@@ -150,6 +149,7 @@
             this.txtpaidamount.Name = "txtpaidamount";
             this.txtpaidamount.Size = new System.Drawing.Size(77, 20);
             this.txtpaidamount.TabIndex = 42;
+            this.txtpaidamount.TextChanged += new System.EventHandler(this.txtpaidamount_TextChanged);
             // 
             // lblpaidamount
             // 
@@ -195,6 +195,7 @@
             this.txtpersentance.Name = "txtpersentance";
             this.txtpersentance.Size = new System.Drawing.Size(54, 20);
             this.txtpersentance.TabIndex = 35;
+            this.txtpersentance.TextChanged += new System.EventHandler(this.txtpersentance_TextChanged);
             // 
             // lblpersentance
             // 
@@ -546,20 +547,12 @@
             // btnsave
             // 
             this.btnsave.Image = global::hms.Properties.Resources.SAVE;
-            this.btnsave.Location = new System.Drawing.Point(715, 2);
+            this.btnsave.Location = new System.Drawing.Point(752, 3);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(30, 23);
             this.btnsave.TabIndex = 55;
             this.btnsave.UseVisualStyleBackColor = true;
-            // 
-            // btndelect
-            // 
-            this.btndelect.Image = global::hms.Properties.Resources.DELETE;
-            this.btndelect.Location = new System.Drawing.Point(752, 3);
-            this.btndelect.Name = "btndelect";
-            this.btndelect.Size = new System.Drawing.Size(30, 23);
-            this.btndelect.TabIndex = 56;
-            this.btndelect.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // btnprint
             // 
@@ -569,6 +562,7 @@
             this.btnprint.Size = new System.Drawing.Size(30, 23);
             this.btnprint.TabIndex = 57;
             this.btnprint.UseVisualStyleBackColor = true;
+            this.btnprint.Click += new System.EventHandler(this.btnprint_Click);
             // 
             // btnclose
             // 
@@ -578,6 +572,7 @@
             this.btnclose.Size = new System.Drawing.Size(30, 23);
             this.btnclose.TabIndex = 58;
             this.btnclose.UseVisualStyleBackColor = true;
+            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
             // 
             // cmbInvestigation
             // 
@@ -600,7 +595,7 @@
             // btnNew
             // 
             this.btnNew.Image = global::hms.Properties.Resources.ADD;
-            this.btnNew.Location = new System.Drawing.Point(677, 1);
+            this.btnNew.Location = new System.Drawing.Point(714, 2);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(32, 23);
             this.btnNew.TabIndex = 61;
@@ -616,7 +611,6 @@
             this.Controls.Add(this.cmbInvestigation);
             this.Controls.Add(this.btnclose);
             this.Controls.Add(this.btnprint);
-            this.Controls.Add(this.btndelect);
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.gbAccountsInformation);
             this.Controls.Add(this.gbPatientInformation);
@@ -691,7 +685,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnsave;
-        private System.Windows.Forms.Button btndelect;
         private System.Windows.Forms.Button btnprint;
         private System.Windows.Forms.Button btnclose;
         private System.Windows.Forms.ComboBox cmbInvestigation;

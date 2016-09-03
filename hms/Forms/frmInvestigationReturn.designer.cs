@@ -256,6 +256,7 @@
             // 
             // btnnew
             // 
+            this.btnnew.Image = global::hms.Properties.Resources.ADD;
             this.btnnew.Location = new System.Drawing.Point(8, 2);
             this.btnnew.Name = "btnnew";
             this.btnnew.Size = new System.Drawing.Size(25, 23);
