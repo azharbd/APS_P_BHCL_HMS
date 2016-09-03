@@ -16,14 +16,14 @@ namespace hms.Reports {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class rptServices : ReportClass {
+    public class rptduecollection : ReportClass {
         
-        public rptServices() {
+        public rptduecollection() {
         }
         
         public override string ResourceName {
             get {
-                return "rptServices.rpt";
+                return "rptduecollection.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace hms.Reports {
         
         public override string FullResourceName {
             get {
-                return "hms.Reports.rptServices.rpt";
+                return "hms.Reports.rptduecollection.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace hms.Reports {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedrptServices : Component, ICachedReport {
+    public class Cachedrptduecollection : Component, ICachedReport {
         
-        public CachedrptServices() {
+        public Cachedrptduecollection() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace hms.Reports {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            rptServices rpt = new rptServices();
+            rptduecollection rpt = new rptduecollection();
             rpt.Site = this.Site;
             return rpt;
         }
