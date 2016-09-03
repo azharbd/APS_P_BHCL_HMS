@@ -58,3 +58,6 @@ D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmServiceWi
 D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmserviceiteminformation.resources
 D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Properties.Resources.resources
 D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.csproj.GenerateResource.Cache
+D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\bin\Release\hms.exe.config
+D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.exe
+D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.pdb
