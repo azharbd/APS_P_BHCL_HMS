@@ -177,7 +177,7 @@ namespace hms.Forms
         private void getcalclalculation()
         {
             //throw new NotImplementedException();
-            int totalDiscountTake = 0;
+            int totalDiscountTake = 0; 
             int totalDiscountParsentence = 0;
 
             if (txtdiscount.Text.ToString() != "")
