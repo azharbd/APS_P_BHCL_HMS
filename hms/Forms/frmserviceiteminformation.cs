@@ -59,7 +59,7 @@ namespace hms.Forms
             strSQL = "select Category_id, Category_name from dbo_Service_Category order by Category_Name";
             DataTable arrcatList = objData.RetriveData(strSQL, ref strErr);
             objData.CloseConnection();
-
+            
             cmbCategory.Items.Clear();
             if (arrcatList.Rows.Count > 0)
             {

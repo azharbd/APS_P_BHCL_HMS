@@ -27,7 +27,8 @@ namespace hms
             //Application.Run(new hms.Forms.frmServiceWiseList());
             //Application.Run(new hms.Forms.frmfrontdeskinvestigation());
             //Application.Run(new hms.Forms.frmInvestigationSearchEdit());
-            Application.Run(new hms.Forms.frmInvestigationDueCollection());
+            //Application.Run(new hms.Forms.frmInvestigationDueCollection());
+            Application.Run(new hms.Forms.frmHopitalAdmissionFront());
         }
     }
 
