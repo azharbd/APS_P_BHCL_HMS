@@ -143,6 +143,7 @@
             this.Controls.Add(this.lbldesigID);
             this.Name = "frmDesignationSetup";
             this.Text = "frmDesignationSetup";
+            this.Load += new System.EventHandler(this.frmDesignationSetup_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDensignati)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

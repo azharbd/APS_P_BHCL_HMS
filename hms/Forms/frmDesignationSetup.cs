@@ -20,5 +20,10 @@ namespace hms.Forms
         {
 
         }
+
+        private void frmDesignationSetup_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

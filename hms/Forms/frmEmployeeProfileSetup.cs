@@ -28,7 +28,7 @@ namespace hms.Forms
 
         private void frmEmployeeProfileSetup_Load(object sender, EventArgs e)
         {
-
+                 
         }
     }
 }

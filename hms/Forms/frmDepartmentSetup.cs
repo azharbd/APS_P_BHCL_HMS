@@ -15,5 +15,10 @@ namespace hms.Forms
         {
             InitializeComponent();
         }
+
+        private void frmDepartmentSetup_Load(object sender, EventArgs e)
+        {
+             
+        }
     }
 }
