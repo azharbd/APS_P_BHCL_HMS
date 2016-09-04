@@ -87,6 +87,24 @@
     <Compile Include="Forms\frmConsultantVisit.designer.cs">
       <DependentUpon>frmConsultantVisit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmDerpartmentSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDerpartmentSetup.designer.cs">
+      <DependentUpon>frmDerpartmentSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDesignationSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDesignationSetup.designer.cs">
+      <DependentUpon>frmDesignationSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEmployeeProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEmployeeProfile.designer.cs">
+      <DependentUpon>frmEmployeeProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmfrontdeskinvestigation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,6 +240,15 @@
     <EmbeddedResource Include="Forms\frmConsultantVisit.resx">
       <DependentUpon>frmConsultantVisit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDerpartmentSetup.resx">
+      <DependentUpon>frmDerpartmentSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDesignationSetup.resx">
+      <DependentUpon>frmDesignationSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEmployeeProfile.resx">
+      <DependentUpon>frmEmployeeProfile.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmfrontdeskinvestigation.resx">
       <DependentUpon>frmfrontdeskinvestigation.cs</DependentUpon>
     </EmbeddedResource>
@@ -264,6 +291,27 @@
     <EmbeddedResource Include="Forms\frmserviceiteminformation.resx">
       <DependentUpon>frmserviceiteminformation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\x86\Release\hms.Forms.frmCategory.resources" />
+    <EmbeddedResource Include="obj\x86\Release\hms.Forms.frmConsultantVisit.resources" />
+    <EmbeddedResource Include="obj\x86\Release\hms.Forms.frmDerpartmentSetup.resources" />
+    <EmbeddedResource Include="obj\x86\Release\hms.Forms.frmDesignationSetup.resources" />
+    <EmbeddedResource Include="obj\x86\Release\hms.Forms.frmDoctorsInformation.resources" />
+    <EmbeddedResource Include="obj\x86\Release\hms.Forms.frmEmployeeProfile.resources" />
+    <EmbeddedResource Include="obj\x86\Release\hms.Forms.frmfrontdeskinvestigation.resources" />
+    <EmbeddedResource Include="obj\x86\Release\hms.Forms.frmHopitalAdmissionFront.resources" />
+    <EmbeddedResource Include="obj\x86\Release\hms.Forms.frmInvestigationDueCollection.resources" />
+    <EmbeddedResource Include="obj\x86\Release\hms.Forms.frmInvestigationReturn.resources" />
+    <EmbeddedResource Include="obj\x86\Release\hms.Forms.frmInvestigationsamplecollection.resources" />
+    <EmbeddedResource Include="obj\x86\Release\hms.Forms.frmInvestigationSearchEdit.resources" />
+    <EmbeddedResource Include="obj\x86\Release\hms.Forms.frmReport.resources" />
+    <EmbeddedResource Include="obj\x86\Release\hms.Forms.frmReportDelivery.resources" />
+    <EmbeddedResource Include="obj\x86\Release\hms.Forms.frmserviceiteminformation.resources" />
+    <EmbeddedResource Include="obj\x86\Release\hms.Forms.frmServiceWiseList.resources" />
+    <EmbeddedResource Include="obj\x86\Release\hms.Froms.frmfrontdeskinvetigationreturn.resources" />
+    <EmbeddedResource Include="obj\x86\Release\hms.Froms.frmHospitalDeposit.resources" />
+    <EmbeddedResource Include="obj\x86\Release\hms.Froms.frmlogin.resources" />
+    <EmbeddedResource Include="obj\x86\Release\hms.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\x86\Release\Lab.From.frmPathologylab.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -290,6 +338,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="bin\Debug\hms.vshost.exe.manifest" />
+    <None Include="obj\x86\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\x86\Release\hms.csproj.GenerateResource.Cache" />
+    <None Include="obj\x86\Release\hms.csprojResolveAssemblyReference.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -332,7 +383,9 @@
     <Content Include="bin\Debug\hms.exe" />
     <Content Include="bin\Debug\hms.pdb" />
     <Content Include="bin\Debug\hms.vshost.exe" />
-    <Content Include="obj\x86\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="obj\x86\Release\hms.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\x86\Release\hms.exe" />
+    <Content Include="obj\x86\Release\hms.pdb" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
