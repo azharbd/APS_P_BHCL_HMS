@@ -1,136 +1,8 @@
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\bin\Release\hms.exe.config
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\bin\Release\Forms\DoctorsInformation.resx
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\bin\Release\Forms\DoctorsInformation.cs
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\bin\Release\Forms\DoctorsInformation.Designer.cs
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\bin\Release\Program.cs
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\bin\Release\hms.exe
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\bin\Release\hms.pdb
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\bin\Release\C_Data_Batch.dll
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.csprojResolveAssemblyReference.cache
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmDoctorsInformation.resources
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmCategory.resources
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmConsultantVisit.resources
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmfrontdeskinvestigation.resources
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Froms.frmfrontdeskinvetigationreturn.resources
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Froms.frmHopitalAdmissionFront.resources
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Froms.frmHospitalDeposit.resources
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmInvestigationDueCollection.resources
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmInvestigationReturn.resources
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmInvestigationsamplecollection.resources
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmInvestigationSearchEdit.resources
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Froms.frmlogin.resources
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\Lab.From.frmPathologylab.resources
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmReport.resources
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmReportDelivery.resources
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmServiceWiseList.resources
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmserviceiteminformation.resources
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Properties.Resources.resources
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.csproj.GenerateResource.Cache
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.exe
-E:\APS_P_BHDCL_HMS_Updated\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.pdb
-<<<<<<< HEAD
-F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Release\hms.exe.config
-F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.exe
-F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.pdb
-F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Release\Forms\DoctorsInformation.resx
-F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Release\Forms\DoctorsInformation.cs
-F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Release\Forms\DoctorsInformation.Designer.cs
-F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Release\Program.cs
-F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Release\hms.exe
-F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Release\hms.pdb
-F:\Dot net project\APS_P_BHCL_HMS\hms\bin\Release\C_Data_Batch.dll
-F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.csprojResolveAssemblyReference.cache
-F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmDoctorsInformation.resources
-F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmCategory.resources
-F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmConsultantVisit.resources
-F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmfrontdeskinvestigation.resources
-F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Froms.frmfrontdeskinvetigationreturn.resources
-F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Froms.frmHospitalDeposit.resources
-F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmInvestigationDueCollection.resources
-F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmInvestigationReturn.resources
-F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmInvestigationsamplecollection.resources
-F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmInvestigationSearchEdit.resources
-F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Froms.frmlogin.resources
-F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\Lab.From.frmPathologylab.resources
-F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmReport.resources
-F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmReportDelivery.resources
-F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmServiceWiseList.resources
-F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmserviceiteminformation.resources
-F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Properties.Resources.resources
-F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.csproj.GenerateResource.Cache
-F:\Dot net project\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmHopitalAdmissionFront.resources
-=======
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\bin\Release\hms.exe.config
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.exe
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.pdb
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\bin\Release\Forms\DoctorsInformation.resx
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\bin\Release\Forms\DoctorsInformation.cs
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\bin\Release\Forms\DoctorsInformation.Designer.cs
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\bin\Release\Program.cs
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\bin\Release\hms.exe
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\bin\Release\hms.pdb
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\bin\Release\C_Data_Batch.dll
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.csprojResolveAssemblyReference.cache
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmDoctorsInformation.resources
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmCategory.resources
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmConsultantVisit.resources
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmfrontdeskinvestigation.resources
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Froms.frmfrontdeskinvetigationreturn.resources
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Froms.frmHopitalAdmissionFront.resources
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Froms.frmHospitalDeposit.resources
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmInvestigationDueCollection.resources
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmInvestigationReturn.resources
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmInvestigationsamplecollection.resources
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmInvestigationSearchEdit.resources
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Froms.frmlogin.resources
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\Lab.From.frmPathologylab.resources
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmReport.resources
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmReportDelivery.resources
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmServiceWiseList.resources
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmserviceiteminformation.resources
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Properties.Resources.resources
-D:\ASP_P_BHDCL_HMS_New\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.csproj.GenerateResource.Cache
-E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\bin\Release\hms.exe.config
-E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.exe
-E:\APS_P_BHDCL_HMS\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.pdb
->>>>>>> origin/master
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.exe
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.pdb
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\bin\Release\Forms\DoctorsInformation.resx
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\bin\Release\Forms\DoctorsInformation.cs
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\bin\Release\Forms\DoctorsInformation.Designer.cs
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\bin\Release\Program.cs
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\bin\Release\hms.exe.config
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\bin\Release\hms.exe
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\bin\Release\hms.pdb
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\bin\Release\C_Data_Batch.dll
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.csprojResolveAssemblyReference.cache
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmDoctorsInformation.resources
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmCategory.resources
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmConsultantVisit.resources
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmfrontdeskinvestigation.resources
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Froms.frmfrontdeskinvetigationreturn.resources
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmHopitalAdmissionFront.resources
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Froms.frmHospitalDeposit.resources
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmInvestigationDueCollection.resources
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmInvestigationReturn.resources
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmInvestigationsamplecollection.resources
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmInvestigationSearchEdit.resources
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Froms.frmlogin.resources
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\Lab.From.frmPathologylab.resources
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmReport.resources
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmReportDelivery.resources
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmServiceWiseList.resources
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmserviceiteminformation.resources
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Properties.Resources.resources
-D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.csproj.GenerateResource.Cache
-C:\Users\Bdjobs\Desktop\hms_update\APS_P_BHCL_HMS\hms\bin\Release\hms.exe.config
-C:\Users\Bdjobs\Desktop\hms_update\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.exe
-C:\Users\Bdjobs\Desktop\hms_update\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.pdb
 C:\Users\Bdjobs\Desktop\hms_update\APS_P_BHCL_HMS\hms\bin\Release\Forms\DoctorsInformation.resx
 C:\Users\Bdjobs\Desktop\hms_update\APS_P_BHCL_HMS\hms\bin\Release\Forms\DoctorsInformation.cs
 C:\Users\Bdjobs\Desktop\hms_update\APS_P_BHCL_HMS\hms\bin\Release\Forms\DoctorsInformation.Designer.cs
 C:\Users\Bdjobs\Desktop\hms_update\APS_P_BHCL_HMS\hms\bin\Release\Program.cs
+C:\Users\Bdjobs\Desktop\hms_update\APS_P_BHCL_HMS\hms\bin\Release\hms.exe.config
 C:\Users\Bdjobs\Desktop\hms_update\APS_P_BHCL_HMS\hms\bin\Release\hms.exe
 C:\Users\Bdjobs\Desktop\hms_update\APS_P_BHCL_HMS\hms\bin\Release\hms.pdb
 C:\Users\Bdjobs\Desktop\hms_update\APS_P_BHCL_HMS\hms\bin\Release\C_Data_Batch.dll
@@ -157,3 +29,5 @@ C:\Users\Bdjobs\Desktop\hms_update\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.
 C:\Users\Bdjobs\Desktop\hms_update\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmserviceiteminformation.resources
 C:\Users\Bdjobs\Desktop\hms_update\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Properties.Resources.resources
 C:\Users\Bdjobs\Desktop\hms_update\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.csproj.GenerateResource.Cache
+C:\Users\Bdjobs\Desktop\hms_update\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.exe
+C:\Users\Bdjobs\Desktop\hms_update\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.pdb
