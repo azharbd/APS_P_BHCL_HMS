@@ -124,3 +124,6 @@ D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmService
 D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmserviceiteminformation.resources
 D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Properties.Resources.resources
 D:\APS_BHDCL_HMS_Upadate\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.csproj.GenerateResource.Cache
+C:\Users\Bdjobs\Desktop\hms_update\APS_P_BHCL_HMS\hms\bin\Release\hms.exe.config
+C:\Users\Bdjobs\Desktop\hms_update\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.exe
+C:\Users\Bdjobs\Desktop\hms_update\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.pdb
