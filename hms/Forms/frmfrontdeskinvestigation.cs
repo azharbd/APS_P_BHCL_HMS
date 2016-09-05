@@ -81,7 +81,7 @@ namespace hms.Forms
         {
             //throw new NotImplementedException();
             string strSQL = "";
-            strSQL = "select Service_ID, Service_Name from Dbo_Services order by Service_Name";
+            strSQL = "select Service_ID, Service_Name from Dbo_Services where Service_Name like'%" + txtSearchServices.Text.ToString() + "%' order by Service_Name";
             DataTable arrDocList = objData.RetriveData(strSQL, ref strErr);
             lsttestname.Items.Clear();
             if (arrDocList.Rows.Count > 0)
@@ -747,6 +747,29 @@ namespace hms.Forms
             frmInvestigationSearchEdit fr = new frmInvestigationSearchEdit();
             fr.Show();
         }
+
+        private void txtSearchServices_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            //txtSearchServices.Text.ToString() == "0")
+            {
+                if (txtSearchServices.Text.ToString() == "0")
+                {
+                    frmserviceiteminformation fr = new frmserviceiteminformation();
+                    fr.Show();
+                }
+            }
+            else
+            {
+                objData = new C_Data_Batch();
+                objData.OpenConnection("AzharPC-Home", ref strErr);
+                getServices();
+                objData.CloseConnection();
+            }
+        }
+
+
+        
 
         
     }

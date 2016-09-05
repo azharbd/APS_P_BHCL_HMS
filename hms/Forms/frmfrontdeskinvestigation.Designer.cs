@@ -586,6 +586,8 @@
             this.txtSearchServices.Name = "txtSearchServices";
             this.txtSearchServices.Size = new System.Drawing.Size(406, 20);
             this.txtSearchServices.TabIndex = 56;
+            this.txtSearchServices.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearchServices_KeyPress);
+            //this.txtSearchServices.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtSearchServices_KeyUp);
             // 
             // groupBox1
             // 
@@ -770,7 +772,6 @@
             // 
             // btnGridDelete
             // 
-            this.btnGridDelete.Image = global::hms.Properties.Resources.DELETE;
             this.btnGridDelete.Location = new System.Drawing.Point(20, 373);
             this.btnGridDelete.Name = "btnGridDelete";
             this.btnGridDelete.Size = new System.Drawing.Size(24, 20);

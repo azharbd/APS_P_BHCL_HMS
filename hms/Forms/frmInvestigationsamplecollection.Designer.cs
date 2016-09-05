@@ -28,24 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvSampleCollection = new System.Windows.Forms.DataGridView();
+            this.SL = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.txtInvestigation = new System.Windows.Forms.TextBox();
             this.chkNewCollection = new System.Windows.Forms.CheckBox();
             this.lblclose = new System.Windows.Forms.Button();
             this.btnsave = new System.Windows.Forms.Button();
-            this.SL = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.cachedrptServicesWiseTest1 = new hms.Reports.CachedrptServicesWiseTest();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSampleCollection)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvSampleCollection
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvSampleCollection.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSampleCollection.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.SL});
-            this.dataGridView1.Location = new System.Drawing.Point(38, 75);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(812, 636);
-            this.dataGridView1.TabIndex = 9;
+            this.dgvSampleCollection.Location = new System.Drawing.Point(38, 75);
+            this.dgvSampleCollection.Name = "dgvSampleCollection";
+            this.dgvSampleCollection.Size = new System.Drawing.Size(812, 636);
+            this.dgvSampleCollection.TabIndex = 9;
+            // 
+            // SL
+            // 
+            this.SL.HeaderText = "Sl NO";
+            this.SL.Name = "SL";
             // 
             // txtInvestigation
             // 
@@ -83,18 +89,14 @@
             this.btnsave.Size = new System.Drawing.Size(30, 23);
             this.btnsave.TabIndex = 5;
             this.btnsave.UseVisualStyleBackColor = true;
-            // 
-            // SL
-            // 
-            this.SL.HeaderText = "Sl NO";
-            this.SL.Name = "SL";
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // frmInvestigationsamplecollection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(888, 742);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvSampleCollection);
             this.Controls.Add(this.txtInvestigation);
             this.Controls.Add(this.chkNewCollection);
             this.Controls.Add(this.lblclose);
@@ -102,7 +104,7 @@
             this.Name = "frmInvestigationsamplecollection";
             this.Text = "frmInvestigationsamplecollection";
             this.Load += new System.EventHandler(this.frmInvestigationsamplecollection_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSampleCollection)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,11 +112,12 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvSampleCollection;
         private System.Windows.Forms.TextBox txtInvestigation;
         private System.Windows.Forms.CheckBox chkNewCollection;
         private System.Windows.Forms.Button lblclose;
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.DataGridViewCheckBoxColumn SL;
+        private Reports.CachedrptServicesWiseTest cachedrptServicesWiseTest1;
     }
 }
