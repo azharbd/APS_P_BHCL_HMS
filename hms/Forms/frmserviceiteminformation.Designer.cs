@@ -190,7 +190,7 @@
             // 
             // btnsave
             // 
-            //this.btnsave.Image = global::hms.Properties.Resources.SAVE;
+            this.btnsave.Image = global::hms.Properties.Resources.SAVE;
             this.btnsave.Location = new System.Drawing.Point(231, 4);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(40, 23);
@@ -200,7 +200,6 @@
             // 
             // btnedit
             // 
-            //this.btnedit.Image = global::hms.Properties.Resources.Edit;
             this.btnedit.Location = new System.Drawing.Point(271, 4);
             this.btnedit.Name = "btnedit";
             this.btnedit.Size = new System.Drawing.Size(38, 23);
@@ -210,7 +209,6 @@
             // 
             // btnpreview
             // 
-            //this.btnpreview.Image = global::hms.Properties.Resources.Preview;
             this.btnpreview.Location = new System.Drawing.Point(309, 4);
             this.btnpreview.Name = "btnpreview";
             this.btnpreview.Size = new System.Drawing.Size(40, 23);
@@ -220,7 +218,7 @@
             // 
             // btnnew
             // 
-            //this.btnnew.Image = global::hms.Properties.Resources.ADD;
+            this.btnnew.Image = global::hms.Properties.Resources.ADD;
             this.btnnew.Location = new System.Drawing.Point(194, 4);
             this.btnnew.Name = "btnnew";
             this.btnnew.Size = new System.Drawing.Size(38, 23);
@@ -230,7 +228,6 @@
             // 
             // btnclose
             // 
-            //this.btnclose.Image = global::hms.Properties.Resources.CLOSE;
             this.btnclose.Location = new System.Drawing.Point(344, 4);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(44, 23);
