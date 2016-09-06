@@ -43,10 +43,8 @@
             this.txtpc = new System.Windows.Forms.TextBox();
             this.lblPC = new System.Windows.Forms.Label();
             this.dgvServcieInformation = new System.Windows.Forms.DataGridView();
-            this.btnsave = new System.Windows.Forms.Button();
             this.btnedit = new System.Windows.Forms.Button();
             this.btnpreview = new System.Windows.Forms.Button();
-            this.btnnew = new System.Windows.Forms.Button();
             this.btnclose = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.cmbCategory = new System.Windows.Forms.ComboBox();
@@ -55,6 +53,8 @@
             this.lblSample = new System.Windows.Forms.Label();
             this.txtSample = new System.Windows.Forms.TextBox();
             this.chkSample = new System.Windows.Forms.CheckBox();
+            this.btnnew = new System.Windows.Forms.Button();
+            this.btnsave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServcieInformation)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +62,7 @@
             // 
             this.lblserviceid.AutoSize = true;
             this.lblserviceid.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblserviceid.Location = new System.Drawing.Point(12, 26);
+            this.lblserviceid.Location = new System.Drawing.Point(15, 29);
             this.lblserviceid.Name = "lblserviceid";
             this.lblserviceid.Size = new System.Drawing.Size(67, 13);
             this.lblserviceid.TabIndex = 0;
@@ -122,7 +122,7 @@
             // 
             this.lblservicename.AutoSize = true;
             this.lblservicename.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblservicename.Location = new System.Drawing.Point(12, 71);
+            this.lblservicename.Location = new System.Drawing.Point(15, 74);
             this.lblservicename.Name = "lblservicename";
             this.lblservicename.Size = new System.Drawing.Size(39, 13);
             this.lblservicename.TabIndex = 4;
@@ -173,7 +173,7 @@
             // 
             this.lblPC.AutoSize = true;
             this.lblPC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPC.Location = new System.Drawing.Point(9, 185);
+            this.lblPC.Location = new System.Drawing.Point(15, 185);
             this.lblPC.Name = "lblPC";
             this.lblPC.Size = new System.Drawing.Size(45, 13);
             this.lblPC.TabIndex = 12;
@@ -188,18 +188,9 @@
             this.dgvServcieInformation.TabIndex = 18;
             this.dgvServcieInformation.Click += new System.EventHandler(this.dgvServcieInformation_Click);
             // 
-            // btnsave
-            // 
-            this.btnsave.Image = global::hms.Properties.Resources.SAVE;
-            this.btnsave.Location = new System.Drawing.Point(231, 4);
-            this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(40, 23);
-            this.btnsave.TabIndex = 19;
-            this.btnsave.UseVisualStyleBackColor = true;
-            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
-            // 
             // btnedit
             // 
+            this.btnedit.Image = global::hms.Properties.Resources.Edit;
             this.btnedit.Location = new System.Drawing.Point(271, 4);
             this.btnedit.Name = "btnedit";
             this.btnedit.Size = new System.Drawing.Size(38, 23);
@@ -209,6 +200,7 @@
             // 
             // btnpreview
             // 
+            this.btnpreview.Image = global::hms.Properties.Resources.Preview;
             this.btnpreview.Location = new System.Drawing.Point(309, 4);
             this.btnpreview.Name = "btnpreview";
             this.btnpreview.Size = new System.Drawing.Size(40, 23);
@@ -216,18 +208,9 @@
             this.btnpreview.UseVisualStyleBackColor = true;
             this.btnpreview.Click += new System.EventHandler(this.btnpreview_Click);
             // 
-            // btnnew
-            // 
-            this.btnnew.Image = global::hms.Properties.Resources.ADD;
-            this.btnnew.Location = new System.Drawing.Point(194, 4);
-            this.btnnew.Name = "btnnew";
-            this.btnnew.Size = new System.Drawing.Size(38, 23);
-            this.btnnew.TabIndex = 22;
-            this.btnnew.UseVisualStyleBackColor = true;
-            this.btnnew.Click += new System.EventHandler(this.btnnew_Click);
-            // 
             // btnclose
             // 
+            this.btnclose.Image = global::hms.Properties.Resources.CLOSE;
             this.btnclose.Location = new System.Drawing.Point(344, 4);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(44, 23);
@@ -272,11 +255,12 @@
             // lblSample
             // 
             this.lblSample.AutoSize = true;
-            this.lblSample.Location = new System.Drawing.Point(12, 107);
+            this.lblSample.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSample.Location = new System.Drawing.Point(12, 100);
             this.lblSample.Name = "lblSample";
-            this.lblSample.Size = new System.Drawing.Size(35, 13);
+            this.lblSample.Size = new System.Drawing.Size(56, 15);
             this.lblSample.TabIndex = 28;
-            this.lblSample.Text = "label1";
+            this.lblSample.Text = "Sample";
             // 
             // txtSample
             // 
@@ -293,6 +277,26 @@
             this.chkSample.Size = new System.Drawing.Size(15, 14);
             this.chkSample.TabIndex = 30;
             this.chkSample.UseVisualStyleBackColor = true;
+            // 
+            // btnnew
+            // 
+            this.btnnew.Image = global::hms.Properties.Resources.ADD;
+            this.btnnew.Location = new System.Drawing.Point(194, 4);
+            this.btnnew.Name = "btnnew";
+            this.btnnew.Size = new System.Drawing.Size(38, 23);
+            this.btnnew.TabIndex = 22;
+            this.btnnew.UseVisualStyleBackColor = true;
+            this.btnnew.Click += new System.EventHandler(this.btnnew_Click);
+            // 
+            // btnsave
+            // 
+            this.btnsave.Image = global::hms.Properties.Resources.SAVE;
+            this.btnsave.Location = new System.Drawing.Point(231, 4);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(40, 23);
+            this.btnsave.TabIndex = 19;
+            this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // frmserviceiteminformation
             // 

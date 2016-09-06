@@ -543,41 +543,41 @@
             // 
             // btnnew
             // 
+            this.btnnew.Image = global::hms.Properties.Resources.ADD;
             this.btnnew.Location = new System.Drawing.Point(4, 3);
             this.btnnew.Name = "btnnew";
-            this.btnnew.Size = new System.Drawing.Size(75, 23);
+            this.btnnew.Size = new System.Drawing.Size(23, 23);
             this.btnnew.TabIndex = 52;
-            this.btnnew.Text = "New";
             this.btnnew.UseVisualStyleBackColor = true;
             this.btnnew.Click += new System.EventHandler(this.btnnew_Click);
             // 
             // btnsave
             // 
-            this.btnsave.Location = new System.Drawing.Point(76, 3);
+            this.btnsave.Image = global::hms.Properties.Resources.SAVE;
+            this.btnsave.Location = new System.Drawing.Point(29, 4);
             this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(75, 23);
+            this.btnsave.Size = new System.Drawing.Size(25, 23);
             this.btnsave.TabIndex = 53;
-            this.btnsave.Text = "Save";
             this.btnsave.UseVisualStyleBackColor = true;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // btnedit
             // 
-            this.btnedit.Location = new System.Drawing.Point(148, 3);
+            this.btnedit.Image = global::hms.Properties.Resources.Edit;
+            this.btnedit.Location = new System.Drawing.Point(55, 4);
             this.btnedit.Name = "btnedit";
-            this.btnedit.Size = new System.Drawing.Size(75, 23);
+            this.btnedit.Size = new System.Drawing.Size(22, 23);
             this.btnedit.TabIndex = 54;
-            this.btnedit.Text = "Edit";
             this.btnedit.UseVisualStyleBackColor = true;
             this.btnedit.Click += new System.EventHandler(this.btnedit_Click);
             // 
             // btnprint
             // 
-            this.btnprint.Location = new System.Drawing.Point(218, 3);
+            this.btnprint.Image = global::hms.Properties.Resources.PRINTMAN;
+            this.btnprint.Location = new System.Drawing.Point(79, 4);
             this.btnprint.Name = "btnprint";
-            this.btnprint.Size = new System.Drawing.Size(75, 23);
+            this.btnprint.Size = new System.Drawing.Size(31, 23);
             this.btnprint.TabIndex = 55;
-            this.btnprint.Text = "Print";
             this.btnprint.UseVisualStyleBackColor = true;
             // 
             // txtSearchServices
@@ -587,7 +587,6 @@
             this.txtSearchServices.Size = new System.Drawing.Size(406, 20);
             this.txtSearchServices.TabIndex = 56;
             this.txtSearchServices.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearchServices_KeyPress);
-            //this.txtSearchServices.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtSearchServices_KeyUp);
             // 
             // groupBox1
             // 
@@ -762,7 +761,7 @@
             // 
             // btnAddDoctor
             // 
-            this.btnAddDoctor.Location = new System.Drawing.Point(438, 44);
+            this.btnAddDoctor.Location = new System.Drawing.Point(435, 38);
             this.btnAddDoctor.Name = "btnAddDoctor";
             this.btnAddDoctor.Size = new System.Drawing.Size(25, 22);
             this.btnAddDoctor.TabIndex = 68;

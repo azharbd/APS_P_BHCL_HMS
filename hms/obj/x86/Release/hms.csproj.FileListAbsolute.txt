@@ -97,3 +97,4 @@ C:\Users\SH\Desktop\fhms\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmService
 C:\Users\SH\Desktop\fhms\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmserviceiteminformation.resources
 C:\Users\SH\Desktop\fhms\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Properties.Resources.resources
 C:\Users\SH\Desktop\fhms\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.csproj.GenerateResource.Cache
+C:\Users\SH\Desktop\fhms\APS_P_BHCL_HMS\hms\obj\x86\Release\hms.Forms.frmmainfrom.resources
