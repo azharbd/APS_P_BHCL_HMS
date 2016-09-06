@@ -1,4 +1,4 @@
-﻿namespace hms.Froms
+﻿namespace hms.Forms
 {
     partial class frmHospitalDeposit
     {
@@ -477,7 +477,7 @@
             this.Name = "frmHospitalDeposit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmHospitalDeposit";
-            this.Load += new System.EventHandler(this.frmHospitalDeposit_Load);
+            //this.Load += new System.EventHandler(this.frmHospitalDeposit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.gbPatientinformation.ResumeLayout(false);
             this.gbPatientinformation.PerformLayout();

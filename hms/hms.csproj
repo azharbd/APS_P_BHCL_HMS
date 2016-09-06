@@ -165,6 +165,12 @@
     <Compile Include="Forms\frmlogin.Designer.cs">
       <DependentUpon>frmlogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmmainfrom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +206,12 @@
     </Compile>
     <Compile Include="Forms\frmserviceiteminformation.Designer.cs">
       <DependentUpon>frmserviceiteminformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\NewTestFrm.cs">
       <SubType>Form</SubType>
@@ -282,6 +294,9 @@
     <EmbeddedResource Include="Forms\frmlogin.resx">
       <DependentUpon>frmlogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmmainfrom.resx">
       <DependentUpon>frmmainfrom.cs</DependentUpon>
     </EmbeddedResource>
@@ -299,6 +314,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmserviceiteminformation.resx">
       <DependentUpon>frmserviceiteminformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\x86\Release\hms.Forms.frmCategory.resources" />
     <EmbeddedResource Include="obj\x86\Release\hms.Forms.frmConsultantVisit.resources" />

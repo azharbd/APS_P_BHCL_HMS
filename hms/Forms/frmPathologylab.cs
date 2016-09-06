@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Lab.From
+namespace hms.Forms
 {
     public partial class frmPathologylab : Form
     {
@@ -17,6 +17,11 @@ namespace Lab.From
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmPathologylab_Load(object sender, EventArgs e)
         {
 
         }

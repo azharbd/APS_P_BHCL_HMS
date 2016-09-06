@@ -92,7 +92,7 @@ namespace hms.Forms
 
 
             objData = new C_Data_Batch();
-            objData.OpenConnection("AzharPC-Home", ref strErr);
+            objData.OpenConnection("SAKIL-PC", ref strErr);
             DataTable arrSample = objData.RetriveData(strSQL, ref strErr);
 
             DataSet ds = new DataSet();

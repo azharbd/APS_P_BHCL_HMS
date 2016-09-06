@@ -771,6 +771,7 @@
             // 
             // btnGridDelete
             // 
+            this.btnGridDelete.Image = global::hms.Properties.Resources.DELETE;
             this.btnGridDelete.Location = new System.Drawing.Point(20, 373);
             this.btnGridDelete.Name = "btnGridDelete";
             this.btnGridDelete.Size = new System.Drawing.Size(24, 20);
@@ -850,7 +851,7 @@
             this.Controls.Add(this.shapeContainer1);
             this.Name = "frmfrontdeskinvestigation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Front Desk Investigation";
+            this.Text = "R";
             this.Load += new System.EventHandler(this.frmfrontdeskinvestigation_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

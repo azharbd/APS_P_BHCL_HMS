@@ -750,11 +750,12 @@ namespace hms.Forms
 
         private void txtSearchServices_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == (char)13)
-            //txtSearchServices.Text.ToString() == "0")
+            if (txtSearchServices.Text.ToString() == "0")
             {
-                if (txtSearchServices.Text.ToString() == "0")
+                if (e.KeyChar == (char)13)
+                //txtSearchServices.Text.ToString() == "0")
                 {
+
                     frmserviceiteminformation fr = new frmserviceiteminformation();
                     fr.Show();
                 }

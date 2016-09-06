@@ -1,4 +1,4 @@
-﻿namespace Lab.From
+﻿namespace hms.Forms
 {
     partial class frmPathologylab
     {
@@ -34,18 +34,18 @@
             this.linklblReportcomplete = new System.Windows.Forms.LinkLabel();
             this.linklblreportapproved = new System.Windows.Forms.LinkLabel();
             this.gbtestcatagory = new System.Windows.Forms.GroupBox();
-            this.chkmicrobiology = new System.Windows.Forms.CheckBox();
-            this.chkimmunology = new System.Windows.Forms.CheckBox();
-            this.chkhormonetest = new System.Windows.Forms.CheckBox();
-            this.chkdrugmonitoring = new System.Windows.Forms.CheckBox();
-            this.chktorchpanel = new System.Windows.Forms.CheckBox();
-            this.chkcancermarker = new System.Windows.Forms.CheckBox();
-            this.chkhematology = new System.Windows.Forms.CheckBox();
-            this.chkserology = new System.Windows.Forms.CheckBox();
-            this.chkdrgsofabusetoxity = new System.Windows.Forms.CheckBox();
             this.chkbiochemicalexaz = new System.Windows.Forms.CheckBox();
             this.chkhistopathology = new System.Windows.Forms.CheckBox();
             this.chkcttology = new System.Windows.Forms.CheckBox();
+            this.chkhematology = new System.Windows.Forms.CheckBox();
+            this.chkserology = new System.Windows.Forms.CheckBox();
+            this.chkdrgsofabusetoxity = new System.Windows.Forms.CheckBox();
+            this.chkdrugmonitoring = new System.Windows.Forms.CheckBox();
+            this.chktorchpanel = new System.Windows.Forms.CheckBox();
+            this.chkcancermarker = new System.Windows.Forms.CheckBox();
+            this.chkhormonetest = new System.Windows.Forms.CheckBox();
+            this.chkimmunology = new System.Windows.Forms.CheckBox();
+            this.chkmicrobiology = new System.Windows.Forms.CheckBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.gbtestcatagory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -69,6 +69,7 @@
             this.txtinvestigationid.Name = "txtinvestigationid";
             this.txtinvestigationid.Size = new System.Drawing.Size(131, 20);
             this.txtinvestigationid.TabIndex = 1;
+            //this.txtinvestigationid.TextChanged += new System.EventHandler(this.txtinvestigationid_TextChanged);
             // 
             // linklbltestcomplete
             // 
@@ -122,114 +123,7 @@
             this.gbtestcatagory.TabIndex = 5;
             this.gbtestcatagory.TabStop = false;
             this.gbtestcatagory.Text = "Test Catagory";
-            // 
-            // chkmicrobiology
-            // 
-            this.chkmicrobiology.AutoSize = true;
-            this.chkmicrobiology.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkmicrobiology.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.chkmicrobiology.Location = new System.Drawing.Point(18, 23);
-            this.chkmicrobiology.Name = "chkmicrobiology";
-            this.chkmicrobiology.Size = new System.Drawing.Size(72, 20);
-            this.chkmicrobiology.TabIndex = 0;
-            this.chkmicrobiology.Text = "biology";
-            this.chkmicrobiology.UseVisualStyleBackColor = true;
-            // 
-            // chkimmunology
-            // 
-            this.chkimmunology.AutoSize = true;
-            this.chkimmunology.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkimmunology.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.chkimmunology.Location = new System.Drawing.Point(18, 54);
-            this.chkimmunology.Name = "chkimmunology";
-            this.chkimmunology.Size = new System.Drawing.Size(100, 20);
-            this.chkimmunology.TabIndex = 1;
-            this.chkimmunology.Text = "Immunology";
-            this.chkimmunology.UseVisualStyleBackColor = true;
-            // 
-            // chkhormonetest
-            // 
-            this.chkhormonetest.AutoSize = true;
-            this.chkhormonetest.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkhormonetest.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.chkhormonetest.Location = new System.Drawing.Point(18, 88);
-            this.chkhormonetest.Name = "chkhormonetest";
-            this.chkhormonetest.Size = new System.Drawing.Size(113, 20);
-            this.chkhormonetest.TabIndex = 2;
-            this.chkhormonetest.Text = "Hormone Test";
-            this.chkhormonetest.UseVisualStyleBackColor = true;
-            // 
-            // chkdrugmonitoring
-            // 
-            this.chkdrugmonitoring.AutoSize = true;
-            this.chkdrugmonitoring.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkdrugmonitoring.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.chkdrugmonitoring.Location = new System.Drawing.Point(178, 88);
-            this.chkdrugmonitoring.Name = "chkdrugmonitoring";
-            this.chkdrugmonitoring.Size = new System.Drawing.Size(121, 20);
-            this.chkdrugmonitoring.TabIndex = 5;
-            this.chkdrugmonitoring.Text = "Drug Monitoring";
-            this.chkdrugmonitoring.UseVisualStyleBackColor = true;
-            // 
-            // chktorchpanel
-            // 
-            this.chktorchpanel.AutoSize = true;
-            this.chktorchpanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chktorchpanel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.chktorchpanel.Location = new System.Drawing.Point(178, 54);
-            this.chktorchpanel.Name = "chktorchpanel";
-            this.chktorchpanel.Size = new System.Drawing.Size(100, 20);
-            this.chktorchpanel.TabIndex = 4;
-            this.chktorchpanel.Text = "Torch Panel";
-            this.chktorchpanel.UseVisualStyleBackColor = true;
-            // 
-            // chkcancermarker
-            // 
-            this.chkcancermarker.AutoSize = true;
-            this.chkcancermarker.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkcancermarker.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.chkcancermarker.Location = new System.Drawing.Point(178, 23);
-            this.chkcancermarker.Name = "chkcancermarker";
-            this.chkcancermarker.Size = new System.Drawing.Size(115, 20);
-            this.chkcancermarker.TabIndex = 3;
-            this.chkcancermarker.Text = "Cancer Marker";
-            this.chkcancermarker.UseVisualStyleBackColor = true;
-            // 
-            // chkhematology
-            // 
-            this.chkhematology.AutoSize = true;
-            this.chkhematology.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkhematology.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.chkhematology.Location = new System.Drawing.Point(324, 87);
-            this.chkhematology.Name = "chkhematology";
-            this.chkhematology.Size = new System.Drawing.Size(109, 20);
-            this.chkhematology.TabIndex = 8;
-            this.chkhematology.Text = "Haematology";
-            this.chkhematology.UseVisualStyleBackColor = true;
-            // 
-            // chkserology
-            // 
-            this.chkserology.AutoSize = true;
-            this.chkserology.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkserology.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.chkserology.Location = new System.Drawing.Point(324, 53);
-            this.chkserology.Name = "chkserology";
-            this.chkserology.Size = new System.Drawing.Size(82, 20);
-            this.chkserology.TabIndex = 7;
-            this.chkserology.Text = "Serology";
-            this.chkserology.UseVisualStyleBackColor = true;
-            // 
-            // chkdrgsofabusetoxity
-            // 
-            this.chkdrgsofabusetoxity.AutoSize = true;
-            this.chkdrgsofabusetoxity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkdrgsofabusetoxity.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.chkdrgsofabusetoxity.Location = new System.Drawing.Point(324, 20);
-            this.chkdrgsofabusetoxity.Name = "chkdrgsofabusetoxity";
-            this.chkdrgsofabusetoxity.Size = new System.Drawing.Size(169, 20);
-            this.chkdrgsofabusetoxity.TabIndex = 6;
-            this.chkdrgsofabusetoxity.Text = "Drugs of Abuse/Toxicity";
-            this.chkdrgsofabusetoxity.UseVisualStyleBackColor = true;
+            //this.gbtestcatagory.Enter += new System.EventHandler(this.gbtestcatagory_Enter);
             // 
             // chkbiochemicalexaz
             // 
@@ -267,6 +161,114 @@
             this.chkcttology.Text = "Cyotoloy";
             this.chkcttology.UseVisualStyleBackColor = true;
             // 
+            // chkhematology
+            // 
+            this.chkhematology.AutoSize = true;
+            this.chkhematology.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkhematology.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.chkhematology.Location = new System.Drawing.Point(324, 87);
+            this.chkhematology.Name = "chkhematology";
+            this.chkhematology.Size = new System.Drawing.Size(109, 20);
+            this.chkhematology.TabIndex = 8;
+            this.chkhematology.Text = "Haematology";
+            this.chkhematology.UseVisualStyleBackColor = true;
+            // 
+            // chkserology
+            // 
+            this.chkserology.AutoSize = true;
+            this.chkserology.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkserology.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.chkserology.Location = new System.Drawing.Point(324, 53);
+            this.chkserology.Name = "chkserology";
+            this.chkserology.Size = new System.Drawing.Size(82, 20);
+            this.chkserology.TabIndex = 7;
+            this.chkserology.Text = "Serology";
+            this.chkserology.UseVisualStyleBackColor = true;
+            // 
+            // chkdrgsofabusetoxity
+            // 
+            this.chkdrgsofabusetoxity.AutoSize = true;
+            this.chkdrgsofabusetoxity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkdrgsofabusetoxity.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.chkdrgsofabusetoxity.Location = new System.Drawing.Point(324, 20);
+            this.chkdrgsofabusetoxity.Name = "chkdrgsofabusetoxity";
+            this.chkdrgsofabusetoxity.Size = new System.Drawing.Size(169, 20);
+            this.chkdrgsofabusetoxity.TabIndex = 6;
+            this.chkdrgsofabusetoxity.Text = "Drugs of Abuse/Toxicity";
+            this.chkdrgsofabusetoxity.UseVisualStyleBackColor = true;
+            // 
+            // chkdrugmonitoring
+            // 
+            this.chkdrugmonitoring.AutoSize = true;
+            this.chkdrugmonitoring.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkdrugmonitoring.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.chkdrugmonitoring.Location = new System.Drawing.Point(178, 88);
+            this.chkdrugmonitoring.Name = "chkdrugmonitoring";
+            this.chkdrugmonitoring.Size = new System.Drawing.Size(121, 20);
+            this.chkdrugmonitoring.TabIndex = 5;
+            this.chkdrugmonitoring.Text = "Drug Monitoring";
+            this.chkdrugmonitoring.UseVisualStyleBackColor = true;
+            // 
+            // chktorchpanel
+            // 
+            this.chktorchpanel.AutoSize = true;
+            this.chktorchpanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chktorchpanel.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.chktorchpanel.Location = new System.Drawing.Point(178, 54);
+            this.chktorchpanel.Name = "chktorchpanel";
+            this.chktorchpanel.Size = new System.Drawing.Size(100, 20);
+            this.chktorchpanel.TabIndex = 4;
+            this.chktorchpanel.Text = "Torch Panel";
+            this.chktorchpanel.UseVisualStyleBackColor = true;
+            // 
+            // chkcancermarker
+            // 
+            this.chkcancermarker.AutoSize = true;
+            this.chkcancermarker.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkcancermarker.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.chkcancermarker.Location = new System.Drawing.Point(178, 23);
+            this.chkcancermarker.Name = "chkcancermarker";
+            this.chkcancermarker.Size = new System.Drawing.Size(115, 20);
+            this.chkcancermarker.TabIndex = 3;
+            this.chkcancermarker.Text = "Cancer Marker";
+            this.chkcancermarker.UseVisualStyleBackColor = true;
+            // 
+            // chkhormonetest
+            // 
+            this.chkhormonetest.AutoSize = true;
+            this.chkhormonetest.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkhormonetest.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.chkhormonetest.Location = new System.Drawing.Point(18, 88);
+            this.chkhormonetest.Name = "chkhormonetest";
+            this.chkhormonetest.Size = new System.Drawing.Size(113, 20);
+            this.chkhormonetest.TabIndex = 2;
+            this.chkhormonetest.Text = "Hormone Test";
+            this.chkhormonetest.UseVisualStyleBackColor = true;
+            // 
+            // chkimmunology
+            // 
+            this.chkimmunology.AutoSize = true;
+            this.chkimmunology.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkimmunology.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.chkimmunology.Location = new System.Drawing.Point(18, 54);
+            this.chkimmunology.Name = "chkimmunology";
+            this.chkimmunology.Size = new System.Drawing.Size(100, 20);
+            this.chkimmunology.TabIndex = 1;
+            this.chkimmunology.Text = "Immunology";
+            this.chkimmunology.UseVisualStyleBackColor = true;
+            // 
+            // chkmicrobiology
+            // 
+            this.chkmicrobiology.AutoSize = true;
+            this.chkmicrobiology.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkmicrobiology.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.chkmicrobiology.Location = new System.Drawing.Point(18, 23);
+            this.chkmicrobiology.Name = "chkmicrobiology";
+            this.chkmicrobiology.Size = new System.Drawing.Size(72, 20);
+            this.chkmicrobiology.TabIndex = 0;
+            this.chkmicrobiology.Text = "biology";
+            this.chkmicrobiology.UseVisualStyleBackColor = true;
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -290,6 +292,7 @@
             this.Name = "frmPathologylab";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pathology Lab";
+            this.Load += new System.EventHandler(this.frmPathologylab_Load);
             this.gbtestcatagory.ResumeLayout(false);
             this.gbtestcatagory.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

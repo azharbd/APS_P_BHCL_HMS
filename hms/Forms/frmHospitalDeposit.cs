@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace hms.Froms
+namespace hms.Forms
 {
     public partial class frmHospitalDeposit : Form
     {
@@ -16,9 +16,5 @@ namespace hms.Froms
             InitializeComponent();
         }
 
-        private void frmHospitalDeposit_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
